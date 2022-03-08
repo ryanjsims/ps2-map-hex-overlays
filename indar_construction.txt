@@ -1,0 +1,6 @@
+x=601.596 y=112.090 z=-2408.150, Heading: -0.600   /loc 601.596 112.090 -2408.150
+[SAY] You: lowland trading post
+x=-2032.330 y=461.020 z=-92.780, Heading: 1.363   /loc -2032.330 461.020 -92.780
+[SAY] You: berjess
+x=1423.700 y=71.890 z=2631.840, Heading: -3.115   /loc 1423.700 71.890 2631.840
+[SAY] You: sunken relay
