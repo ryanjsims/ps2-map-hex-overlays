@@ -97,6 +97,9 @@ class Region:
                 pile.put(edge)
         
         self.__dirty = False
+        if self._name == "Mirror Bay Watchtower":
+            for i, point in enumerate(self.__shape):
+                print(i, point)
         return self.__shape
     
     def draw_outline(self, context: cairo.Context, offset_x = 0, offset_y = 0, transform_fn = Map.world_to_map):
@@ -247,7 +250,6 @@ class Region:
         context.stroke()
 
         context.arc(center[0] + badge_radius / 3, center[1] + badge_radius / 3, badge_radius / 6, math.radians(0), math.radians(360))
-
         context.stroke()
 
         context.restore()

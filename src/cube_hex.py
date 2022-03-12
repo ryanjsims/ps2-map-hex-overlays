@@ -36,14 +36,14 @@ class CubeHex:
         direction = direction % 6
         return self + CubeHex.DIRECTION_VECTORS[direction]
 
-    def to_pixel(self, hex_size: float):
+    def to_world(self, hex_size: float):
         z = hex_size * math.sqrt(3) * (self._q + 0.5 * self._r - 0.5)
         x = hex_size * (self._r * -(3 / 2) - 1 / 2)
         return x, z
     
     def corner(self, i: int, hex_size: float):
         angle = math.radians(60 * i - 30)
-        center = self.to_pixel(hex_size)
+        center = self.to_world(hex_size)
         return round(center[0] + hex_size * math.sin(angle), 2), round(center[1] + hex_size * math.cos(angle))
     
     def edge(self, i, hex_size: float):
@@ -68,8 +68,8 @@ class CubeHex:
     
     @classmethod
     def from_pixel(cls, point: tuple, size: float):
-        q = (math.sqrt(3) / 3 * point[0] - 1./3 * point[1]) / size
-        r = (                              2./3 * point[1]) / size
+        q = (math.sqrt(3) * point[1] + point[0]) / (3 * size) + 2 / 3
+        r = (-2/3) * ((point[0] / size) + 0.5)
         s = -q-r
         def hex_round(qf, rf, sf):
             q = round(qf)

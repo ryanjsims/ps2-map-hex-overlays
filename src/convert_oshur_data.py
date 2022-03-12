@@ -1,4 +1,5 @@
 import json
+import math
 
 with open("../data/oshur.json") as f:
     oshur_data = json.load(f)
@@ -42,3 +43,6 @@ oshur_cache["returned"] = len(oshur_data)
 
 with open("../cache/oshur_cache.json", "w") as f:
     json.dump(oshur_cache, f, separators=(',', ':'))
+
+
+math.ce
