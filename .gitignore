@@ -1,7 +1,8 @@
 __pycache__
 .pytest_cache
+.venv
 cache/amerish_cache.json
 cache/esamir_cache.json
 cache/hossin_cache.json
 cache/indar_cache.json
-
+tiles
