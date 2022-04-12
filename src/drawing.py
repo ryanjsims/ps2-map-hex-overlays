@@ -2,6 +2,7 @@ import os
 import sys
 import asyncio
 import json
+import xml.etree.ElementTree as ET
 import cairo
 import gi
 gi.require_foreign("cairo")
@@ -19,10 +20,11 @@ from auraxium import ps2
 from cube_hex import CubeHex
 from map_region import Region
 from map import Map
+from path_drawer import pathContext
 
 from constants.zone_ids import ZoneID
 from constants.faction_colors import FactionColors
-from constants.facility_types import FacilityTypes
+from constants.facility_types import BADGE_SIZES, FacilityTypes, BADGE_HREFS
 
 
 def build_zone_request(service_id: str, zone_id: int) -> auraxium.census.Query:
@@ -113,6 +115,7 @@ async def main():
 
         Path(f"..{os.path.sep}svg").mkdir(exist_ok=True)
         for zone in zones:
+            break
             with cairo.SVGSurface(f"..{os.path.sep}svg{os.path.sep}{zone}.svg", 1024, 1024) as surface:
                 surface.set_document_unit(cairo.SVG_UNIT_PX)
                 print("Drawing " + f"..{os.path.sep}svg{os.path.sep}{zone}.svg")
@@ -126,7 +129,7 @@ async def main():
                 
                 context.set_source_rgba(1, 1, 1, 0.5)
                 for region_id, region in zones[zone].items():
-                    if region_id != region._id:
+                    if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
                         continue
                     region.draw_lattice(context, *offsets, [zones[zone][link_id] for link_id in region.get_connections()])
                 
@@ -142,7 +145,96 @@ async def main():
                 for region_id, region in zones[zone].items():
                     if region_id != region._id:
                         continue
-                    region.draw_name(context, *offsets)            
+                    region.draw_name(context, *offsets)
+
+        facility_icons = ET.ElementTree(file=f"..{os.path.sep}svg{os.path.sep}facility-icon.svg").getroot()[0]
+        embedded_css = open("../css/map_embedded.css")
+        style = ET.Element("style")
+        style.text = embedded_css.read()
+        embedded_css.close()
+
+        for zone in zones:
+            with open(f"..{os.path.sep}svg{os.path.sep}{zone}_homebrew.svg", "wb") as surface:
+                print("Drawing " + f"..{os.path.sep}svg{os.path.sep}{zone}_homebrew.svg")
+                context = pathContext(surface, 1024, 1024)
+                context.embed(style)
+                context.enter_defs()
+                for icon in facility_icons:
+                    context.embed(icon)
+                context.exit_defs()
+
+                offsets = (4096, 4096)
+                context.enter_group("hex-layer")
+                for region_id, region in zones[zone].items():
+                    if region_id != region._id:
+                        continue
+                    context.id(f"hex-{region_id}")
+                    context._class(f"region-NS")
+                    region.draw_outline(context, *offsets, transform_fn=Map.world_to_map)
+                context.exit_group()
+
+                context.enter_group("lattice-layer")
+                context.set_source_rgba(1, 1, 1, 0.5)
+                for region_id, region in zones[zone].items():
+                    if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
+                        continue
+                    try:
+                        region.draw_lattice(context, *offsets, [zones[zone][link_id] for link_id in region.get_connections()], Map.world_to_map, "link-NS", True)
+                    except IndexError as e:
+                        print(region.get_name())
+                        print(region.get_facility_type())
+                        raise e
+
+                context.exit_group()
+                context.enter_group("badge-layer")
+                for region_id, region in zones[zone].items():
+                    if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
+                        continue
+                    try:
+                        location = Map.world_to_map(region.get_location(), (-offsets[0], offsets[1]))
+                        context.enter_group(f"badge-{region_id}")
+                        context.id(f"bgbadge-{region_id}")
+                        context._class(f"badge-NS")
+                        context.save()
+                        context.set_source_rgb(*region._color.as_percents())
+                        context.use(
+                            "#facility-bg",
+                            location[0],
+                            location[1],
+                            BADGE_SIZES[region.get_facility_type()] * 2,
+                            BADGE_SIZES[region.get_facility_type()] * 2
+                        )
+                        context.fill()
+                        context.use(
+                            f"{BADGE_HREFS[region.get_facility_type()]}", 
+                            location[0],
+                            location[1],
+                            BADGE_SIZES[region.get_facility_type()] * 2,
+                            BADGE_SIZES[region.get_facility_type()] * 2
+                        )
+                        context._finalize()
+                        context.exit_group()
+                        context.restore()
+
+                    except IndexError as e:
+                        print(region.get_name())
+                        print(region.get_facility_type())
+                        raise e
+                context.exit_group()
+
+                context.enter_group("name-layer")
+                for region_id, region in zones[zone].items():
+                    if region_id != region._id:
+                        continue
+                    context.id(f"bgname-{region_id}")
+                    context._class(f"bgtext-NS")
+                    region.draw_name(context, *offsets, True)
+                    context.id(f"name-{region_id}")
+                    context._class(f"fgtext")
+                    region.draw_name(context, *offsets)
+                context.exit_group()
+
+                context.write()
 
 
 if __name__ == '__main__':
