@@ -13,7 +13,7 @@ class LineBase:
         self._y = y
 
     def __str__(self):
-        return f"{self._x} {self._y}"
+        return f"{self._x:.2f} {self._y:.2f}"
 
 class Move(LineBase):
     def __init__(self, x, y):
@@ -271,9 +271,9 @@ class pathContext:
     def circle(self, xc, yc, radius) -> None:
         assert not self.__ids_required or self.__id is not None, "An ID was required but was not provided!"
         self.__elem = ET.SubElement(self.__root, "circle", {
-            "cx": str(xc),
-            "cy": str(yc),
-            "r": str(radius),
+            "cx": f"{xc:.2f}",
+            "cy": f"{yc:.2f}",
+            "r": f"{radius:.1f}",
         })
         if self.__id is not None:
             self.__elem.attrib["id"] = self.__id
@@ -397,8 +397,8 @@ class pathContext:
         linejoins = ["miter", "round", "bevel"]
         self.__elem.attrib["stroke-linejoin"] = linejoins[self.__line_join]
         self.__elem.attrib["stroke-linecap"] = linecaps[self.__line_cap]
-        self.__elem.attrib["stroke-width"] = str(self.__line_width)
-        self.__elem.attrib["stroke-miterlimit"] = str(self.__miter_limit)
+        self.__elem.attrib["stroke-width"] = f"{self.__line_width:.2f}"
+        self.__elem.attrib["stroke-miterlimit"] = f"{self.__miter_limit:.2f}"
 
     def rectangle(self, x, y, w, h):
         self.__path.append(Move(x, y))
@@ -410,9 +410,9 @@ class pathContext:
     
     def text(self, x: float, y: float, font_size: float, text: str, background: bool = False):
         self.__elem = ET.SubElement(self.__root, "text", {
-            "x": str(x),
-            "y": str(y),
-            "font-size": str(font_size),
+            "x": f"{x:.2f}",
+            "y": f"{y:.2f}",
+            "font-size": f"{font_size:d}",
         })
         if self.__id is not None:
             self.__elem.attrib["id"] = self.__id
@@ -431,8 +431,8 @@ class pathContext:
     def use(self, href: str, x: float, y: float, width: float = 0, height: float = 0):
         self.__elem = ET.SubElement(self.__root, "use", {
             "href": href,
-            "x": str(x),
-            "y": str(y),
+            "x": f"{x:.2f}",
+            "y": f"{y:.2f}",
             "transform": f"translate({-50 * width / 100}, {-50 * height / 100}) scale({width / 100} {height / 100})",
             "transform-origin": f"{x} {y}"
         })

@@ -154,7 +154,7 @@ async def main():
         embedded_css.close()
 
         for zone in zones:
-            with open(f"..{os.path.sep}svg{os.path.sep}{zone}_homebrew.svg", "wb") as surface:
+            with open(f"..{os.path.sep}svg{os.path.sep}{zone}_base.svg", "wb") as surface:
                 print("Drawing " + f"..{os.path.sep}svg{os.path.sep}{zone}_homebrew.svg")
                 context = pathContext(surface, 1024, 1024)
                 context.embed(style)
