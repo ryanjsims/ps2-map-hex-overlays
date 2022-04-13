@@ -25,7 +25,7 @@ MAJOR_FACILITY_TYPES = [
 ]
 
 BADGE_SIZES = {
-    facility_type: 10 for facility_type in MAJOR_FACILITY_TYPES
+    facility_type: 8 for facility_type in MAJOR_FACILITY_TYPES
 }
 
 BADGE_SIZES[FacilityTypes.LARGE_OUTPOST] = BADGE_SIZES[FacilityTypes.WARPGATE] * 0.85

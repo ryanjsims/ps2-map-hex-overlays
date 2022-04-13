@@ -411,7 +411,7 @@ class pathContext:
     def text(self, x: float, y: float, font_size: float, text: str, background: bool = False):
         self.__elem = ET.SubElement(self.__root, "text", {
             "x": f"{x:.2f}",
-            "y": f"{y:.2f}",
+            "y": f"{y + font_size:.2f}",
             "font-size": f"{font_size:d}",
         })
         if self.__id is not None:
@@ -431,10 +431,12 @@ class pathContext:
     def use(self, href: str, x: float, y: float, width: float = 0, height: float = 0):
         self.__elem = ET.SubElement(self.__root, "use", {
             "href": href,
-            "x": f"{x:.2f}",
-            "y": f"{y:.2f}",
-            "transform": f"translate({-50 * width / 100}, {-50 * height / 100}) scale({width / 100} {height / 100})",
-            "transform-origin": f"{x} {y}"
+            "x": f"0px",
+            "y": f"0px",
+            "width": f"{width}px",
+            "height": f"{height}px",
+            "transform": f"translate({x - width / 2} {y - height / 2})",
+            #"transform-origin": f"{x:.2f} {y:.2f}",
         })
         if self.__id is not None:
             self.__elem.attrib["id"] = self.__id

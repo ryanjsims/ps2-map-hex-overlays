@@ -6,3 +6,5 @@ cache/esamir_cache.json
 cache/hossin_cache.json
 cache/indar_cache.json
 tiles
+node_modules
+*.png

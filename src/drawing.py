@@ -80,6 +80,12 @@ async def main():
             facilities: Dict[int, Region] = {}
             for map_region in data["map_region_list"]:
                 map_region_id = int(map_region["map_region_id"])
+                if "facility_id" not in map_region:
+                    facility_id = map_region_id
+                    print(map_region["facility_name"])
+                    print(map_region_id)
+                else:
+                    facility_id = int(map_region["facility_id"])
                 if "location_x" in map_region:
                     location = (float(map_region["location_x"]), float(map_region["location_z"]))
                 elif map_region["facility_name"] == "Berjess Overlook":
@@ -101,6 +107,7 @@ async def main():
 
                 facilities[map_region_id] = Region(
                     map_region_id,
+                    facility_id=facility_id,
                     zone_id=id,
                     facility_type_id=int(map_region["facility_type_id"]),
                     name = map_region["facility_name"],
@@ -155,8 +162,8 @@ async def main():
 
         for zone in zones:
             with open(f"..{os.path.sep}svg{os.path.sep}{zone}_base.svg", "wb") as surface:
-                print("Drawing " + f"..{os.path.sep}svg{os.path.sep}{zone}_homebrew.svg")
-                context = pathContext(surface, 1024, 1024)
+                print("Drawing " + f"..{os.path.sep}svg{os.path.sep}{zone}_base.svg")
+                context = pathContext(surface, 2048, 2048)
                 context.embed(style)
                 context.enter_defs()
                 for icon in facility_icons:
@@ -168,7 +175,7 @@ async def main():
                 for region_id, region in zones[zone].items():
                     if region_id != region._id:
                         continue
-                    context.id(f"hex-{region_id}")
+                    context.id(f"hex-{region._facility_id}")
                     context._class(f"region-NS")
                     region.draw_outline(context, *offsets, transform_fn=Map.world_to_map)
                 context.exit_group()
@@ -192,8 +199,8 @@ async def main():
                         continue
                     try:
                         location = Map.world_to_map(region.get_location(), (-offsets[0], offsets[1]))
-                        context.enter_group(f"badge-{region_id}")
-                        context.id(f"bgbadge-{region_id}")
+                        context.enter_group(f"badge-{region._facility_id}")
+                        context.id(f"bgbadge-{region._facility_id}")
                         context._class(f"badge-NS")
                         context.save()
                         context.set_source_rgb(*region._color.as_percents())
@@ -226,10 +233,10 @@ async def main():
                 for region_id, region in zones[zone].items():
                     if region_id != region._id:
                         continue
-                    context.id(f"bgname-{region_id}")
+                    context.id(f"bgname-{region._facility_id}")
                     context._class(f"bgtext-NS")
                     region.draw_name(context, *offsets, True)
-                    context.id(f"name-{region_id}")
+                    context.id(f"name-{region._facility_id}")
                     context._class(f"fgtext")
                     region.draw_name(context, *offsets)
                 context.exit_group()

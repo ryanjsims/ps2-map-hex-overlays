@@ -22,6 +22,7 @@ class Region:
     def __init__(
             self, 
             id: int = 0,
+            facility_id: int = 0,
             zone_id: int = ZoneID.INDAR,
             facility_type_id: int = FacilityTypes.UNKNOWN,
             name: str = None, 
@@ -33,6 +34,7 @@ class Region:
             ):
         self._hexes = {CubeHex(q, r, s) for q, r, s in hex_tuples} if hex_tuples is not None else set(hexes)
         self._id = id
+        self._facility_id = facility_id
         self._zone_id = zone_id
         self._facility_type = facility_type_id
         self._name = name
@@ -132,7 +134,7 @@ class Region:
             if _class is not None and type(context) == pathContext:
                 context._class("bg" + _class)
             if _id and type(context) == pathContext:
-                context.id(f"bglink-{self._id}-{connection._id}")
+                context.id(f"bglink-{self._facility_id}-{connection._facility_id}")
             context.set_miter_limit(3)
             context.set_source_rgba(*self._color.as_percents(), 1)
             context.move_to(x, y)
@@ -143,7 +145,7 @@ class Region:
             if _class is not None and type(context) == pathContext:
                 context._class(_class)
             if _id and type(context) == pathContext:
-                context.id(f"link-{self._id}-{connection._id}")
+                context.id(f"link-{self._facility_id}-{connection._facility_id}")
             context.set_line_width(context.get_line_width() * 0.66)
             context.move_to(x, y)
             context.line_to(conn_x, conn_y)
@@ -157,8 +159,6 @@ class Region:
         if None in self.get_location():
             return
         x, y = Map.world_to_map(self.get_location(), (-offset_x, offset_y))
-        if self.get_facility_type() == FacilityTypes.CONSTRUCTION_OUTPOST:
-            return
         if self.get_facility_type() not in MAJOR_FACILITY_TYPES:
             font_size = 5
         else:
