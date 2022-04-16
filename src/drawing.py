@@ -122,38 +122,6 @@ async def main():
             zones[name] = facilities
 
         Path(f"..{os.path.sep}svg").mkdir(exist_ok=True)
-        for zone in zones:
-            break
-            with cairo.SVGSurface(f"..{os.path.sep}svg{os.path.sep}{zone}.svg", 1024, 1024) as surface:
-                surface.set_document_unit(cairo.SVG_UNIT_PX)
-                print("Drawing " + f"..{os.path.sep}svg{os.path.sep}{zone}.svg")
-                context = cairo.Context(surface)
-                
-                offsets = (4096, 4096)
-                for region_id, region in zones[zone].items():
-                    if region_id != region._id:
-                        continue
-                    region.draw_outline(context, *offsets, transform_fn=Map.world_to_map)
-                
-                context.set_source_rgba(1, 1, 1, 0.5)
-                for region_id, region in zones[zone].items():
-                    if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
-                        continue
-                    region.draw_lattice(context, *offsets, [zones[zone][link_id] for link_id in region.get_connections()])
-                
-                for region_id, region in zones[zone].items():
-                    if region_id != region._id:
-                        continue
-                    try:
-                        region.draw_facility_indicator(context, *offsets)
-                    except IndexError as e:
-                        print(region.get_name())
-                        raise e
-
-                for region_id, region in zones[zone].items():
-                    if region_id != region._id:
-                        continue
-                    region.draw_name(context, *offsets)
 
         facility_icons = ET.ElementTree(file=f"..{os.path.sep}svg{os.path.sep}facility-icon.svg").getroot()[0]
         embedded_css = open("../css/map_embedded.min.css")
@@ -164,7 +132,7 @@ async def main():
 
         for zone in zones:
             regions = ET.Element("regionJson")
-            regionData = {region._facility_id: region.as_embeddable_json(zones[zone], offsets) for region in zones[zone].values() if region.get_facility_type() != FacilityTypes.UNKNOWN}
+            regionData = {region._facility_id: region.as_embeddable_json(zones[zone], (-offsets[0], offsets[1])) for region in zones[zone].values() if region.get_facility_type() != FacilityTypes.UNKNOWN}
             for regionJson in regionData.values():
                 for connection_id in regionJson["linked_facilities"]:
                     if regionJson["facility_id"] in regionData[connection_id]["linked_facilities"]:
