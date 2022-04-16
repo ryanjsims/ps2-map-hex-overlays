@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" width="2048px" height="2048px">
-  <regionJson>{"230000":{"name":"Palos Solar Array","location":[207.15,-683.21],"badge":{"size":11.2},"facility_id":230000,"facility_type":6,"linked_facilities":[258000]},"231000":{"name":"Crystal Ridge Comm Array","location":[304.35,-700.92],"badge":{"size":11.2},"facility_id":231000,"facility_type":6,"linked_facilities":[230000,232000,253000,258000]},"232000":{"name":"Haven Outpost","location":[426.03,-795.17],"badge":{"size":11.2},"facility_id":232000,"facility_type":6,"linked_facilities":[255010,258000]},"233000":{"name":"Aurora Materials Lab","location":[449.31,-690.95],"badge":{"size":11.2},"facility_id":233000,"facility_type":6,"linked_facilities":[]},"234000":{"name":"Mani Containment Site","location":[563.23,-649.41],"badge":{"size":16},"facility_id":234000,"facility_type":11,"linked_facilities":[235000,244620,255030]},"235000":{"name":"Stillwater Watch","location":[658.81,-745.95],"badge":{"size":11.2},"facility_id":235000,"facility_type":9,"linked_facilities":[247000,400315]},"236000":{"name":"Grey Heron Shipping","location":[747.45,-626.43],"badge":{"size":13.6},"facility_id":236000,"facility_type":5,"linked_facilities":[]},"237000":{"name":"The Traverse","location":[343.27,-550.92],"badge":{"size":11.2},"facility_id":237000,"facility_type":6,"linked_facilities":[246000]},"239000":{"name":"Pale Canyon Chemical","location":[378.01,-452.28],"badge":{"size":11.2},"facility_id":239000,"facility_type":6,"linked_facilities":[246000]},"240000":{"name":"Old Shore Checkpoint","location":[465.73,-298.01],"badge":{"size":11.2},"facility_id":240000,"facility_type":6,"linked_facilities":[244300,252010,259000]},"242000":{"name":"Eastwake Harborage","location":[866.82,-418.14],"badge":{"size":11.2},"facility_id":242000,"facility_type":6,"linked_facilities":[]},"243000":{"name":"Elli Forest Pass","location":[593.12,-273.96],"badge":{"size":11.2},"facility_id":243000,"facility_type":6,"linked_facilities":[252010,400328]},"244000":{"name":"Frostfall Overlook","location":[834.12,-359.97],"badge":{"size":11.2},"facility_id":244000,"facility_type":6,"linked_facilities":[242000,257000]},"245000":{"name":"Snowshear Fort","location":[260.51,-637.47],"badge":{"size":13.6},"facility_id":245000,"facility_type":5,"linked_facilities":[230000,237000,251010]},"246000":{"name":"Mattherson's Triumph","location":[413.85,-532.18],"badge":{"size":13.6},"facility_id":246000,"facility_type":5,"linked_facilities":[]},"247000":{"name":"Northpoint Ruins","location":[652.24,-838.54],"badge":{"size":11.2},"facility_id":247000,"facility_type":9,"linked_facilities":[]},"248000":{"name":"Saerro Listening Post","location":[585.84,-539.54],"badge":{"size":13.6},"facility_id":248000,"facility_type":5,"linked_facilities":[244610]},"249000":{"name":"Waterson's Redemption","location":[527.54,-425.98],"badge":{"size":13.6},"facility_id":249000,"facility_type":5,"linked_facilities":[]},"400326":{"name":"Andvari Containment Site","location":[200.75,-522.25],"badge":{"size":16},"facility_id":400326,"facility_type":11,"linked_facilities":[251010,251030,400134]},"253000":{"name":"Freyr","location":[384.38,-652.46],"badge":{"size":16},"facility_id":253000,"facility_type":2,"linked_facilities":[233000,237000]},"254000":{"name":"Eisa","location":[501.88,-520.84],"badge":{"size":16},"facility_id":254000,"facility_type":4,"linked_facilities":[244610,246000,248000,249000]},"256000":{"name":"Nott Communications","location":[757.54,-506.98],"badge":{"size":11.2},"facility_id":256000,"facility_type":6,"linked_facilities":[236000,242000,256030,260000]},"257000":{"name":"Ymir","location":[778.92,-267.75],"badge":{"size":11.2},"facility_id":257000,"facility_type":9,"linked_facilities":[]},"258000":{"name":"Esamir Northern Warpgate","location":[213.34,-793.33],"badge":{"size":16},"facility_id":258000,"facility_type":7,"linked_facilities":[]},"259000":{"name":"Esamir Southern Warpgate","location":[262.1,-213.6],"badge":{"size":16},"facility_id":259000,"facility_type":7,"linked_facilities":[]},"244100":{"name":"Echo Valley Substation","location":[577.54,-469.13],"badge":{"size":11.2},"facility_id":244100,"facility_type":6,"linked_facilities":[248000,249000]},"244200":{"name":"Bridge-ward","location":[513.24,-370.75],"badge":{"size":11.2},"facility_id":244200,"facility_type":6,"linked_facilities":[249000,252010]},"244300":{"name":"Frostbite Harbor","location":[394.56,-328.13],"badge":{"size":11.2},"facility_id":244300,"facility_type":6,"linked_facilities":[259000]},"244500":{"name":"Jaeger's Fist","location":[240.08,-407.05],"badge":{"size":11.2},"facility_id":244500,"facility_type":6,"linked_facilities":[251030,400134]},"244600":{"name":"Two Stone Beach","location":[239.29,-311.44],"badge":{"size":11.2},"facility_id":244600,"facility_type":6,"linked_facilities":[244300,244500,259000]},"260010":{"name":"Terran BL-4 Crash Site","location":[749.24,-364.33],"badge":{"size":13.6},"facility_id":260010,"facility_type":5,"linked_facilities":[400328]},"251010":{"name":"Andvari Barracks","location":[214.45,-569.31],"badge":{"size":11.2},"facility_id":251010,"facility_type":6,"linked_facilities":[]},"251030":{"name":"Andvari South Bank","location":[217.47,-468.35],"badge":{"size":11.2},"facility_id":251030,"facility_type":6,"linked_facilities":[]},"252010":{"name":"Elli Tower","location":[542.37,-295.63],"badge":{"size":11.2},"facility_id":252010,"facility_type":6,"linked_facilities":[]},"255010":{"name":"Steelshore Processing","location":[485.52,-814.03],"badge":{"size":11.2},"facility_id":255010,"facility_type":6,"linked_facilities":[255020]},"255020":{"name":"Steelshore Reconstruction","location":[550.07,-834.28],"badge":{"size":11.2},"facility_id":255020,"facility_type":6,"linked_facilities":[247000]},"255030":{"name":"Esper Research Station","location":[506.63,-744.6],"badge":{"size":11.2},"facility_id":255030,"facility_type":6,"linked_facilities":[233000,255020]},"260000":{"name":"Esamir Eastern Warpgate","location":[844.26,-541.24],"badge":{"size":16},"facility_id":260000,"facility_type":7,"linked_facilities":[236000,242000]},"256030":{"name":"Genudine Gardens","location":[680.5,-550.84],"badge":{"size":11.2},"facility_id":256030,"facility_type":6,"linked_facilities":[248000]},"244610":{"name":"Rime Analytics","location":[519.51,-602.39],"badge":{"size":11.2},"facility_id":244610,"facility_type":6,"linked_facilities":[233000,234000]},"244620":{"name":"The Rink","location":[635.27,-601.51],"badge":{"size":11.2},"facility_id":244620,"facility_type":6,"linked_facilities":[236000,248000]},"400133":{"name":"BL-4 Recovery Point","location":[720.87,-425.21],"badge":{"size":11.2},"facility_id":400133,"facility_type":9,"linked_facilities":[260010]},"400134":{"name":"Tapp Waystation","location":[293.01,-469.18],"badge":{"size":11.2},"facility_id":400134,"facility_type":9,"linked_facilities":[239000]},"400135":{"name":"Untapped Reservoir","location":[461.01,-606.64],"badge":{"size":11.2},"facility_id":400135,"facility_type":9,"linked_facilities":[244610,246000]},"400314":{"name":"Baldur","location":[442.04,-406.58],"badge":{"size":16},"facility_id":400314,"facility_type":2,"linked_facilities":[239000,244300,249000]},"400315":{"name":"Vidar Observation Site","location":[784.0,-679.76],"badge":{"size":11.2},"facility_id":400315,"facility_type":9,"linked_facilities":[236000]},"400327":{"name":"Ymir Containment Site","location":[706.54,-256.12],"badge":{"size":16},"facility_id":400327,"facility_type":11,"linked_facilities":[243000,257000,260010]},"400317":{"name":"Jord","location":[655.79,-456.97],"badge":{"size":16},"facility_id":400317,"facility_type":2,"linked_facilities":[244100,400133]},"400328":{"name":"Spral Oasis","location":[649.28,-330.17],"badge":{"size":11.2},"facility_id":400328,"facility_type":9,"linked_facilities":[]}}</regionJson>
+  <regionJson>{"230000":{"name":"Palos Solar Array","location":[207.15,340.79],"badge":{"size":11.2},"facility_id":230000,"facility_type":6,"linked_facilities":[258000,231000,245000],"orig_linked_facilities":[258000]},"231000":{"name":"Crystal Ridge Comm Array","location":[304.35,323.08],"badge":{"size":11.2},"facility_id":231000,"facility_type":6,"linked_facilities":[230000,232000,253000,258000],"orig_linked_facilities":[230000,232000,253000,258000]},"232000":{"name":"Haven Outpost","location":[426.03,228.83],"badge":{"size":11.2},"facility_id":232000,"facility_type":6,"linked_facilities":[255010,258000,231000],"orig_linked_facilities":[255010,258000]},"233000":{"name":"Aurora Materials Lab","location":[449.31,333.05],"badge":{"size":11.2},"facility_id":233000,"facility_type":6,"linked_facilities":[253000,255030,244610],"orig_linked_facilities":[]},"234000":{"name":"Mani Containment Site","location":[563.23,374.59],"badge":{"size":16},"facility_id":234000,"facility_type":11,"linked_facilities":[235000,244620,255030,244610],"orig_linked_facilities":[235000,244620,255030]},"235000":{"name":"Stillwater Watch","location":[658.81,278.05],"badge":{"size":11.2},"facility_id":235000,"facility_type":9,"linked_facilities":[247000,400315,234000],"orig_linked_facilities":[247000,400315]},"236000":{"name":"Grey Heron Shipping","location":[747.45,397.57],"badge":{"size":13.6},"facility_id":236000,"facility_type":5,"linked_facilities":[256000,260000,244620,400315],"orig_linked_facilities":[]},"237000":{"name":"The Traverse","location":[343.27,473.08],"badge":{"size":11.2},"facility_id":237000,"facility_type":6,"linked_facilities":[246000,245000,253000],"orig_linked_facilities":[246000]},"239000":{"name":"Pale Canyon Chemical","location":[378.01,571.72],"badge":{"size":11.2},"facility_id":239000,"facility_type":6,"linked_facilities":[246000,400134,400314],"orig_linked_facilities":[246000]},"240000":{"name":"Old Shore Checkpoint","location":[465.73,725.99],"badge":{"size":11.2},"facility_id":240000,"facility_type":6,"linked_facilities":[244300,252010,259000],"orig_linked_facilities":[244300,252010,259000]},"242000":{"name":"Eastwake Harborage","location":[866.82,605.86],"badge":{"size":11.2},"facility_id":242000,"facility_type":6,"linked_facilities":[244000,256000,260000],"orig_linked_facilities":[]},"243000":{"name":"Elli Forest Pass","location":[593.12,750.04],"badge":{"size":11.2},"facility_id":243000,"facility_type":6,"linked_facilities":[252010,400328,400327],"orig_linked_facilities":[252010,400328]},"244000":{"name":"Frostfall Overlook","location":[834.12,664.03],"badge":{"size":11.2},"facility_id":244000,"facility_type":6,"linked_facilities":[242000,257000],"orig_linked_facilities":[242000,257000]},"245000":{"name":"Snowshear Fort","location":[260.51,386.53],"badge":{"size":13.6},"facility_id":245000,"facility_type":5,"linked_facilities":[230000,237000,251010],"orig_linked_facilities":[230000,237000,251010]},"246000":{"name":"Mattherson's Triumph","location":[413.85,491.82],"badge":{"size":13.6},"facility_id":246000,"facility_type":5,"linked_facilities":[237000,239000,254000,400135],"orig_linked_facilities":[]},"247000":{"name":"Northpoint Ruins","location":[652.24,185.46],"badge":{"size":11.2},"facility_id":247000,"facility_type":9,"linked_facilities":[235000,255020],"orig_linked_facilities":[]},"248000":{"name":"Saerro Listening Post","location":[585.84,484.46],"badge":{"size":13.6},"facility_id":248000,"facility_type":5,"linked_facilities":[244610,254000,244100,256030,244620],"orig_linked_facilities":[244610]},"249000":{"name":"Waterson's Redemption","location":[527.54,598.02],"badge":{"size":13.6},"facility_id":249000,"facility_type":5,"linked_facilities":[254000,244100,244200,400314],"orig_linked_facilities":[]},"400326":{"name":"Andvari Containment Site","location":[200.75,501.75],"badge":{"size":16},"facility_id":400326,"facility_type":11,"linked_facilities":[251010,251030,400134],"orig_linked_facilities":[251010,251030,400134]},"253000":{"name":"Freyr","location":[384.38,371.54],"badge":{"size":16},"facility_id":253000,"facility_type":2,"linked_facilities":[233000,237000,231000],"orig_linked_facilities":[233000,237000]},"254000":{"name":"Eisa","location":[501.88,503.16],"badge":{"size":16},"facility_id":254000,"facility_type":4,"linked_facilities":[244610,246000,248000,249000],"orig_linked_facilities":[244610,246000,248000,249000]},"256000":{"name":"Nott Communications","location":[757.54,517.02],"badge":{"size":11.2},"facility_id":256000,"facility_type":6,"linked_facilities":[236000,242000,256030,260000],"orig_linked_facilities":[236000,242000,256030,260000]},"257000":{"name":"Ymir","location":[778.92,756.25],"badge":{"size":11.2},"facility_id":257000,"facility_type":9,"linked_facilities":[244000,400327],"orig_linked_facilities":[]},"258000":{"name":"Esamir Northern Warpgate","location":[213.34,230.67],"badge":{"size":16},"facility_id":258000,"facility_type":7,"linked_facilities":[230000,231000,232000],"orig_linked_facilities":[]},"259000":{"name":"Esamir Southern Warpgate","location":[262.1,810.4],"badge":{"size":16},"facility_id":259000,"facility_type":7,"linked_facilities":[240000,244300,244600],"orig_linked_facilities":[]},"244100":{"name":"Echo Valley Substation","location":[577.54,554.87],"badge":{"size":11.2},"facility_id":244100,"facility_type":6,"linked_facilities":[248000,249000,400317],"orig_linked_facilities":[248000,249000]},"244200":{"name":"Bridge-ward","location":[513.24,653.25],"badge":{"size":11.2},"facility_id":244200,"facility_type":6,"linked_facilities":[249000,252010],"orig_linked_facilities":[249000,252010]},"244300":{"name":"Frostbite Harbor","location":[394.56,695.87],"badge":{"size":11.2},"facility_id":244300,"facility_type":6,"linked_facilities":[259000,240000,244600,400314],"orig_linked_facilities":[259000]},"244500":{"name":"Jaeger's Fist","location":[240.08,616.95],"badge":{"size":11.2},"facility_id":244500,"facility_type":6,"linked_facilities":[251030,400134,244600],"orig_linked_facilities":[251030,400134]},"244600":{"name":"Two Stone Beach","location":[239.29,712.56],"badge":{"size":11.2},"facility_id":244600,"facility_type":6,"linked_facilities":[244300,244500,259000],"orig_linked_facilities":[244300,244500,259000]},"260010":{"name":"Terran BL-4 Crash Site","location":[749.24,659.67],"badge":{"size":13.6},"facility_id":260010,"facility_type":5,"linked_facilities":[400328,400133,400327],"orig_linked_facilities":[400328]},"251010":{"name":"Andvari Barracks","location":[214.45,454.69],"badge":{"size":11.2},"facility_id":251010,"facility_type":6,"linked_facilities":[245000,400326],"orig_linked_facilities":[]},"251030":{"name":"Andvari South Bank","location":[217.47,555.65],"badge":{"size":11.2},"facility_id":251030,"facility_type":6,"linked_facilities":[400326,244500],"orig_linked_facilities":[]},"252010":{"name":"Elli Tower","location":[542.37,728.37],"badge":{"size":11.2},"facility_id":252010,"facility_type":6,"linked_facilities":[240000,243000,244200],"orig_linked_facilities":[]},"255010":{"name":"Steelshore Processing","location":[485.52,209.97],"badge":{"size":11.2},"facility_id":255010,"facility_type":6,"linked_facilities":[255020,232000],"orig_linked_facilities":[255020]},"255020":{"name":"Steelshore Reconstruction","location":[550.07,189.72],"badge":{"size":11.2},"facility_id":255020,"facility_type":6,"linked_facilities":[247000,255010,255030],"orig_linked_facilities":[247000]},"255030":{"name":"Esper Research Station","location":[506.63,279.4],"badge":{"size":11.2},"facility_id":255030,"facility_type":6,"linked_facilities":[233000,255020,234000],"orig_linked_facilities":[233000,255020]},"260000":{"name":"Esamir Eastern Warpgate","location":[844.26,482.76],"badge":{"size":16},"facility_id":260000,"facility_type":7,"linked_facilities":[236000,242000,256000],"orig_linked_facilities":[236000,242000]},"256030":{"name":"Genudine Gardens","location":[680.5,473.16],"badge":{"size":11.2},"facility_id":256030,"facility_type":6,"linked_facilities":[248000,256000],"orig_linked_facilities":[248000]},"244610":{"name":"Rime Analytics","location":[519.51,421.61],"badge":{"size":11.2},"facility_id":244610,"facility_type":6,"linked_facilities":[233000,234000,248000,254000,400135],"orig_linked_facilities":[233000,234000]},"244620":{"name":"The Rink","location":[635.27,422.49],"badge":{"size":11.2},"facility_id":244620,"facility_type":6,"linked_facilities":[236000,248000,234000],"orig_linked_facilities":[236000,248000]},"400133":{"name":"BL-4 Recovery Point","location":[720.87,598.79],"badge":{"size":11.2},"facility_id":400133,"facility_type":9,"linked_facilities":[260010,400317],"orig_linked_facilities":[260010]},"400134":{"name":"Tapp Waystation","location":[293.01,554.82],"badge":{"size":11.2},"facility_id":400134,"facility_type":9,"linked_facilities":[239000,400326,244500],"orig_linked_facilities":[239000]},"400135":{"name":"Untapped Reservoir","location":[461.01,417.36],"badge":{"size":11.2},"facility_id":400135,"facility_type":9,"linked_facilities":[244610,246000],"orig_linked_facilities":[244610,246000]},"400314":{"name":"Baldur","location":[442.04,617.42],"badge":{"size":16},"facility_id":400314,"facility_type":2,"linked_facilities":[239000,244300,249000],"orig_linked_facilities":[239000,244300,249000]},"400315":{"name":"Vidar Observation Site","location":[784.0,344.24],"badge":{"size":11.2},"facility_id":400315,"facility_type":9,"linked_facilities":[236000,235000],"orig_linked_facilities":[236000]},"400327":{"name":"Ymir Containment Site","location":[706.54,767.88],"badge":{"size":16},"facility_id":400327,"facility_type":11,"linked_facilities":[243000,257000,260010],"orig_linked_facilities":[243000,257000,260010]},"400317":{"name":"Jord","location":[655.79,567.03],"badge":{"size":16},"facility_id":400317,"facility_type":2,"linked_facilities":[244100,400133],"orig_linked_facilities":[244100,400133]},"400328":{"name":"Spral Oasis","location":[649.28,693.83],"badge":{"size":11.2},"facility_id":400328,"facility_type":9,"linked_facilities":[243000,260010],"orig_linked_facilities":[]}}</regionJson>
   <style>.region-TR{stroke:#000;fill:#bc1212;fill-opacity:0.4;}.region-NC{stroke:#000;fill:#0064aa;fill-opacity:0.4;}.region-VS{stroke:#000;fill:#6e18a3;fill-opacity:0.4;}.region-NS{stroke:#000;fill:#718096;fill-opacity:0.4;}.region-NS-cutoff{stroke:#000;fill:#718096;fill-opacity:0.8;}.region-VS-cutoff{stroke:#000;fill:#2e153d;fill-opacity:0.8;}.region-NC-cutoff{stroke:#000;fill:#0f273f;fill-opacity:0.8;}.region-TR-cutoff{stroke:#000;fill:#3a0005;fill-opacity:0.8;}.link{stroke-width:0.66;}.link-NS{stroke:#928e99;opacity:0.6;}.link-VS{stroke:#ffb2ff;opacity:0.8;}.link-NC{stroke:#b0ffff;opacity:0.8;}.link-TR{stroke:#ffbfb2;opacity:0.8;}.link-warpgate{stroke:#928e99;opacity:0.8;stroke-dasharray:5 5;}.link-captureable{stroke:#eae690;opacity:0.8;stroke-dasharray:5 5;}.badge-TR{fill:#cd4d4d;}.badge-NC{fill:#408bbf;}.badge-VS{fill:#9252ba;}.badge-NS{fill:#94a0b0;}.bglink-NS,.bglink-VS,.bglink-NC,.bglink-TR{stroke:none;}.bglink-warpgate{stroke:#49474c;opacity:0.8;stroke-dasharray:5 5;stroke-dashoffset:5;}.bglink-captureable{stroke:#8b7251;opacity:0.8;stroke-dasharray:5 5;stroke-dashoffset:5;}text{font-family:sans-serif;text-anchor:middle;}.fgtext{fill:#FFF;}.bgtext{filter:blur(1px);}.bgtext-TR{fill:#bc1212;stroke:#bc1212;}.bgtext-NC{fill:#0064aa;stroke:#0064aa;}.bgtext-VS{fill:#6e18a3;stroke:#6e18a3;}.bgtext-NS{fill:#718096;stroke:#718096;}</style>
   <defs>
     <symbol id="facility-bg" width="100" height="100" viewBox="0 0 100 100">
@@ -72,12 +72,12 @@
       <polygon stroke="none" fill="white" points="66.8,40.8 59.67,43.1 57.5,36" />
       <polygon stroke="none" fill="white" points="50,55 60,65 50,75 40,65" />
     </symbol>
-    <path d="M 224.38 288.22 L 211.88 295.44 L 199.38 288.22 L 186.88 295.44 L 174.38 288.22 L 161.88 295.44 L 161.88 309.88 L 149.38 317.09 L 149.38 331.53 L 136.88 338.75 L 136.88 353.19 L 124.38 360.41 L 124.38 374.84 L 136.88 382.06 L 149.38 374.84 L 161.88 382.06 L 174.38 374.84 L 186.88 382.06 L 199.38 374.84 L 211.88 382.06 L 224.38 374.84 L 224.38 360.41 L 236.88 353.19 L 249.38 360.41 L 261.88 353.19 L 261.88 338.75 L 249.38 331.53 L 249.38 317.09 L 236.88 309.88 L 236.88 295.44 Z" id="hex-230000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 161.88 309.88 L 149.38 317.09 L 149.38 331.53 L 136.88 338.75 L 136.88 353.19 L 124.38 360.41 L 124.38 374.84 L 136.88 382.06 L 149.38 374.84 L 161.88 382.06 L 174.38 374.84 L 186.88 382.06 L 199.38 374.84 L 211.88 382.06 L 224.38 374.84 L 224.38 360.41 L 236.88 353.19 L 249.38 360.41 L 261.88 353.19 L 261.88 338.75 L 249.38 331.53 L 249.38 317.09 L 236.88 309.88 L 236.88 295.44 L 224.38 288.22 L 211.88 295.44 L 199.38 288.22 L 186.88 295.44 L 174.38 288.22 L 161.88 295.44 Z" id="hex-230000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 207.15 340.79 L 213.34 230.67" id="link-230000-258000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="207.15" y="352.51" font-size="5" id="name-230000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Palos Solar Array</tspan>
     </text>
-    <path d="M 362.00 295.44 L 349.50 288.22 L 349.50 273.78 L 337.00 266.56 L 324.50 273.78 L 312.00 266.56 L 299.50 273.78 L 299.50 288.22 L 287.00 295.44 L 274.50 288.22 L 261.88 295.44 L 249.38 288.22 L 236.88 295.44 L 236.88 309.88 L 249.38 317.09 L 249.38 331.53 L 261.88 338.75 L 261.88 353.19 L 274.50 360.41 L 287.00 353.19 L 299.50 360.41 L 312.00 353.19 L 324.50 360.41 L 337.00 353.19 L 337.00 338.75 L 349.50 331.53 L 349.50 317.09 L 362.00 309.88 Z" id="hex-231000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 261.88 338.75 L 261.88 353.19 L 274.50 360.41 L 287.00 353.19 L 299.50 360.41 L 312.00 353.19 L 324.50 360.41 L 337.00 353.19 L 337.00 338.75 L 349.50 331.53 L 349.50 317.09 L 362.00 309.88 L 362.00 295.44 L 349.50 288.22 L 349.50 273.78 L 337.00 266.56 L 324.50 273.78 L 312.00 266.56 L 299.50 273.78 L 299.50 288.22 L 287.00 295.44 L 274.50 288.22 L 261.88 295.44 L 249.38 288.22 L 236.88 295.44 L 236.88 309.88 L 249.38 317.09 L 249.38 331.53 Z" id="hex-231000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 304.35 323.08 L 207.15 340.79" id="link-231000-230000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 304.35 323.08 L 426.03 228.83" id="link-231000-232000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 304.35 323.08 L 384.38 371.54" id="link-231000-253000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
@@ -85,104 +85,104 @@
     <text x="304.35" y="334.80" font-size="5" id="name-231000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Crystal Ridge Comm Array</tspan>
     </text>
-    <path d="M 474.50 244.91 L 474.50 230.47 L 462.00 223.25 L 462.00 208.81 L 449.50 201.59 L 449.50 187.16 L 437.00 179.94 L 424.50 187.16 L 412.00 179.94 L 399.50 187.16 L 387.00 179.94 L 374.50 187.16 L 362.00 179.94 L 349.50 187.16 L 349.50 201.59 L 337.00 208.81 L 337.00 223.25 L 324.50 230.47 L 324.50 244.91 L 312.00 252.12 L 312.00 266.56 L 324.50 273.78 L 337.00 266.56 L 349.50 273.78 L 349.50 288.22 L 362.00 295.44 L 374.50 288.22 L 387.00 295.44 L 399.50 288.22 L 412.00 295.44 L 424.50 288.22 L 437.00 295.44 L 449.50 288.22 L 449.50 273.78 L 462.00 266.56 L 462.00 252.12 Z" id="hex-232000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 424.50 187.16 L 412.00 179.94 L 399.50 187.16 L 387.00 179.94 L 374.50 187.16 L 362.00 179.94 L 349.50 187.16 L 349.50 201.59 L 337.00 208.81 L 337.00 223.25 L 324.50 230.47 L 324.50 244.91 L 312.00 252.12 L 312.00 266.56 L 324.50 273.78 L 337.00 266.56 L 349.50 273.78 L 349.50 288.22 L 362.00 295.44 L 374.50 288.22 L 387.00 295.44 L 399.50 288.22 L 412.00 295.44 L 424.50 288.22 L 437.00 295.44 L 449.50 288.22 L 449.50 273.78 L 462.00 266.56 L 462.00 252.12 L 474.50 244.91 L 474.50 230.47 L 462.00 223.25 L 462.00 208.81 L 449.50 201.59 L 449.50 187.16 L 437.00 179.94 Z" id="hex-232000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 426.03 228.83 L 485.52 209.97" id="link-232000-255010" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 426.03 228.83 L 213.34 230.67" id="link-232000-258000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="426.03" y="240.55" font-size="5" id="name-232000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Haven Outpost</tspan>
     </text>
-    <path d="M 474.50 288.22 L 474.50 273.78 L 462.00 266.56 L 449.50 273.78 L 449.50 288.22 L 437.00 295.44 L 437.00 309.88 L 424.50 317.09 L 424.50 331.53 L 437.00 338.75 L 437.00 353.19 L 449.50 360.41 L 462.00 353.19 L 474.50 360.41 L 487.00 353.19 L 499.50 360.41 L 512.00 353.19 L 512.00 338.75 L 499.50 331.53 L 499.50 317.09 L 487.00 309.88 L 487.00 295.44 Z" id="hex-233000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 437.00 309.88 L 424.50 317.09 L 424.50 331.53 L 437.00 338.75 L 437.00 353.19 L 449.50 360.41 L 462.00 353.19 L 474.50 360.41 L 487.00 353.19 L 499.50 360.41 L 512.00 353.19 L 512.00 338.75 L 499.50 331.53 L 499.50 317.09 L 487.00 309.88 L 487.00 295.44 L 474.50 288.22 L 474.50 273.78 L 462.00 266.56 L 449.50 273.78 L 449.50 288.22 L 437.00 295.44 Z" id="hex-233000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="449.31" y="344.77" font-size="5" id="name-233000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Aurora Materials Lab</tspan>
     </text>
-    <path d="M 512.00 338.75 L 512.00 353.19 L 524.50 360.41 L 524.50 374.84 L 537.00 382.06 L 537.00 396.50 L 549.50 403.72 L 549.50 418.16 L 562.00 425.38 L 562.00 439.81 L 574.50 447.03 L 587.00 439.81 L 587.00 425.38 L 599.50 418.16 L 599.50 403.72 L 612.00 396.50 L 612.00 382.06 L 624.50 374.84 L 624.50 360.41 L 637.00 353.19 L 637.00 338.75 L 624.50 331.53 L 624.50 317.09 L 612.00 309.88 L 612.00 295.44 L 599.50 288.22 L 599.50 273.78 L 587.00 266.56 L 574.50 273.78 L 562.00 266.56 L 549.50 273.78 L 549.50 288.22 L 562.00 295.44 L 562.00 309.88 L 549.50 317.09 L 537.00 309.88 L 524.50 317.09 L 512.00 309.88 L 499.50 317.09 L 499.50 331.53 Z" id="hex-234000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 562.00 439.81 L 574.50 447.03 L 587.00 439.81 L 587.00 425.38 L 599.50 418.16 L 599.50 403.72 L 612.00 396.50 L 612.00 382.06 L 624.50 374.84 L 624.50 360.41 L 637.00 353.19 L 637.00 338.75 L 624.50 331.53 L 624.50 317.09 L 612.00 309.88 L 612.00 295.44 L 599.50 288.22 L 599.50 273.78 L 587.00 266.56 L 574.50 273.78 L 562.00 266.56 L 549.50 273.78 L 549.50 288.22 L 562.00 295.44 L 562.00 309.88 L 549.50 317.09 L 537.00 309.88 L 524.50 317.09 L 512.00 309.88 L 499.50 317.09 L 499.50 331.53 L 512.00 338.75 L 512.00 353.19 L 524.50 360.41 L 524.50 374.84 L 537.00 382.06 L 537.00 396.50 L 549.50 403.72 L 549.50 418.16 L 562.00 425.38 Z" id="hex-234000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 563.23 374.59 L 658.81 278.05" id="link-234000-235000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 563.23 374.59 L 635.27 422.49" id="link-234000-244620" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 563.23 374.59 L 506.63 279.40" id="link-234000-255030" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="563.23" y="394.19" font-size="10" id="name-234000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Mani Containment Site</tspan>
     </text>
-    <path d="M 649.50 360.41 L 662.00 353.19 L 674.50 360.41 L 687.00 353.19 L 687.00 338.75 L 699.50 331.53 L 712.00 338.75 L 724.50 331.53 L 724.50 317.09 L 737.00 309.88 L 737.00 295.44 L 724.50 288.22 L 724.50 273.78 L 712.00 266.56 L 712.00 252.12 L 699.50 244.91 L 699.50 230.47 L 687.00 223.25 L 674.50 230.47 L 662.00 223.25 L 649.50 230.47 L 637.00 223.25 L 624.50 230.47 L 612.00 223.25 L 599.50 230.47 L 599.50 244.91 L 612.00 252.12 L 612.00 266.56 L 599.50 273.78 L 599.50 288.22 L 612.00 295.44 L 612.00 309.88 L 624.50 317.09 L 624.50 331.53 L 637.00 338.75 L 637.00 353.19 Z" id="hex-235000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 612.00 309.88 L 624.50 317.09 L 624.50 331.53 L 637.00 338.75 L 637.00 353.19 L 649.50 360.41 L 662.00 353.19 L 674.50 360.41 L 687.00 353.19 L 687.00 338.75 L 699.50 331.53 L 712.00 338.75 L 724.50 331.53 L 724.50 317.09 L 737.00 309.88 L 737.00 295.44 L 724.50 288.22 L 724.50 273.78 L 712.00 266.56 L 712.00 252.12 L 699.50 244.91 L 699.50 230.47 L 687.00 223.25 L 674.50 230.47 L 662.00 223.25 L 649.50 230.47 L 637.00 223.25 L 624.50 230.47 L 612.00 223.25 L 599.50 230.47 L 599.50 244.91 L 612.00 252.12 L 612.00 266.56 L 599.50 273.78 L 599.50 288.22 L 612.00 295.44 Z" id="hex-235000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 658.81 278.05 L 652.24 185.46" id="link-235000-247000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 658.81 278.05 L 784.00 344.24" id="link-235000-400315" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="658.81" y="289.77" font-size="5" id="name-235000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Stillwater Watch</tspan>
     </text>
-    <path d="M 749.50 374.84 L 737.00 382.06 L 724.50 374.84 L 712.00 382.06 L 699.50 374.84 L 687.00 382.06 L 687.00 396.50 L 699.50 403.72 L 699.50 418.16 L 712.00 425.38 L 712.00 439.81 L 724.50 447.03 L 737.00 439.81 L 749.50 447.03 L 762.12 439.81 L 774.62 447.03 L 787.12 439.81 L 787.12 425.38 L 799.62 418.16 L 812.12 425.38 L 824.62 418.16 L 824.62 403.72 L 812.12 396.50 L 812.12 382.06 L 799.62 374.84 L 787.12 382.06 L 774.62 374.84 L 762.12 382.06 Z" id="hex-236000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 749.50 374.84 L 737.00 382.06 L 724.50 374.84 L 712.00 382.06 L 699.50 374.84 L 687.00 382.06 L 687.00 396.50 L 699.50 403.72 L 699.50 418.16 L 712.00 425.38 L 712.00 439.81 L 724.50 447.03 L 737.00 439.81 L 749.50 447.03 L 762.12 439.81 L 774.62 447.03 L 787.12 439.81 L 787.12 425.38 L 799.62 418.16 L 812.12 425.38 L 824.62 418.16 L 824.62 403.72 L 812.12 396.50 L 812.12 382.06 L 799.62 374.84 L 787.12 382.06 L 774.62 374.84 L 762.12 382.06 Z" id="hex-236000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="747.45" y="410.73" font-size="5" id="name-236000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Grey Heron Shipping</tspan>
     </text>
-    <path d="M 299.50 490.34 L 299.50 504.78 L 312.00 512.00 L 324.50 504.78 L 337.00 512.00 L 337.00 526.44 L 349.50 533.66 L 362.00 526.44 L 362.00 512.00 L 374.50 504.78 L 374.50 490.34 L 387.00 483.12 L 387.00 468.69 L 374.50 461.47 L 374.50 447.03 L 362.00 439.81 L 362.00 425.38 L 349.50 418.16 L 337.00 425.38 L 324.50 418.16 L 312.00 425.38 L 312.00 439.81 L 299.50 447.03 L 299.50 461.47 L 287.00 468.69 L 287.00 483.12 Z" id="hex-237000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 337.00 526.44 L 349.50 533.66 L 362.00 526.44 L 362.00 512.00 L 374.50 504.78 L 374.50 490.34 L 387.00 483.12 L 387.00 468.69 L 374.50 461.47 L 374.50 447.03 L 362.00 439.81 L 362.00 425.38 L 349.50 418.16 L 337.00 425.38 L 324.50 418.16 L 312.00 425.38 L 312.00 439.81 L 299.50 447.03 L 299.50 461.47 L 287.00 468.69 L 287.00 483.12 L 299.50 490.34 L 299.50 504.78 L 312.00 512.00 L 324.50 504.78 L 337.00 512.00 Z" id="hex-237000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 343.27 473.08 L 413.85 491.82" id="link-237000-246000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="343.27" y="484.80" font-size="5" id="name-237000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">The Traverse</tspan>
     </text>
-    <path d="M 349.50 591.41 L 362.00 598.62 L 362.00 613.06 L 349.50 620.28 L 349.50 634.72 L 362.00 641.94 L 374.50 634.72 L 387.00 641.94 L 399.50 634.72 L 399.50 620.28 L 412.00 613.06 L 412.00 598.62 L 424.50 591.41 L 424.50 576.97 L 437.00 569.75 L 437.00 555.31 L 424.50 548.09 L 424.50 533.66 L 412.00 526.44 L 399.50 533.66 L 387.00 526.44 L 374.50 533.66 L 362.00 526.44 L 349.50 533.66 L 349.50 548.09 L 337.00 555.31 L 337.00 569.75 L 349.50 576.97 Z" id="hex-239000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 374.50 533.66 L 362.00 526.44 L 349.50 533.66 L 349.50 548.09 L 337.00 555.31 L 337.00 569.75 L 349.50 576.97 L 349.50 591.41 L 362.00 598.62 L 362.00 613.06 L 349.50 620.28 L 349.50 634.72 L 362.00 641.94 L 374.50 634.72 L 387.00 641.94 L 399.50 634.72 L 399.50 620.28 L 412.00 613.06 L 412.00 598.62 L 424.50 591.41 L 424.50 576.97 L 437.00 569.75 L 437.00 555.31 L 424.50 548.09 L 424.50 533.66 L 412.00 526.44 L 399.50 533.66 L 387.00 526.44 Z" id="hex-239000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 378.01 571.72 L 413.85 491.82" id="link-239000-246000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="378.01" y="583.44" font-size="5" id="name-239000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Pale Canyon Chemical</tspan>
     </text>
-    <path d="M 374.50 721.34 L 362.00 728.56 L 362.00 743.00 L 349.50 750.22 L 349.50 764.66 L 362.00 771.88 L 362.00 786.31 L 374.50 793.53 L 374.50 807.97 L 387.00 815.19 L 399.50 807.97 L 412.00 815.19 L 424.50 807.97 L 437.00 815.19 L 449.50 807.97 L 462.00 815.19 L 474.50 807.97 L 487.00 815.19 L 499.50 807.97 L 499.50 793.53 L 487.00 786.31 L 487.00 771.88 L 499.50 764.66 L 499.50 750.22 L 512.00 743.00 L 512.00 728.56 L 499.50 721.34 L 499.50 706.91 L 512.00 699.69 L 512.00 685.25 L 499.50 678.03 L 487.00 685.25 L 474.50 678.03 L 462.00 685.25 L 462.00 699.69 L 449.50 706.91 L 449.50 721.34 L 437.00 728.56 L 424.50 721.34 L 412.00 728.56 L 399.50 721.34 L 387.00 728.56 Z" id="hex-240000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 499.50 793.53 L 487.00 786.31 L 487.00 771.88 L 499.50 764.66 L 499.50 750.22 L 512.00 743.00 L 512.00 728.56 L 499.50 721.34 L 499.50 706.91 L 512.00 699.69 L 512.00 685.25 L 499.50 678.03 L 487.00 685.25 L 474.50 678.03 L 462.00 685.25 L 462.00 699.69 L 449.50 706.91 L 449.50 721.34 L 437.00 728.56 L 424.50 721.34 L 412.00 728.56 L 399.50 721.34 L 387.00 728.56 L 374.50 721.34 L 362.00 728.56 L 362.00 743.00 L 349.50 750.22 L 349.50 764.66 L 362.00 771.88 L 362.00 786.31 L 374.50 793.53 L 374.50 807.97 L 387.00 815.19 L 399.50 807.97 L 412.00 815.19 L 424.50 807.97 L 437.00 815.19 L 449.50 807.97 L 462.00 815.19 L 474.50 807.97 L 487.00 815.19 L 499.50 807.97 Z" id="hex-240000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 465.73 725.99 L 394.56 695.87" id="link-240000-244300" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 465.73 725.99 L 542.37 728.37" id="link-240000-252010" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 465.73 725.99 L 262.10 810.40" id="link-240000-259000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="465.73" y="737.71" font-size="5" id="name-240000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Old Shore Checkpoint</tspan>
     </text>
-    <path d="M 849.62 634.72 L 862.12 641.94 L 874.62 634.72 L 887.12 641.94 L 899.62 634.72 L 899.62 620.28 L 887.12 613.06 L 887.12 598.62 L 899.62 591.41 L 899.62 576.97 L 887.12 569.75 L 887.12 555.31 L 874.62 548.09 L 862.12 555.31 L 849.62 548.09 L 837.12 555.31 L 824.62 548.09 L 812.12 555.31 L 799.62 548.09 L 787.12 555.31 L 774.62 548.09 L 762.12 555.31 L 762.12 569.75 L 774.62 576.97 L 774.62 591.41 L 787.12 598.62 L 787.12 613.06 L 774.62 620.28 L 774.62 634.72 L 787.12 641.94 L 799.62 634.72 L 812.12 641.94 L 824.62 634.72 L 837.12 641.94 Z" id="hex-242000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 874.62 548.09 L 862.12 555.31 L 849.62 548.09 L 837.12 555.31 L 824.62 548.09 L 812.12 555.31 L 799.62 548.09 L 787.12 555.31 L 774.62 548.09 L 762.12 555.31 L 762.12 569.75 L 774.62 576.97 L 774.62 591.41 L 787.12 598.62 L 787.12 613.06 L 774.62 620.28 L 774.62 634.72 L 787.12 641.94 L 799.62 634.72 L 812.12 641.94 L 824.62 634.72 L 837.12 641.94 L 849.62 634.72 L 862.12 641.94 L 874.62 634.72 L 887.12 641.94 L 899.62 634.72 L 899.62 620.28 L 887.12 613.06 L 887.12 598.62 L 899.62 591.41 L 899.62 576.97 L 887.12 569.75 L 887.12 555.31 Z" id="hex-242000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="866.82" y="617.58" font-size="5" id="name-242000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Eastwake Harborage</tspan>
     </text>
-    <path d="M 587.00 786.31 L 599.50 793.53 L 612.00 786.31 L 624.50 793.53 L 637.00 786.31 L 637.00 771.88 L 649.50 764.66 L 649.50 750.22 L 637.00 743.00 L 637.00 728.56 L 624.50 721.34 L 624.50 706.91 L 612.00 699.69 L 599.50 706.91 L 587.00 699.69 L 574.50 706.91 L 574.50 721.34 L 562.00 728.56 L 562.00 743.00 L 574.50 750.22 L 574.50 764.66 L 562.00 771.88 L 562.00 786.31 L 574.50 793.53 Z" id="hex-243000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 637.00 728.56 L 624.50 721.34 L 624.50 706.91 L 612.00 699.69 L 599.50 706.91 L 587.00 699.69 L 574.50 706.91 L 574.50 721.34 L 562.00 728.56 L 562.00 743.00 L 574.50 750.22 L 574.50 764.66 L 562.00 771.88 L 562.00 786.31 L 574.50 793.53 L 587.00 786.31 L 599.50 793.53 L 612.00 786.31 L 624.50 793.53 L 637.00 786.31 L 637.00 771.88 L 649.50 764.66 L 649.50 750.22 L 637.00 743.00 Z" id="hex-243000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 593.12 750.04 L 542.37 728.37" id="link-243000-252010" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 593.12 750.04 L 649.28 693.83" id="link-243000-400328" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="593.12" y="761.76" font-size="5" id="name-243000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Elli Forest Pass</tspan>
     </text>
-    <path d="M 874.62 706.91 L 887.12 699.69 L 887.12 685.25 L 899.62 678.03 L 899.62 663.59 L 912.12 656.38 L 912.12 641.94 L 899.62 634.72 L 887.12 641.94 L 874.62 634.72 L 862.12 641.94 L 849.62 634.72 L 837.12 641.94 L 824.62 634.72 L 812.12 641.94 L 799.62 634.72 L 787.12 641.94 L 787.12 656.38 L 799.62 663.59 L 799.62 678.03 L 787.12 685.25 L 787.12 699.69 L 799.62 706.91 L 799.62 721.34 L 812.12 728.56 L 812.12 743.00 L 824.62 750.22 L 837.12 743.00 L 849.62 750.22 L 862.12 743.00 L 862.12 728.56 L 874.62 721.34 Z" id="hex-244000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 799.62 678.03 L 787.12 685.25 L 787.12 699.69 L 799.62 706.91 L 799.62 721.34 L 812.12 728.56 L 812.12 743.00 L 824.62 750.22 L 837.12 743.00 L 849.62 750.22 L 862.12 743.00 L 862.12 728.56 L 874.62 721.34 L 874.62 706.91 L 887.12 699.69 L 887.12 685.25 L 899.62 678.03 L 899.62 663.59 L 912.12 656.38 L 912.12 641.94 L 899.62 634.72 L 887.12 641.94 L 874.62 634.72 L 862.12 641.94 L 849.62 634.72 L 837.12 641.94 L 824.62 634.72 L 812.12 641.94 L 799.62 634.72 L 787.12 641.94 L 787.12 656.38 L 799.62 663.59 Z" id="hex-244000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 834.12 664.03 L 866.82 605.86" id="link-244000-242000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 834.12 664.03 L 778.92 756.25" id="link-244000-257000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="834.12" y="675.75" font-size="5" id="name-244000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Frostfall Overlook</tspan>
     </text>
-    <path d="M 149.38 374.84 L 136.88 382.06 L 136.88 396.50 L 149.38 403.72 L 149.38 418.16 L 161.88 425.38 L 174.38 418.16 L 186.88 425.38 L 199.38 418.16 L 211.88 425.38 L 224.38 418.16 L 236.88 425.38 L 249.38 418.16 L 261.88 425.38 L 261.88 439.81 L 274.50 447.03 L 287.00 439.81 L 299.50 447.03 L 312.00 439.81 L 312.00 425.38 L 324.50 418.16 L 324.50 403.72 L 312.00 396.50 L 312.00 382.06 L 299.50 374.84 L 299.50 360.41 L 287.00 353.19 L 274.50 360.41 L 261.88 353.19 L 249.38 360.41 L 236.88 353.19 L 224.38 360.41 L 224.38 374.84 L 211.88 382.06 L 199.38 374.84 L 186.88 382.06 L 174.38 374.84 L 161.88 382.06 Z" id="hex-245000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 261.88 425.38 L 261.88 439.81 L 274.50 447.03 L 287.00 439.81 L 299.50 447.03 L 312.00 439.81 L 312.00 425.38 L 324.50 418.16 L 324.50 403.72 L 312.00 396.50 L 312.00 382.06 L 299.50 374.84 L 299.50 360.41 L 287.00 353.19 L 274.50 360.41 L 261.88 353.19 L 249.38 360.41 L 236.88 353.19 L 224.38 360.41 L 224.38 374.84 L 211.88 382.06 L 199.38 374.84 L 186.88 382.06 L 174.38 374.84 L 161.88 382.06 L 149.38 374.84 L 136.88 382.06 L 136.88 396.50 L 149.38 403.72 L 149.38 418.16 L 161.88 425.38 L 174.38 418.16 L 186.88 425.38 L 199.38 418.16 L 211.88 425.38 L 224.38 418.16 L 236.88 425.38 L 249.38 418.16 Z" id="hex-245000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 260.51 386.53 L 207.15 340.79" id="link-245000-230000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 260.51 386.53 L 343.27 473.08" id="link-245000-237000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 260.51 386.53 L 214.45 454.69" id="link-245000-251010" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="260.51" y="399.69" font-size="5" id="name-245000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Snowshear Fort</tspan>
     </text>
-    <path d="M 374.50 461.47 L 387.00 468.69 L 387.00 483.12 L 374.50 490.34 L 374.50 504.78 L 362.00 512.00 L 362.00 526.44 L 374.50 533.66 L 387.00 526.44 L 399.50 533.66 L 412.00 526.44 L 424.50 533.66 L 424.50 548.09 L 437.00 555.31 L 449.50 548.09 L 449.50 533.66 L 462.00 526.44 L 462.00 512.00 L 449.50 504.78 L 449.50 490.34 L 462.00 483.12 L 462.00 468.69 L 449.50 461.47 L 437.00 468.69 L 424.50 461.47 L 424.50 447.03 L 412.00 439.81 L 399.50 447.03 L 387.00 439.81 L 374.50 447.03 Z" id="hex-246000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 437.00 468.69 L 424.50 461.47 L 424.50 447.03 L 412.00 439.81 L 399.50 447.03 L 387.00 439.81 L 374.50 447.03 L 374.50 461.47 L 387.00 468.69 L 387.00 483.12 L 374.50 490.34 L 374.50 504.78 L 362.00 512.00 L 362.00 526.44 L 374.50 533.66 L 387.00 526.44 L 399.50 533.66 L 412.00 526.44 L 424.50 533.66 L 424.50 548.09 L 437.00 555.31 L 449.50 548.09 L 449.50 533.66 L 462.00 526.44 L 462.00 512.00 L 449.50 504.78 L 449.50 490.34 L 462.00 483.12 L 462.00 468.69 L 449.50 461.47 Z" id="hex-246000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="413.85" y="504.98" font-size="5" id="name-246000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Mattherson's Triumph</tspan>
     </text>
-    <path d="M 699.50 230.47 L 712.00 223.25 L 712.00 208.81 L 724.50 201.59 L 724.50 187.16 L 712.00 179.94 L 712.00 165.50 L 724.50 158.28 L 724.50 143.84 L 712.00 136.62 L 699.50 143.84 L 687.00 136.62 L 674.50 143.84 L 662.00 136.62 L 649.50 143.84 L 637.00 136.62 L 624.50 143.84 L 612.00 136.62 L 599.50 143.84 L 599.50 158.28 L 587.00 165.50 L 587.00 179.94 L 599.50 187.16 L 599.50 201.59 L 612.00 208.81 L 612.00 223.25 L 624.50 230.47 L 637.00 223.25 L 649.50 230.47 L 662.00 223.25 L 674.50 230.47 L 687.00 223.25 Z" id="hex-247000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 599.50 187.16 L 599.50 201.59 L 612.00 208.81 L 612.00 223.25 L 624.50 230.47 L 637.00 223.25 L 649.50 230.47 L 662.00 223.25 L 674.50 230.47 L 687.00 223.25 L 699.50 230.47 L 712.00 223.25 L 712.00 208.81 L 724.50 201.59 L 724.50 187.16 L 712.00 179.94 L 712.00 165.50 L 724.50 158.28 L 724.50 143.84 L 712.00 136.62 L 699.50 143.84 L 687.00 136.62 L 674.50 143.84 L 662.00 136.62 L 649.50 143.84 L 637.00 136.62 L 624.50 143.84 L 612.00 136.62 L 599.50 143.84 L 599.50 158.28 L 587.00 165.50 L 587.00 179.94 Z" id="hex-247000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="652.24" y="197.18" font-size="5" id="name-247000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Northpoint Ruins</tspan>
     </text>
-    <path d="M 549.50 504.78 L 537.00 512.00 L 537.00 526.44 L 549.50 533.66 L 562.00 526.44 L 574.50 533.66 L 587.00 526.44 L 599.50 533.66 L 612.00 526.44 L 624.50 533.66 L 637.00 526.44 L 637.00 512.00 L 624.50 504.78 L 624.50 490.34 L 612.00 483.12 L 612.00 468.69 L 599.50 461.47 L 599.50 447.03 L 587.00 439.81 L 574.50 447.03 L 562.00 439.81 L 549.50 447.03 L 549.50 461.47 L 537.00 468.69 L 537.00 483.12 L 549.50 490.34 Z" id="hex-248000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 599.50 461.47 L 599.50 447.03 L 587.00 439.81 L 574.50 447.03 L 562.00 439.81 L 549.50 447.03 L 549.50 461.47 L 537.00 468.69 L 537.00 483.12 L 549.50 490.34 L 549.50 504.78 L 537.00 512.00 L 537.00 526.44 L 549.50 533.66 L 562.00 526.44 L 574.50 533.66 L 587.00 526.44 L 599.50 533.66 L 612.00 526.44 L 624.50 533.66 L 637.00 526.44 L 637.00 512.00 L 624.50 504.78 L 624.50 490.34 L 612.00 483.12 L 612.00 468.69 Z" id="hex-248000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 585.84 484.46 L 519.51 421.61" id="link-248000-244610" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="585.84" y="497.62" font-size="5" id="name-248000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Saerro Listening Post</tspan>
     </text>
-    <path d="M 512.00 613.06 L 524.50 620.28 L 537.00 613.06 L 549.50 620.28 L 562.00 613.06 L 574.50 620.28 L 587.00 613.06 L 587.00 598.62 L 574.50 591.41 L 562.00 598.62 L 549.50 591.41 L 549.50 576.97 L 537.00 569.75 L 537.00 555.31 L 524.50 548.09 L 512.00 555.31 L 499.50 548.09 L 487.00 555.31 L 474.50 548.09 L 462.00 555.31 L 462.00 569.75 L 474.50 576.97 L 474.50 591.41 L 487.00 598.62 L 487.00 613.06 L 499.50 620.28 Z" id="hex-249000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 487.00 555.31 L 474.50 548.09 L 462.00 555.31 L 462.00 569.75 L 474.50 576.97 L 474.50 591.41 L 487.00 598.62 L 487.00 613.06 L 499.50 620.28 L 512.00 613.06 L 524.50 620.28 L 537.00 613.06 L 549.50 620.28 L 562.00 613.06 L 574.50 620.28 L 587.00 613.06 L 587.00 598.62 L 574.50 591.41 L 562.00 598.62 L 549.50 591.41 L 549.50 576.97 L 537.00 569.75 L 537.00 555.31 L 524.50 548.09 L 512.00 555.31 L 499.50 548.09 Z" id="hex-249000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="527.54" y="611.18" font-size="5" id="name-249000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Waterson's Redemption</tspan>
     </text>
-    <path d="M 111.88 468.69 L 111.88 483.12 L 99.38 490.34 L 99.38 504.78 L 111.88 512.00 L 111.88 526.44 L 124.38 533.66 L 136.88 526.44 L 149.38 533.66 L 161.88 526.44 L 174.38 533.66 L 186.88 526.44 L 199.38 533.66 L 211.88 526.44 L 224.38 533.66 L 236.88 526.44 L 249.38 533.66 L 261.88 526.44 L 261.88 512.00 L 249.38 504.78 L 249.38 490.34 L 236.88 483.12 L 236.88 468.69 L 224.38 461.47 L 211.88 468.69 L 199.38 461.47 L 186.88 468.69 L 174.38 461.47 L 161.88 468.69 L 149.38 461.47 L 136.88 468.69 L 124.38 461.47 Z" id="hex-400326" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 111.88 468.69 L 111.88 483.12 L 99.38 490.34 L 99.38 504.78 L 111.88 512.00 L 111.88 526.44 L 124.38 533.66 L 136.88 526.44 L 149.38 533.66 L 161.88 526.44 L 174.38 533.66 L 186.88 526.44 L 199.38 533.66 L 211.88 526.44 L 224.38 533.66 L 236.88 526.44 L 249.38 533.66 L 261.88 526.44 L 261.88 512.00 L 249.38 504.78 L 249.38 490.34 L 236.88 483.12 L 236.88 468.69 L 224.38 461.47 L 211.88 468.69 L 199.38 461.47 L 186.88 468.69 L 174.38 461.47 L 161.88 468.69 L 149.38 461.47 L 136.88 468.69 L 124.38 461.47 Z" id="hex-400326" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 200.75 501.75 L 214.45 454.69" id="link-400326-251010" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 200.75 501.75 L 217.47 555.65" id="link-400326-251030" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 200.75 501.75 L 293.01 554.82" id="link-400326-400134" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="200.75" y="521.35" font-size="10" id="name-400326">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Andvari Containment Site</tspan>
     </text>
-    <path d="M 324.50 360.41 L 312.00 353.19 L 299.50 360.41 L 299.50 374.84 L 312.00 382.06 L 312.00 396.50 L 324.50 403.72 L 324.50 418.16 L 337.00 425.38 L 349.50 418.16 L 362.00 425.38 L 362.00 439.81 L 374.50 447.03 L 387.00 439.81 L 399.50 447.03 L 412.00 439.81 L 412.00 425.38 L 424.50 418.16 L 424.50 403.72 L 437.00 396.50 L 449.50 403.72 L 462.00 396.50 L 462.00 382.06 L 474.50 374.84 L 474.50 360.41 L 462.00 353.19 L 449.50 360.41 L 437.00 353.19 L 437.00 338.75 L 424.50 331.53 L 424.50 317.09 L 437.00 309.88 L 437.00 295.44 L 424.50 288.22 L 412.00 295.44 L 399.50 288.22 L 387.00 295.44 L 374.50 288.22 L 362.00 295.44 L 362.00 309.88 L 349.50 317.09 L 349.50 331.53 L 337.00 338.75 L 337.00 353.19 Z" id="hex-253000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 449.50 403.72 L 462.00 396.50 L 462.00 382.06 L 474.50 374.84 L 474.50 360.41 L 462.00 353.19 L 449.50 360.41 L 437.00 353.19 L 437.00 338.75 L 424.50 331.53 L 424.50 317.09 L 437.00 309.88 L 437.00 295.44 L 424.50 288.22 L 412.00 295.44 L 399.50 288.22 L 387.00 295.44 L 374.50 288.22 L 362.00 295.44 L 362.00 309.88 L 349.50 317.09 L 349.50 331.53 L 337.00 338.75 L 337.00 353.19 L 324.50 360.41 L 312.00 353.19 L 299.50 360.41 L 299.50 374.84 L 312.00 382.06 L 312.00 396.50 L 324.50 403.72 L 324.50 418.16 L 337.00 425.38 L 349.50 418.16 L 362.00 425.38 L 362.00 439.81 L 374.50 447.03 L 387.00 439.81 L 399.50 447.03 L 412.00 439.81 L 412.00 425.38 L 424.50 418.16 L 424.50 403.72 L 437.00 396.50 Z" id="hex-253000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 384.38 371.54 L 449.31 333.05" id="link-253000-233000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 384.38 371.54 L 343.27 473.08" id="link-253000-237000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="384.38" y="391.14" font-size="10" id="name-253000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Freyr</tspan>
     </text>
-    <path d="M 524.50 461.47 L 512.00 468.69 L 499.50 461.47 L 499.50 447.03 L 487.00 439.81 L 474.50 447.03 L 474.50 461.47 L 462.00 468.69 L 462.00 483.12 L 449.50 490.34 L 449.50 504.78 L 462.00 512.00 L 462.00 526.44 L 449.50 533.66 L 449.50 548.09 L 462.00 555.31 L 474.50 548.09 L 487.00 555.31 L 499.50 548.09 L 512.00 555.31 L 524.50 548.09 L 537.00 555.31 L 549.50 548.09 L 549.50 533.66 L 537.00 526.44 L 537.00 512.00 L 549.50 504.78 L 549.50 490.34 L 537.00 483.12 L 537.00 468.69 Z" id="hex-254000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 537.00 512.00 L 549.50 504.78 L 549.50 490.34 L 537.00 483.12 L 537.00 468.69 L 524.50 461.47 L 512.00 468.69 L 499.50 461.47 L 499.50 447.03 L 487.00 439.81 L 474.50 447.03 L 474.50 461.47 L 462.00 468.69 L 462.00 483.12 L 449.50 490.34 L 449.50 504.78 L 462.00 512.00 L 462.00 526.44 L 449.50 533.66 L 449.50 548.09 L 462.00 555.31 L 474.50 548.09 L 487.00 555.31 L 499.50 548.09 L 512.00 555.31 L 524.50 548.09 L 537.00 555.31 L 549.50 548.09 L 549.50 533.66 L 537.00 526.44 Z" id="hex-254000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 501.88 503.16 L 519.51 421.61" id="link-254000-244610" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 501.88 503.16 L 413.85 491.82" id="link-254000-246000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 501.88 503.16 L 585.84 484.46" id="link-254000-248000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
@@ -190,7 +190,7 @@
     <text x="501.88" y="522.76" font-size="10" id="name-254000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Eisa</tspan>
     </text>
-    <path d="M 762.12 569.75 L 762.12 555.31 L 774.62 548.09 L 787.12 555.31 L 799.62 548.09 L 812.12 555.31 L 824.62 548.09 L 824.62 533.66 L 812.12 526.44 L 812.12 512.00 L 799.62 504.78 L 799.62 490.34 L 787.12 483.12 L 787.12 468.69 L 774.62 461.47 L 774.62 447.03 L 762.12 439.81 L 749.50 447.03 L 737.00 439.81 L 724.50 447.03 L 724.50 461.47 L 712.00 468.69 L 712.00 483.12 L 724.50 490.34 L 724.50 504.78 L 712.00 512.00 L 712.00 526.44 L 724.50 533.66 L 724.50 548.09 L 712.00 555.31 L 712.00 569.75 L 724.50 576.97 L 737.00 569.75 L 749.50 576.97 Z" id="hex-256000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 749.50 576.97 L 762.12 569.75 L 762.12 555.31 L 774.62 548.09 L 787.12 555.31 L 799.62 548.09 L 812.12 555.31 L 824.62 548.09 L 824.62 533.66 L 812.12 526.44 L 812.12 512.00 L 799.62 504.78 L 799.62 490.34 L 787.12 483.12 L 787.12 468.69 L 774.62 461.47 L 774.62 447.03 L 762.12 439.81 L 749.50 447.03 L 737.00 439.81 L 724.50 447.03 L 724.50 461.47 L 712.00 468.69 L 712.00 483.12 L 724.50 490.34 L 724.50 504.78 L 712.00 512.00 L 712.00 526.44 L 724.50 533.66 L 724.50 548.09 L 712.00 555.31 L 712.00 569.75 L 724.50 576.97 L 737.00 569.75 Z" id="hex-256000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 757.54 517.02 L 747.45 397.57" id="link-256000-236000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 757.54 517.02 L 866.82 605.86" id="link-256000-242000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 757.54 517.02 L 680.50 473.16" id="link-256000-256030" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
@@ -198,148 +198,551 @@
     <text x="757.54" y="528.74" font-size="5" id="name-256000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Nott Communications</tspan>
     </text>
-    <path d="M 749.50 764.66 L 737.00 771.88 L 737.00 786.31 L 724.50 793.53 L 724.50 807.97 L 737.00 815.19 L 749.50 807.97 L 762.12 815.19 L 774.62 807.97 L 787.12 815.19 L 799.62 807.97 L 812.12 815.19 L 824.62 807.97 L 824.62 793.53 L 837.12 786.31 L 837.12 771.88 L 849.62 764.66 L 849.62 750.22 L 837.12 743.00 L 824.62 750.22 L 812.12 743.00 L 812.12 728.56 L 799.62 721.34 L 799.62 706.91 L 787.12 699.69 L 774.62 706.91 L 762.12 699.69 L 749.50 706.91 L 749.50 721.34 L 737.00 728.56 L 737.00 743.00 L 749.50 750.22 Z" id="hex-257000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 799.62 721.34 L 799.62 706.91 L 787.12 699.69 L 774.62 706.91 L 762.12 699.69 L 749.50 706.91 L 749.50 721.34 L 737.00 728.56 L 737.00 743.00 L 749.50 750.22 L 749.50 764.66 L 737.00 771.88 L 737.00 786.31 L 724.50 793.53 L 724.50 807.97 L 737.00 815.19 L 749.50 807.97 L 762.12 815.19 L 774.62 807.97 L 787.12 815.19 L 799.62 807.97 L 812.12 815.19 L 824.62 807.97 L 824.62 793.53 L 837.12 786.31 L 837.12 771.88 L 849.62 764.66 L 849.62 750.22 L 837.12 743.00 L 824.62 750.22 L 812.12 743.00 L 812.12 728.56 Z" id="hex-257000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="778.92" y="767.97" font-size="5" id="name-257000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Ymir</tspan>
     </text>
-    <path d="M 312.00 179.94 L 299.50 187.16 L 287.00 179.94 L 274.50 187.16 L 261.88 179.94 L 249.38 187.16 L 236.88 179.94 L 224.38 187.16 L 211.88 179.94 L 199.38 187.16 L 186.88 179.94 L 174.38 187.16 L 174.38 201.59 L 161.88 208.81 L 161.88 223.25 L 149.38 230.47 L 149.38 244.91 L 136.88 252.12 L 136.88 266.56 L 149.38 273.78 L 149.38 288.22 L 161.88 295.44 L 174.38 288.22 L 186.88 295.44 L 199.38 288.22 L 211.88 295.44 L 224.38 288.22 L 236.88 295.44 L 249.38 288.22 L 261.88 295.44 L 274.50 288.22 L 287.00 295.44 L 299.50 288.22 L 299.50 273.78 L 312.00 266.56 L 312.00 252.12 L 324.50 244.91 L 324.50 230.47 L 337.00 223.25 L 337.00 208.81 L 349.50 201.59 L 349.50 187.16 L 337.00 179.94 L 324.50 187.16 Z" id="hex-258000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 174.38 288.22 L 186.88 295.44 L 199.38 288.22 L 211.88 295.44 L 224.38 288.22 L 236.88 295.44 L 249.38 288.22 L 261.88 295.44 L 274.50 288.22 L 287.00 295.44 L 299.50 288.22 L 299.50 273.78 L 312.00 266.56 L 312.00 252.12 L 324.50 244.91 L 324.50 230.47 L 337.00 223.25 L 337.00 208.81 L 349.50 201.59 L 349.50 187.16 L 337.00 179.94 L 324.50 187.16 L 312.00 179.94 L 299.50 187.16 L 287.00 179.94 L 274.50 187.16 L 261.88 179.94 L 249.38 187.16 L 236.88 179.94 L 224.38 187.16 L 211.88 179.94 L 199.38 187.16 L 186.88 179.94 L 174.38 187.16 L 174.38 201.59 L 161.88 208.81 L 161.88 223.25 L 149.38 230.47 L 149.38 244.91 L 136.88 252.12 L 136.88 266.56 L 149.38 273.78 L 149.38 288.22 L 161.88 295.44 Z" id="hex-258000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="213.34" y="250.27" font-size="10" id="name-258000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Esamir Northern Warpgate</tspan>
     </text>
-    <path d="M 399.50 880.16 L 412.00 872.94 L 412.00 858.50 L 424.50 851.28 L 424.50 836.84 L 437.00 829.62 L 437.00 815.19 L 424.50 807.97 L 412.00 815.19 L 399.50 807.97 L 387.00 815.19 L 374.50 807.97 L 374.50 793.53 L 362.00 786.31 L 362.00 771.88 L 349.50 764.66 L 349.50 750.22 L 337.00 743.00 L 324.50 750.22 L 312.00 743.00 L 299.50 750.22 L 287.00 743.00 L 274.50 750.22 L 261.88 743.00 L 249.38 750.22 L 236.88 743.00 L 224.38 750.22 L 211.88 743.00 L 199.38 750.22 L 186.88 743.00 L 174.38 750.22 L 161.88 743.00 L 149.38 750.22 L 149.38 764.66 L 161.88 771.88 L 161.88 786.31 L 174.38 793.53 L 174.38 807.97 L 186.88 815.19 L 186.88 829.62 L 199.38 836.84 L 199.38 851.28 L 211.88 858.50 L 211.88 872.94 L 224.38 880.16 L 224.38 894.59 L 236.88 901.81 L 249.38 894.59 L 261.88 901.81 L 274.50 894.59 L 287.00 901.81 L 299.50 894.59 L 312.00 901.81 L 324.50 894.59 L 337.00 901.81 L 349.50 894.59 L 362.00 901.81 L 374.50 894.59 L 387.00 901.81 L 399.50 894.59 Z" id="hex-259000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 274.50 750.22 L 261.88 743.00 L 249.38 750.22 L 236.88 743.00 L 224.38 750.22 L 211.88 743.00 L 199.38 750.22 L 186.88 743.00 L 174.38 750.22 L 161.88 743.00 L 149.38 750.22 L 149.38 764.66 L 161.88 771.88 L 161.88 786.31 L 174.38 793.53 L 174.38 807.97 L 186.88 815.19 L 186.88 829.62 L 199.38 836.84 L 199.38 851.28 L 211.88 858.50 L 211.88 872.94 L 224.38 880.16 L 224.38 894.59 L 236.88 901.81 L 249.38 894.59 L 261.88 901.81 L 274.50 894.59 L 287.00 901.81 L 299.50 894.59 L 312.00 901.81 L 324.50 894.59 L 337.00 901.81 L 349.50 894.59 L 362.00 901.81 L 374.50 894.59 L 387.00 901.81 L 399.50 894.59 L 399.50 880.16 L 412.00 872.94 L 412.00 858.50 L 424.50 851.28 L 424.50 836.84 L 437.00 829.62 L 437.00 815.19 L 424.50 807.97 L 412.00 815.19 L 399.50 807.97 L 387.00 815.19 L 374.50 807.97 L 374.50 793.53 L 362.00 786.31 L 362.00 771.88 L 349.50 764.66 L 349.50 750.22 L 337.00 743.00 L 324.50 750.22 L 312.00 743.00 L 299.50 750.22 L 287.00 743.00 Z" id="hex-259000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="262.10" y="830.00" font-size="10" id="name-259000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Esamir Southern Warpgate</tspan>
     </text>
-    <path d="M 587.00 526.44 L 574.50 533.66 L 562.00 526.44 L 549.50 533.66 L 549.50 548.09 L 537.00 555.31 L 537.00 569.75 L 549.50 576.97 L 549.50 591.41 L 562.00 598.62 L 574.50 591.41 L 587.00 598.62 L 599.50 591.41 L 599.50 576.97 L 612.00 569.75 L 612.00 555.31 L 624.50 548.09 L 624.50 533.66 L 612.00 526.44 L 599.50 533.66 Z" id="hex-244100" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 562.00 598.62 L 574.50 591.41 L 587.00 598.62 L 599.50 591.41 L 599.50 576.97 L 612.00 569.75 L 612.00 555.31 L 624.50 548.09 L 624.50 533.66 L 612.00 526.44 L 599.50 533.66 L 587.00 526.44 L 574.50 533.66 L 562.00 526.44 L 549.50 533.66 L 549.50 548.09 L 537.00 555.31 L 537.00 569.75 L 549.50 576.97 L 549.50 591.41 Z" id="hex-244100" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 577.54 554.87 L 585.84 484.46" id="link-244100-248000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 577.54 554.87 L 527.54 598.02" id="link-244100-249000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="577.54" y="566.59" font-size="5" id="name-244100">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Echo Valley Substation</tspan>
     </text>
-    <path d="M 462.00 656.38 L 474.50 663.59 L 474.50 678.03 L 487.00 685.25 L 499.50 678.03 L 512.00 685.25 L 524.50 678.03 L 537.00 685.25 L 549.50 678.03 L 562.00 685.25 L 574.50 678.03 L 574.50 663.59 L 587.00 656.38 L 587.00 641.94 L 574.50 634.72 L 574.50 620.28 L 562.00 613.06 L 549.50 620.28 L 537.00 613.06 L 524.50 620.28 L 512.00 613.06 L 499.50 620.28 L 487.00 613.06 L 474.50 620.28 L 474.50 634.72 L 462.00 641.94 Z" id="hex-244200" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 549.50 620.28 L 537.00 613.06 L 524.50 620.28 L 512.00 613.06 L 499.50 620.28 L 487.00 613.06 L 474.50 620.28 L 474.50 634.72 L 462.00 641.94 L 462.00 656.38 L 474.50 663.59 L 474.50 678.03 L 487.00 685.25 L 499.50 678.03 L 512.00 685.25 L 524.50 678.03 L 537.00 685.25 L 549.50 678.03 L 562.00 685.25 L 574.50 678.03 L 574.50 663.59 L 587.00 656.38 L 587.00 641.94 L 574.50 634.72 L 574.50 620.28 L 562.00 613.06 Z" id="hex-244200" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 513.24 653.25 L 527.54 598.02" id="link-244200-249000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 513.24 653.25 L 542.37 728.37" id="link-244200-252010" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="513.24" y="664.97" font-size="5" id="name-244200">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Bridge-ward</tspan>
     </text>
-    <path d="M 374.50 721.34 L 387.00 728.56 L 399.50 721.34 L 412.00 728.56 L 424.50 721.34 L 437.00 728.56 L 449.50 721.34 L 449.50 706.91 L 462.00 699.69 L 462.00 685.25 L 474.50 678.03 L 474.50 663.59 L 462.00 656.38 L 449.50 663.59 L 437.00 656.38 L 424.50 663.59 L 412.00 656.38 L 399.50 663.59 L 387.00 656.38 L 387.00 641.94 L 374.50 634.72 L 362.00 641.94 L 349.50 634.72 L 337.00 641.94 L 337.00 656.38 L 324.50 663.59 L 324.50 678.03 L 312.00 685.25 L 312.00 699.69 L 299.50 706.91 L 299.50 721.34 L 287.00 728.56 L 287.00 743.00 L 299.50 750.22 L 312.00 743.00 L 324.50 750.22 L 337.00 743.00 L 349.50 750.22 L 362.00 743.00 L 362.00 728.56 Z" id="hex-244300" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 312.00 699.69 L 299.50 706.91 L 299.50 721.34 L 287.00 728.56 L 287.00 743.00 L 299.50 750.22 L 312.00 743.00 L 324.50 750.22 L 337.00 743.00 L 349.50 750.22 L 362.00 743.00 L 362.00 728.56 L 374.50 721.34 L 387.00 728.56 L 399.50 721.34 L 412.00 728.56 L 424.50 721.34 L 437.00 728.56 L 449.50 721.34 L 449.50 706.91 L 462.00 699.69 L 462.00 685.25 L 474.50 678.03 L 474.50 663.59 L 462.00 656.38 L 449.50 663.59 L 437.00 656.38 L 424.50 663.59 L 412.00 656.38 L 399.50 663.59 L 387.00 656.38 L 387.00 641.94 L 374.50 634.72 L 362.00 641.94 L 349.50 634.72 L 337.00 641.94 L 337.00 656.38 L 324.50 663.59 L 324.50 678.03 L 312.00 685.25 Z" id="hex-244300" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 394.56 695.87 L 262.10 810.40" id="link-244300-259000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="394.56" y="707.59" font-size="5" id="name-244300">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Frostbite Harbor</tspan>
     </text>
-    <path d="M 149.38 620.28 L 149.38 634.72 L 161.88 641.94 L 161.88 656.38 L 174.38 663.59 L 174.38 678.03 L 186.88 685.25 L 199.38 678.03 L 211.88 685.25 L 224.38 678.03 L 236.88 685.25 L 249.38 678.03 L 261.88 685.25 L 274.50 678.03 L 287.00 685.25 L 299.50 678.03 L 312.00 685.25 L 324.50 678.03 L 324.50 663.59 L 337.00 656.38 L 337.00 641.94 L 349.50 634.72 L 349.50 620.28 L 337.00 613.06 L 324.50 620.28 L 312.00 613.06 L 299.50 620.28 L 287.00 613.06 L 287.00 598.62 L 274.50 591.41 L 261.88 598.62 L 249.38 591.41 L 249.38 576.97 L 236.88 569.75 L 224.38 576.97 L 224.38 591.41 L 211.88 598.62 L 199.38 591.41 L 186.88 598.62 L 174.38 591.41 L 161.88 598.62 L 149.38 591.41 L 136.88 598.62 L 136.88 613.06 Z" id="hex-244500" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 149.38 634.72 L 161.88 641.94 L 161.88 656.38 L 174.38 663.59 L 174.38 678.03 L 186.88 685.25 L 199.38 678.03 L 211.88 685.25 L 224.38 678.03 L 236.88 685.25 L 249.38 678.03 L 261.88 685.25 L 274.50 678.03 L 287.00 685.25 L 299.50 678.03 L 312.00 685.25 L 324.50 678.03 L 324.50 663.59 L 337.00 656.38 L 337.00 641.94 L 349.50 634.72 L 349.50 620.28 L 337.00 613.06 L 324.50 620.28 L 312.00 613.06 L 299.50 620.28 L 287.00 613.06 L 287.00 598.62 L 274.50 591.41 L 261.88 598.62 L 249.38 591.41 L 249.38 576.97 L 236.88 569.75 L 224.38 576.97 L 224.38 591.41 L 211.88 598.62 L 199.38 591.41 L 186.88 598.62 L 174.38 591.41 L 161.88 598.62 L 149.38 591.41 L 136.88 598.62 L 136.88 613.06 L 149.38 620.28 Z" id="hex-244500" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 240.08 616.95 L 217.47 555.65" id="link-244500-251030" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 240.08 616.95 L 293.01 554.82" id="link-244500-400134" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="240.08" y="628.67" font-size="5" id="name-244500">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Jaeger's Fist</tspan>
     </text>
-    <path d="M 287.00 743.00 L 287.00 728.56 L 299.50 721.34 L 299.50 706.91 L 312.00 699.69 L 312.00 685.25 L 299.50 678.03 L 287.00 685.25 L 274.50 678.03 L 261.88 685.25 L 249.38 678.03 L 236.88 685.25 L 224.38 678.03 L 211.88 685.25 L 199.38 678.03 L 186.88 685.25 L 174.38 678.03 L 161.88 685.25 L 161.88 699.69 L 149.38 706.91 L 149.38 721.34 L 136.88 728.56 L 136.88 743.00 L 149.38 750.22 L 161.88 743.00 L 174.38 750.22 L 186.88 743.00 L 199.38 750.22 L 211.88 743.00 L 224.38 750.22 L 236.88 743.00 L 249.38 750.22 L 261.88 743.00 L 274.50 750.22 Z" id="hex-244600" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 299.50 678.03 L 287.00 685.25 L 274.50 678.03 L 261.88 685.25 L 249.38 678.03 L 236.88 685.25 L 224.38 678.03 L 211.88 685.25 L 199.38 678.03 L 186.88 685.25 L 174.38 678.03 L 161.88 685.25 L 161.88 699.69 L 149.38 706.91 L 149.38 721.34 L 136.88 728.56 L 136.88 743.00 L 149.38 750.22 L 161.88 743.00 L 174.38 750.22 L 186.88 743.00 L 199.38 750.22 L 211.88 743.00 L 224.38 750.22 L 236.88 743.00 L 249.38 750.22 L 261.88 743.00 L 274.50 750.22 L 287.00 743.00 L 287.00 728.56 L 299.50 721.34 L 299.50 706.91 L 312.00 699.69 L 312.00 685.25 Z" id="hex-244600" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 239.29 712.56 L 394.56 695.87" id="link-244600-244300" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 239.29 712.56 L 240.08 616.95" id="link-244600-244500" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 239.29 712.56 L 262.10 810.40" id="link-244600-259000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="239.29" y="724.28" font-size="5" id="name-244600">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Two Stone Beach</tspan>
     </text>
-    <path d="M 699.50 663.59 L 699.50 678.03 L 712.00 685.25 L 712.00 699.69 L 724.50 706.91 L 737.00 699.69 L 749.50 706.91 L 762.12 699.69 L 774.62 706.91 L 787.12 699.69 L 787.12 685.25 L 799.62 678.03 L 799.62 663.59 L 787.12 656.38 L 787.12 641.94 L 774.62 634.72 L 774.62 620.28 L 762.12 613.06 L 749.50 620.28 L 749.50 634.72 L 737.00 641.94 L 724.50 634.72 L 712.00 641.94 L 699.50 634.72 L 687.00 641.94 L 687.00 656.38 Z" id="hex-260010" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 774.62 620.28 L 762.12 613.06 L 749.50 620.28 L 749.50 634.72 L 737.00 641.94 L 724.50 634.72 L 712.00 641.94 L 699.50 634.72 L 687.00 641.94 L 687.00 656.38 L 699.50 663.59 L 699.50 678.03 L 712.00 685.25 L 712.00 699.69 L 724.50 706.91 L 737.00 699.69 L 749.50 706.91 L 762.12 699.69 L 774.62 706.91 L 787.12 699.69 L 787.12 685.25 L 799.62 678.03 L 799.62 663.59 L 787.12 656.38 L 787.12 641.94 L 774.62 634.72 Z" id="hex-260010" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 749.24 659.67 L 649.28 693.83" id="link-260010-400328" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="749.24" y="672.83" font-size="5" id="name-260010">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Terran BL-4 Crash Site</tspan>
     </text>
-    <path d="M 174.38 418.16 L 161.88 425.38 L 149.38 418.16 L 136.88 425.38 L 136.88 439.81 L 124.38 447.03 L 124.38 461.47 L 136.88 468.69 L 149.38 461.47 L 161.88 468.69 L 174.38 461.47 L 186.88 468.69 L 199.38 461.47 L 211.88 468.69 L 224.38 461.47 L 236.88 468.69 L 236.88 483.12 L 249.38 490.34 L 261.88 483.12 L 274.50 490.34 L 287.00 483.12 L 287.00 468.69 L 299.50 461.47 L 299.50 447.03 L 287.00 439.81 L 274.50 447.03 L 261.88 439.81 L 261.88 425.38 L 249.38 418.16 L 236.88 425.38 L 224.38 418.16 L 211.88 425.38 L 199.38 418.16 L 186.88 425.38 Z" id="hex-251010" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 299.50 461.47 L 299.50 447.03 L 287.00 439.81 L 274.50 447.03 L 261.88 439.81 L 261.88 425.38 L 249.38 418.16 L 236.88 425.38 L 224.38 418.16 L 211.88 425.38 L 199.38 418.16 L 186.88 425.38 L 174.38 418.16 L 161.88 425.38 L 149.38 418.16 L 136.88 425.38 L 136.88 439.81 L 124.38 447.03 L 124.38 461.47 L 136.88 468.69 L 149.38 461.47 L 161.88 468.69 L 174.38 461.47 L 186.88 468.69 L 199.38 461.47 L 211.88 468.69 L 224.38 461.47 L 236.88 468.69 L 236.88 483.12 L 249.38 490.34 L 261.88 483.12 L 274.50 490.34 L 287.00 483.12 L 287.00 468.69 Z" id="hex-251010" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="214.45" y="466.41" font-size="5" id="name-251010">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Andvari Barracks</tspan>
     </text>
-    <path d="M 149.38 576.97 L 149.38 591.41 L 161.88 598.62 L 174.38 591.41 L 186.88 598.62 L 199.38 591.41 L 211.88 598.62 L 224.38 591.41 L 224.38 576.97 L 236.88 569.75 L 249.38 576.97 L 261.88 569.75 L 261.88 555.31 L 249.38 548.09 L 249.38 533.66 L 236.88 526.44 L 224.38 533.66 L 211.88 526.44 L 199.38 533.66 L 186.88 526.44 L 174.38 533.66 L 161.88 526.44 L 149.38 533.66 L 136.88 526.44 L 124.38 533.66 L 124.38 548.09 L 136.88 555.31 L 136.88 569.75 Z" id="hex-251030" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 124.38 548.09 L 136.88 555.31 L 136.88 569.75 L 149.38 576.97 L 149.38 591.41 L 161.88 598.62 L 174.38 591.41 L 186.88 598.62 L 199.38 591.41 L 211.88 598.62 L 224.38 591.41 L 224.38 576.97 L 236.88 569.75 L 249.38 576.97 L 261.88 569.75 L 261.88 555.31 L 249.38 548.09 L 249.38 533.66 L 236.88 526.44 L 224.38 533.66 L 211.88 526.44 L 199.38 533.66 L 186.88 526.44 L 174.38 533.66 L 161.88 526.44 L 149.38 533.66 L 136.88 526.44 L 124.38 533.66 Z" id="hex-251030" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="217.47" y="567.37" font-size="5" id="name-251030">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Andvari South Bank</tspan>
     </text>
-    <path d="M 587.00 685.25 L 574.50 678.03 L 562.00 685.25 L 549.50 678.03 L 537.00 685.25 L 524.50 678.03 L 512.00 685.25 L 512.00 699.69 L 499.50 706.91 L 499.50 721.34 L 512.00 728.56 L 512.00 743.00 L 499.50 750.22 L 499.50 764.66 L 487.00 771.88 L 487.00 786.31 L 499.50 793.53 L 512.00 786.31 L 524.50 793.53 L 537.00 786.31 L 549.50 793.53 L 562.00 786.31 L 562.00 771.88 L 574.50 764.66 L 574.50 750.22 L 562.00 743.00 L 562.00 728.56 L 574.50 721.34 L 574.50 706.91 L 587.00 699.69 Z" id="hex-252010" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 499.50 721.34 L 512.00 728.56 L 512.00 743.00 L 499.50 750.22 L 499.50 764.66 L 487.00 771.88 L 487.00 786.31 L 499.50 793.53 L 512.00 786.31 L 524.50 793.53 L 537.00 786.31 L 549.50 793.53 L 562.00 786.31 L 562.00 771.88 L 574.50 764.66 L 574.50 750.22 L 562.00 743.00 L 562.00 728.56 L 574.50 721.34 L 574.50 706.91 L 587.00 699.69 L 587.00 685.25 L 574.50 678.03 L 562.00 685.25 L 549.50 678.03 L 537.00 685.25 L 524.50 678.03 L 512.00 685.25 L 512.00 699.69 L 499.50 706.91 Z" id="hex-252010" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="542.37" y="740.09" font-size="5" id="name-252010">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Elli Tower</tspan>
     </text>
-    <path d="M 524.50 244.91 L 537.00 252.12 L 549.50 244.91 L 549.50 230.47 L 537.00 223.25 L 537.00 208.81 L 524.50 201.59 L 524.50 187.16 L 512.00 179.94 L 512.00 165.50 L 499.50 158.28 L 487.00 165.50 L 474.50 158.28 L 462.00 165.50 L 449.50 158.28 L 437.00 165.50 L 437.00 179.94 L 449.50 187.16 L 449.50 201.59 L 462.00 208.81 L 462.00 223.25 L 474.50 230.47 L 474.50 244.91 L 487.00 252.12 L 499.50 244.91 L 512.00 252.12 Z" id="hex-255010" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 462.00 165.50 L 449.50 158.28 L 437.00 165.50 L 437.00 179.94 L 449.50 187.16 L 449.50 201.59 L 462.00 208.81 L 462.00 223.25 L 474.50 230.47 L 474.50 244.91 L 487.00 252.12 L 499.50 244.91 L 512.00 252.12 L 524.50 244.91 L 537.00 252.12 L 549.50 244.91 L 549.50 230.47 L 537.00 223.25 L 537.00 208.81 L 524.50 201.59 L 524.50 187.16 L 512.00 179.94 L 512.00 165.50 L 499.50 158.28 L 487.00 165.50 L 474.50 158.28 Z" id="hex-255010" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 485.52 209.97 L 550.07 189.72" id="link-255010-255020" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="485.52" y="221.69" font-size="5" id="name-255010">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Steelshore Processing</tspan>
     </text>
-    <path d="M 512.00 179.94 L 524.50 187.16 L 524.50 201.59 L 537.00 208.81 L 537.00 223.25 L 549.50 230.47 L 549.50 244.91 L 562.00 252.12 L 562.00 266.56 L 574.50 273.78 L 587.00 266.56 L 599.50 273.78 L 612.00 266.56 L 612.00 252.12 L 599.50 244.91 L 599.50 230.47 L 612.00 223.25 L 612.00 208.81 L 599.50 201.59 L 599.50 187.16 L 587.00 179.94 L 587.00 165.50 L 574.50 158.28 L 562.00 165.50 L 549.50 158.28 L 537.00 165.50 L 524.50 158.28 L 512.00 165.50 Z" id="hex-255020" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 599.50 230.47 L 612.00 223.25 L 612.00 208.81 L 599.50 201.59 L 599.50 187.16 L 587.00 179.94 L 587.00 165.50 L 574.50 158.28 L 562.00 165.50 L 549.50 158.28 L 537.00 165.50 L 524.50 158.28 L 512.00 165.50 L 512.00 179.94 L 524.50 187.16 L 524.50 201.59 L 537.00 208.81 L 537.00 223.25 L 549.50 230.47 L 549.50 244.91 L 562.00 252.12 L 562.00 266.56 L 574.50 273.78 L 587.00 266.56 L 599.50 273.78 L 612.00 266.56 L 612.00 252.12 L 599.50 244.91 Z" id="hex-255020" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 550.07 189.72 L 652.24 185.46" id="link-255020-247000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="550.07" y="201.44" font-size="5" id="name-255020">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Steelshore Reconstruction</tspan>
     </text>
-    <path d="M 537.00 309.88 L 549.50 317.09 L 562.00 309.88 L 562.00 295.44 L 549.50 288.22 L 549.50 273.78 L 562.00 266.56 L 562.00 252.12 L 549.50 244.91 L 537.00 252.12 L 524.50 244.91 L 512.00 252.12 L 499.50 244.91 L 487.00 252.12 L 474.50 244.91 L 462.00 252.12 L 462.00 266.56 L 474.50 273.78 L 474.50 288.22 L 487.00 295.44 L 487.00 309.88 L 499.50 317.09 L 512.00 309.88 L 524.50 317.09 Z" id="hex-255030" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 549.50 273.78 L 562.00 266.56 L 562.00 252.12 L 549.50 244.91 L 537.00 252.12 L 524.50 244.91 L 512.00 252.12 L 499.50 244.91 L 487.00 252.12 L 474.50 244.91 L 462.00 252.12 L 462.00 266.56 L 474.50 273.78 L 474.50 288.22 L 487.00 295.44 L 487.00 309.88 L 499.50 317.09 L 512.00 309.88 L 524.50 317.09 L 537.00 309.88 L 549.50 317.09 L 562.00 309.88 L 562.00 295.44 L 549.50 288.22 Z" id="hex-255030" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 506.63 279.40 L 449.31 333.05" id="link-255030-233000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 506.63 279.40 L 550.07 189.72" id="link-255030-255020" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="506.63" y="291.12" font-size="5" id="name-255030">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Esper Research Station</tspan>
     </text>
-    <path d="M 824.62 533.66 L 824.62 548.09 L 837.12 555.31 L 849.62 548.09 L 862.12 555.31 L 874.62 548.09 L 874.62 533.66 L 862.12 526.44 L 862.12 512.00 L 874.62 504.78 L 874.62 490.34 L 887.12 483.12 L 887.12 468.69 L 874.62 461.47 L 874.62 447.03 L 862.12 439.81 L 862.12 425.38 L 849.62 418.16 L 837.12 425.38 L 824.62 418.16 L 812.12 425.38 L 799.62 418.16 L 787.12 425.38 L 787.12 439.81 L 774.62 447.03 L 774.62 461.47 L 787.12 468.69 L 787.12 483.12 L 799.62 490.34 L 799.62 504.78 L 812.12 512.00 L 812.12 526.44 Z" id="hex-260000" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 787.12 483.12 L 799.62 490.34 L 799.62 504.78 L 812.12 512.00 L 812.12 526.44 L 824.62 533.66 L 824.62 548.09 L 837.12 555.31 L 849.62 548.09 L 862.12 555.31 L 874.62 548.09 L 874.62 533.66 L 862.12 526.44 L 862.12 512.00 L 874.62 504.78 L 874.62 490.34 L 887.12 483.12 L 887.12 468.69 L 874.62 461.47 L 874.62 447.03 L 862.12 439.81 L 862.12 425.38 L 849.62 418.16 L 837.12 425.38 L 824.62 418.16 L 812.12 425.38 L 799.62 418.16 L 787.12 425.38 L 787.12 439.81 L 774.62 447.03 L 774.62 461.47 L 787.12 468.69 Z" id="hex-260000" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 844.26 482.76 L 747.45 397.57" id="link-260000-236000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 844.26 482.76 L 866.82 605.86" id="link-260000-242000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="844.26" y="502.36" font-size="10" id="name-260000">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Esamir Eastern Warpgate</tspan>
     </text>
-    <path d="M 687.00 526.44 L 699.50 533.66 L 712.00 526.44 L 712.00 512.00 L 724.50 504.78 L 724.50 490.34 L 712.00 483.12 L 712.00 468.69 L 724.50 461.47 L 724.50 447.03 L 712.00 439.81 L 699.50 447.03 L 687.00 439.81 L 674.50 447.03 L 662.00 439.81 L 649.50 447.03 L 649.50 461.47 L 637.00 468.69 L 624.50 461.47 L 612.00 468.69 L 612.00 483.12 L 624.50 490.34 L 624.50 504.78 L 637.00 512.00 L 637.00 526.44 L 649.50 533.66 L 662.00 526.44 L 674.50 533.66 Z" id="hex-256030" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 712.00 439.81 L 699.50 447.03 L 687.00 439.81 L 674.50 447.03 L 662.00 439.81 L 649.50 447.03 L 649.50 461.47 L 637.00 468.69 L 624.50 461.47 L 612.00 468.69 L 612.00 483.12 L 624.50 490.34 L 624.50 504.78 L 637.00 512.00 L 637.00 526.44 L 649.50 533.66 L 662.00 526.44 L 674.50 533.66 L 687.00 526.44 L 699.50 533.66 L 712.00 526.44 L 712.00 512.00 L 724.50 504.78 L 724.50 490.34 L 712.00 483.12 L 712.00 468.69 L 724.50 461.47 L 724.50 447.03 Z" id="hex-256030" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 680.50 473.16 L 585.84 484.46" id="link-256030-248000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="680.50" y="484.88" font-size="5" id="name-256030">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Genudine Gardens</tspan>
     </text>
-    <path d="M 549.50 447.03 L 562.00 439.81 L 562.00 425.38 L 549.50 418.16 L 549.50 403.72 L 537.00 396.50 L 537.00 382.06 L 524.50 374.84 L 524.50 360.41 L 512.00 353.19 L 499.50 360.41 L 487.00 353.19 L 474.50 360.41 L 474.50 374.84 L 462.00 382.06 L 462.00 396.50 L 474.50 403.72 L 474.50 418.16 L 487.00 425.38 L 487.00 439.81 L 499.50 447.03 L 499.50 461.47 L 512.00 468.69 L 524.50 461.47 L 537.00 468.69 L 549.50 461.47 Z" id="hex-244610" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 474.50 418.16 L 487.00 425.38 L 487.00 439.81 L 499.50 447.03 L 499.50 461.47 L 512.00 468.69 L 524.50 461.47 L 537.00 468.69 L 549.50 461.47 L 549.50 447.03 L 562.00 439.81 L 562.00 425.38 L 549.50 418.16 L 549.50 403.72 L 537.00 396.50 L 537.00 382.06 L 524.50 374.84 L 524.50 360.41 L 512.00 353.19 L 499.50 360.41 L 487.00 353.19 L 474.50 360.41 L 474.50 374.84 L 462.00 382.06 L 462.00 396.50 L 474.50 403.72 Z" id="hex-244610" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 519.51 421.61 L 449.31 333.05" id="link-244610-233000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 519.51 421.61 L 563.23 374.59" id="link-244610-234000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="519.51" y="433.33" font-size="5" id="name-244610">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Rime Analytics</tspan>
     </text>
-    <path d="M 637.00 468.69 L 649.50 461.47 L 649.50 447.03 L 662.00 439.81 L 674.50 447.03 L 687.00 439.81 L 699.50 447.03 L 712.00 439.81 L 712.00 425.38 L 699.50 418.16 L 699.50 403.72 L 687.00 396.50 L 687.00 382.06 L 674.50 374.84 L 662.00 382.06 L 649.50 374.84 L 649.50 360.41 L 637.00 353.19 L 624.50 360.41 L 624.50 374.84 L 612.00 382.06 L 612.00 396.50 L 599.50 403.72 L 599.50 418.16 L 587.00 425.38 L 587.00 439.81 L 599.50 447.03 L 599.50 461.47 L 612.00 468.69 L 624.50 461.47 Z" id="hex-244620" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 687.00 382.06 L 674.50 374.84 L 662.00 382.06 L 649.50 374.84 L 649.50 360.41 L 637.00 353.19 L 624.50 360.41 L 624.50 374.84 L 612.00 382.06 L 612.00 396.50 L 599.50 403.72 L 599.50 418.16 L 587.00 425.38 L 587.00 439.81 L 599.50 447.03 L 599.50 461.47 L 612.00 468.69 L 624.50 461.47 L 637.00 468.69 L 649.50 461.47 L 649.50 447.03 L 662.00 439.81 L 674.50 447.03 L 687.00 439.81 L 699.50 447.03 L 712.00 439.81 L 712.00 425.38 L 699.50 418.16 L 699.50 403.72 L 687.00 396.50 Z" id="hex-244620" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 635.27 422.49 L 747.45 397.57" id="link-244620-236000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 635.27 422.49 L 585.84 484.46" id="link-244620-248000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="635.27" y="434.21" font-size="5" id="name-244620">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">The Rink</tspan>
     </text>
-    <path d="M 749.50 634.72 L 749.50 620.28 L 762.12 613.06 L 774.62 620.28 L 787.12 613.06 L 787.12 598.62 L 774.62 591.41 L 774.62 576.97 L 762.12 569.75 L 749.50 576.97 L 737.00 569.75 L 724.50 576.97 L 712.00 569.75 L 699.50 576.97 L 699.50 591.41 L 687.00 598.62 L 687.00 613.06 L 674.50 620.28 L 674.50 634.72 L 687.00 641.94 L 699.50 634.72 L 712.00 641.94 L 724.50 634.72 L 737.00 641.94 Z" id="hex-400133" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 712.00 569.75 L 699.50 576.97 L 699.50 591.41 L 687.00 598.62 L 687.00 613.06 L 674.50 620.28 L 674.50 634.72 L 687.00 641.94 L 699.50 634.72 L 712.00 641.94 L 724.50 634.72 L 737.00 641.94 L 749.50 634.72 L 749.50 620.28 L 762.12 613.06 L 774.62 620.28 L 787.12 613.06 L 787.12 598.62 L 774.62 591.41 L 774.62 576.97 L 762.12 569.75 L 749.50 576.97 L 737.00 569.75 L 724.50 576.97 Z" id="hex-400133" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 720.87 598.79 L 749.24 659.67" id="link-400133-260010" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="720.87" y="610.51" font-size="5" id="name-400133">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">BL-4 Recovery Point</tspan>
     </text>
-    <path d="M 261.88 512.00 L 261.88 526.44 L 249.38 533.66 L 249.38 548.09 L 261.88 555.31 L 261.88 569.75 L 249.38 576.97 L 249.38 591.41 L 261.88 598.62 L 274.50 591.41 L 287.00 598.62 L 287.00 613.06 L 299.50 620.28 L 312.00 613.06 L 324.50 620.28 L 337.00 613.06 L 349.50 620.28 L 362.00 613.06 L 362.00 598.62 L 349.50 591.41 L 349.50 576.97 L 337.00 569.75 L 337.00 555.31 L 349.50 548.09 L 349.50 533.66 L 337.00 526.44 L 337.00 512.00 L 324.50 504.78 L 312.00 512.00 L 299.50 504.78 L 299.50 490.34 L 287.00 483.12 L 274.50 490.34 L 261.88 483.12 L 249.38 490.34 L 249.38 504.78 Z" id="hex-400134" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 261.88 526.44 L 249.38 533.66 L 249.38 548.09 L 261.88 555.31 L 261.88 569.75 L 249.38 576.97 L 249.38 591.41 L 261.88 598.62 L 274.50 591.41 L 287.00 598.62 L 287.00 613.06 L 299.50 620.28 L 312.00 613.06 L 324.50 620.28 L 337.00 613.06 L 349.50 620.28 L 362.00 613.06 L 362.00 598.62 L 349.50 591.41 L 349.50 576.97 L 337.00 569.75 L 337.00 555.31 L 349.50 548.09 L 349.50 533.66 L 337.00 526.44 L 337.00 512.00 L 324.50 504.78 L 312.00 512.00 L 299.50 504.78 L 299.50 490.34 L 287.00 483.12 L 274.50 490.34 L 261.88 483.12 L 249.38 490.34 L 249.38 504.78 L 261.88 512.00 Z" id="hex-400134" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 293.01 554.82 L 378.01 571.72" id="link-400134-239000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="293.01" y="566.54" font-size="5" id="name-400134">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Tapp Waystation</tspan>
     </text>
-    <path d="M 474.50 403.72 L 462.00 396.50 L 449.50 403.72 L 437.00 396.50 L 424.50 403.72 L 424.50 418.16 L 412.00 425.38 L 412.00 439.81 L 424.50 447.03 L 424.50 461.47 L 437.00 468.69 L 449.50 461.47 L 462.00 468.69 L 474.50 461.47 L 474.50 447.03 L 487.00 439.81 L 487.00 425.38 L 474.50 418.16 Z" id="hex-400135" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 437.00 468.69 L 449.50 461.47 L 462.00 468.69 L 474.50 461.47 L 474.50 447.03 L 487.00 439.81 L 487.00 425.38 L 474.50 418.16 L 474.50 403.72 L 462.00 396.50 L 449.50 403.72 L 437.00 396.50 L 424.50 403.72 L 424.50 418.16 L 412.00 425.38 L 412.00 439.81 L 424.50 447.03 L 424.50 461.47 Z" id="hex-400135" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 461.01 417.36 L 519.51 421.61" id="link-400135-244610" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 461.01 417.36 L 413.85 491.82" id="link-400135-246000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="461.01" y="429.08" font-size="5" id="name-400135">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Untapped Reservoir</tspan>
     </text>
-    <path d="M 462.00 555.31 L 449.50 548.09 L 437.00 555.31 L 437.00 569.75 L 424.50 576.97 L 424.50 591.41 L 412.00 598.62 L 412.00 613.06 L 399.50 620.28 L 399.50 634.72 L 387.00 641.94 L 387.00 656.38 L 399.50 663.59 L 412.00 656.38 L 424.50 663.59 L 437.00 656.38 L 449.50 663.59 L 462.00 656.38 L 462.00 641.94 L 474.50 634.72 L 474.50 620.28 L 487.00 613.06 L 487.00 598.62 L 474.50 591.41 L 474.50 576.97 L 462.00 569.75 Z" id="hex-400314" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 437.00 555.31 L 437.00 569.75 L 424.50 576.97 L 424.50 591.41 L 412.00 598.62 L 412.00 613.06 L 399.50 620.28 L 399.50 634.72 L 387.00 641.94 L 387.00 656.38 L 399.50 663.59 L 412.00 656.38 L 424.50 663.59 L 437.00 656.38 L 449.50 663.59 L 462.00 656.38 L 462.00 641.94 L 474.50 634.72 L 474.50 620.28 L 487.00 613.06 L 487.00 598.62 L 474.50 591.41 L 474.50 576.97 L 462.00 569.75 L 462.00 555.31 L 449.50 548.09 Z" id="hex-400314" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 442.04 617.42 L 378.01 571.72" id="link-400314-239000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 442.04 617.42 L 394.56 695.87" id="link-400314-244300" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 442.04 617.42 L 527.54 598.02" id="link-400314-249000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="442.04" y="637.02" font-size="10" id="name-400314">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Baldur</tspan>
     </text>
-    <path d="M 824.62 374.84 L 824.62 360.41 L 837.12 353.19 L 837.12 338.75 L 849.62 331.53 L 849.62 317.09 L 837.12 309.88 L 824.62 317.09 L 812.12 309.88 L 799.62 317.09 L 787.12 309.88 L 774.62 317.09 L 762.12 309.88 L 749.50 317.09 L 737.00 309.88 L 724.50 317.09 L 724.50 331.53 L 712.00 338.75 L 699.50 331.53 L 687.00 338.75 L 687.00 353.19 L 674.50 360.41 L 662.00 353.19 L 649.50 360.41 L 649.50 374.84 L 662.00 382.06 L 674.50 374.84 L 687.00 382.06 L 699.50 374.84 L 712.00 382.06 L 724.50 374.84 L 737.00 382.06 L 749.50 374.84 L 762.12 382.06 L 774.62 374.84 L 787.12 382.06 L 799.62 374.84 L 812.12 382.06 Z" id="hex-400315" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 662.00 353.19 L 649.50 360.41 L 649.50 374.84 L 662.00 382.06 L 674.50 374.84 L 687.00 382.06 L 699.50 374.84 L 712.00 382.06 L 724.50 374.84 L 737.00 382.06 L 749.50 374.84 L 762.12 382.06 L 774.62 374.84 L 787.12 382.06 L 799.62 374.84 L 812.12 382.06 L 824.62 374.84 L 824.62 360.41 L 837.12 353.19 L 837.12 338.75 L 849.62 331.53 L 849.62 317.09 L 837.12 309.88 L 824.62 317.09 L 812.12 309.88 L 799.62 317.09 L 787.12 309.88 L 774.62 317.09 L 762.12 309.88 L 749.50 317.09 L 737.00 309.88 L 724.50 317.09 L 724.50 331.53 L 712.00 338.75 L 699.50 331.53 L 687.00 338.75 L 687.00 353.19 L 674.50 360.41 Z" id="hex-400315" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 784.00 344.24 L 747.45 397.57" id="link-400315-236000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="784.00" y="355.96" font-size="5" id="name-400315">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Vidar Observation Site</tspan>
     </text>
-    <path d="M 637.00 771.88 L 637.00 786.31 L 649.50 793.53 L 662.00 786.31 L 674.50 793.53 L 674.50 807.97 L 687.00 815.19 L 699.50 807.97 L 712.00 815.19 L 724.50 807.97 L 724.50 793.53 L 737.00 786.31 L 737.00 771.88 L 749.50 764.66 L 749.50 750.22 L 737.00 743.00 L 737.00 728.56 L 749.50 721.34 L 749.50 706.91 L 737.00 699.69 L 724.50 706.91 L 712.00 699.69 L 699.50 706.91 L 699.50 721.34 L 687.00 728.56 L 674.50 721.34 L 662.00 728.56 L 649.50 721.34 L 637.00 728.56 L 637.00 743.00 L 649.50 750.22 L 649.50 764.66 Z" id="hex-400327" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 674.50 721.34 L 662.00 728.56 L 649.50 721.34 L 637.00 728.56 L 637.00 743.00 L 649.50 750.22 L 649.50 764.66 L 637.00 771.88 L 637.00 786.31 L 649.50 793.53 L 662.00 786.31 L 674.50 793.53 L 674.50 807.97 L 687.00 815.19 L 699.50 807.97 L 712.00 815.19 L 724.50 807.97 L 724.50 793.53 L 737.00 786.31 L 737.00 771.88 L 749.50 764.66 L 749.50 750.22 L 737.00 743.00 L 737.00 728.56 L 749.50 721.34 L 749.50 706.91 L 737.00 699.69 L 724.50 706.91 L 712.00 699.69 L 699.50 706.91 L 699.50 721.34 L 687.00 728.56 Z" id="hex-400327" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 706.54 767.88 L 593.12 750.04" id="link-400327-243000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 706.54 767.88 L 778.92 756.25" id="link-400327-257000" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 706.54 767.88 L 749.24 659.67" id="link-400327-260010" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="706.54" y="787.48" font-size="10" id="name-400327">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Ymir Containment Site</tspan>
     </text>
-    <path d="M 587.00 613.06 L 574.50 620.28 L 574.50 634.72 L 587.00 641.94 L 599.50 634.72 L 612.00 641.94 L 624.50 634.72 L 637.00 641.94 L 649.50 634.72 L 662.00 641.94 L 674.50 634.72 L 674.50 620.28 L 687.00 613.06 L 687.00 598.62 L 699.50 591.41 L 699.50 576.97 L 712.00 569.75 L 712.00 555.31 L 724.50 548.09 L 724.50 533.66 L 712.00 526.44 L 699.50 533.66 L 687.00 526.44 L 674.50 533.66 L 662.00 526.44 L 649.50 533.66 L 637.00 526.44 L 624.50 533.66 L 624.50 548.09 L 612.00 555.31 L 612.00 569.75 L 599.50 576.97 L 599.50 591.41 L 587.00 598.62 Z" id="hex-400317" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 699.50 591.41 L 699.50 576.97 L 712.00 569.75 L 712.00 555.31 L 724.50 548.09 L 724.50 533.66 L 712.00 526.44 L 699.50 533.66 L 687.00 526.44 L 674.50 533.66 L 662.00 526.44 L 649.50 533.66 L 637.00 526.44 L 624.50 533.66 L 624.50 548.09 L 612.00 555.31 L 612.00 569.75 L 599.50 576.97 L 599.50 591.41 L 587.00 598.62 L 587.00 613.06 L 574.50 620.28 L 574.50 634.72 L 587.00 641.94 L 599.50 634.72 L 612.00 641.94 L 624.50 634.72 L 637.00 641.94 L 649.50 634.72 L 662.00 641.94 L 674.50 634.72 L 674.50 620.28 L 687.00 613.06 L 687.00 598.62 Z" id="hex-400317" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <path d="M 655.79 567.03 L 577.54 554.87" id="link-400317-244100" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <path d="M 655.79 567.03 L 720.87 598.79" id="link-400317-400133" fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4.00" />
     <text x="655.79" y="586.63" font-size="10" id="name-400317">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Jord</tspan>
     </text>
-    <path d="M 662.00 641.94 L 649.50 634.72 L 637.00 641.94 L 624.50 634.72 L 612.00 641.94 L 599.50 634.72 L 587.00 641.94 L 587.00 656.38 L 574.50 663.59 L 574.50 678.03 L 587.00 685.25 L 587.00 699.69 L 599.50 706.91 L 612.00 699.69 L 624.50 706.91 L 624.50 721.34 L 637.00 728.56 L 649.50 721.34 L 662.00 728.56 L 674.50 721.34 L 687.00 728.56 L 699.50 721.34 L 699.50 706.91 L 712.00 699.69 L 712.00 685.25 L 699.50 678.03 L 699.50 663.59 L 687.00 656.38 L 687.00 641.94 L 674.50 634.72 Z" id="hex-400328" fill="rgb(61.96%,4.31%,5.88%)" fill-opacity="0.4" fill-rule="nonzero" stroke="rgb(0.00%,0.00%,0.00%)" stroke-opacity="0.8" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
+    <path d="M 637.00 641.94 L 624.50 634.72 L 612.00 641.94 L 599.50 634.72 L 587.00 641.94 L 587.00 656.38 L 574.50 663.59 L 574.50 678.03 L 587.00 685.25 L 587.00 699.69 L 599.50 706.91 L 612.00 699.69 L 624.50 706.91 L 624.50 721.34 L 637.00 728.56 L 649.50 721.34 L 662.00 728.56 L 674.50 721.34 L 687.00 728.56 L 699.50 721.34 L 699.50 706.91 L 712.00 699.69 L 712.00 685.25 L 699.50 678.03 L 699.50 663.59 L 687.00 656.38 L 687.00 641.94 L 674.50 634.72 L 662.00 641.94 L 649.50 634.72 Z" id="hex-400328" fill-rule="nonzero" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.20" stroke-miterlimit="4.00" />
     <text x="649.28" y="705.55" font-size="5" id="name-400328">
       <tspan text-anchor="middle" stroke-miterlimit="1.56">Spral Oasis</tspan>
     </text>
   </defs>
+  <g id="hex-layer">
+    <use href="#hex-230000" class="region-TR" />
+    <use href="#hex-231000" class="region-TR" />
+    <use href="#hex-232000" class="region-TR" />
+    <use href="#hex-233000" class="region-TR" />
+    <use href="#hex-234000" class="region-TR" />
+    <use href="#hex-235000" class="region-TR" />
+    <use href="#hex-236000" class="region-TR" />
+    <use href="#hex-237000" class="region-TR" />
+    <use href="#hex-239000" class="region-TR" />
+    <use href="#hex-240000" class="region-TR" />
+    <use href="#hex-242000" class="region-TR" />
+    <use href="#hex-243000" class="region-TR" />
+    <use href="#hex-244000" class="region-TR" />
+    <use href="#hex-245000" class="region-TR" />
+    <use href="#hex-246000" class="region-TR" />
+    <use href="#hex-247000" class="region-TR" />
+    <use href="#hex-248000" class="region-TR" />
+    <use href="#hex-249000" class="region-TR" />
+    <use href="#hex-400326" class="region-TR" />
+    <use href="#hex-253000" class="region-TR" />
+    <use href="#hex-254000" class="region-TR" />
+    <use href="#hex-256000" class="region-TR" />
+    <use href="#hex-257000" class="region-TR" />
+    <use href="#hex-258000" class="region-TR" />
+    <use href="#hex-259000" class="region-TR" />
+    <use href="#hex-244100" class="region-TR" />
+    <use href="#hex-244200" class="region-TR" />
+    <use href="#hex-244300" class="region-TR" />
+    <use href="#hex-244500" class="region-TR" />
+    <use href="#hex-244600" class="region-TR" />
+    <use href="#hex-260010" class="region-TR" />
+    <use href="#hex-251010" class="region-TR" />
+    <use href="#hex-251030" class="region-TR" />
+    <use href="#hex-252010" class="region-TR" />
+    <use href="#hex-255010" class="region-TR" />
+    <use href="#hex-255020" class="region-TR" />
+    <use href="#hex-255030" class="region-TR" />
+    <use href="#hex-260000" class="region-TR" />
+    <use href="#hex-256030" class="region-TR" />
+    <use href="#hex-244610" class="region-TR" />
+    <use href="#hex-244620" class="region-TR" />
+    <use href="#hex-400133" class="region-TR" />
+    <use href="#hex-400134" class="region-TR" />
+    <use href="#hex-400135" class="region-TR" />
+    <use href="#hex-400314" class="region-TR" />
+    <use href="#hex-400315" class="region-TR" />
+    <use href="#hex-400327" class="region-TR" />
+    <use href="#hex-400317" class="region-TR" />
+    <use href="#hex-400328" class="region-TR" />
+  </g>
+  <g id="lattice-layer">
+    <use href="#link-230000-258000" class="bglink-TR" />
+    <use href="#link-230000-258000" class="link link-TR" />
+    <use href="#link-231000-230000" class="bglink-TR" />
+    <use href="#link-231000-230000" class="link link-TR" />
+    <use href="#link-231000-232000" class="bglink-TR" />
+    <use href="#link-231000-232000" class="link link-TR" />
+    <use href="#link-231000-253000" class="bglink-TR" />
+    <use href="#link-231000-253000" class="link link-TR" />
+    <use href="#link-231000-258000" class="bglink-TR" />
+    <use href="#link-231000-258000" class="link link-TR" />
+    <use href="#link-232000-255010" class="bglink-TR" />
+    <use href="#link-232000-255010" class="link link-TR" />
+    <use href="#link-232000-258000" class="bglink-TR" />
+    <use href="#link-232000-258000" class="link link-TR" />
+    <use href="#link-234000-235000" class="bglink-TR" />
+    <use href="#link-234000-235000" class="link link-TR" />
+    <use href="#link-234000-244620" class="bglink-TR" />
+    <use href="#link-234000-244620" class="link link-TR" />
+    <use href="#link-234000-255030" class="bglink-TR" />
+    <use href="#link-234000-255030" class="link link-TR" />
+    <use href="#link-235000-247000" class="bglink-TR" />
+    <use href="#link-235000-247000" class="link link-TR" />
+    <use href="#link-235000-400315" class="bglink-TR" />
+    <use href="#link-235000-400315" class="link link-TR" />
+    <use href="#link-237000-246000" class="bglink-TR" />
+    <use href="#link-237000-246000" class="link link-TR" />
+    <use href="#link-239000-246000" class="bglink-TR" />
+    <use href="#link-239000-246000" class="link link-TR" />
+    <use href="#link-240000-244300" class="bglink-TR" />
+    <use href="#link-240000-244300" class="link link-TR" />
+    <use href="#link-240000-252010" class="bglink-TR" />
+    <use href="#link-240000-252010" class="link link-TR" />
+    <use href="#link-240000-259000" class="bglink-TR" />
+    <use href="#link-240000-259000" class="link link-TR" />
+    <use href="#link-243000-252010" class="bglink-TR" />
+    <use href="#link-243000-252010" class="link link-TR" />
+    <use href="#link-243000-400328" class="bglink-TR" />
+    <use href="#link-243000-400328" class="link link-TR" />
+    <use href="#link-244000-242000" class="bglink-TR" />
+    <use href="#link-244000-242000" class="link link-TR" />
+    <use href="#link-244000-257000" class="bglink-TR" />
+    <use href="#link-244000-257000" class="link link-TR" />
+    <use href="#link-245000-230000" class="bglink-TR" />
+    <use href="#link-245000-230000" class="link link-TR" />
+    <use href="#link-245000-237000" class="bglink-TR" />
+    <use href="#link-245000-237000" class="link link-TR" />
+    <use href="#link-245000-251010" class="bglink-TR" />
+    <use href="#link-245000-251010" class="link link-TR" />
+    <use href="#link-248000-244610" class="bglink-TR" />
+    <use href="#link-248000-244610" class="link link-TR" />
+    <use href="#link-400326-251010" class="bglink-TR" />
+    <use href="#link-400326-251010" class="link link-TR" />
+    <use href="#link-400326-251030" class="bglink-TR" />
+    <use href="#link-400326-251030" class="link link-TR" />
+    <use href="#link-400326-400134" class="bglink-TR" />
+    <use href="#link-400326-400134" class="link link-TR" />
+    <use href="#link-253000-233000" class="bglink-TR" />
+    <use href="#link-253000-233000" class="link link-TR" />
+    <use href="#link-253000-237000" class="bglink-TR" />
+    <use href="#link-253000-237000" class="link link-TR" />
+    <use href="#link-254000-244610" class="bglink-TR" />
+    <use href="#link-254000-244610" class="link link-TR" />
+    <use href="#link-254000-246000" class="bglink-TR" />
+    <use href="#link-254000-246000" class="link link-TR" />
+    <use href="#link-254000-248000" class="bglink-TR" />
+    <use href="#link-254000-248000" class="link link-TR" />
+    <use href="#link-254000-249000" class="bglink-TR" />
+    <use href="#link-254000-249000" class="link link-TR" />
+    <use href="#link-256000-236000" class="bglink-TR" />
+    <use href="#link-256000-236000" class="link link-TR" />
+    <use href="#link-256000-242000" class="bglink-TR" />
+    <use href="#link-256000-242000" class="link link-TR" />
+    <use href="#link-256000-256030" class="bglink-TR" />
+    <use href="#link-256000-256030" class="link link-TR" />
+    <use href="#link-256000-260000" class="bglink-TR" />
+    <use href="#link-256000-260000" class="link link-TR" />
+    <use href="#link-244100-248000" class="bglink-TR" />
+    <use href="#link-244100-248000" class="link link-TR" />
+    <use href="#link-244100-249000" class="bglink-TR" />
+    <use href="#link-244100-249000" class="link link-TR" />
+    <use href="#link-244200-249000" class="bglink-TR" />
+    <use href="#link-244200-249000" class="link link-TR" />
+    <use href="#link-244200-252010" class="bglink-TR" />
+    <use href="#link-244200-252010" class="link link-TR" />
+    <use href="#link-244300-259000" class="bglink-TR" />
+    <use href="#link-244300-259000" class="link link-TR" />
+    <use href="#link-244500-251030" class="bglink-TR" />
+    <use href="#link-244500-251030" class="link link-TR" />
+    <use href="#link-244500-400134" class="bglink-TR" />
+    <use href="#link-244500-400134" class="link link-TR" />
+    <use href="#link-244600-244300" class="bglink-TR" />
+    <use href="#link-244600-244300" class="link link-TR" />
+    <use href="#link-244600-244500" class="bglink-TR" />
+    <use href="#link-244600-244500" class="link link-TR" />
+    <use href="#link-244600-259000" class="bglink-TR" />
+    <use href="#link-244600-259000" class="link link-TR" />
+    <use href="#link-260010-400328" class="bglink-TR" />
+    <use href="#link-260010-400328" class="link link-TR" />
+    <use href="#link-255010-255020" class="bglink-TR" />
+    <use href="#link-255010-255020" class="link link-TR" />
+    <use href="#link-255020-247000" class="bglink-TR" />
+    <use href="#link-255020-247000" class="link link-TR" />
+    <use href="#link-255030-233000" class="bglink-TR" />
+    <use href="#link-255030-233000" class="link link-TR" />
+    <use href="#link-255030-255020" class="bglink-TR" />
+    <use href="#link-255030-255020" class="link link-TR" />
+    <use href="#link-260000-236000" class="bglink-TR" />
+    <use href="#link-260000-236000" class="link link-TR" />
+    <use href="#link-260000-242000" class="bglink-TR" />
+    <use href="#link-260000-242000" class="link link-TR" />
+    <use href="#link-256030-248000" class="bglink-TR" />
+    <use href="#link-256030-248000" class="link link-TR" />
+    <use href="#link-244610-233000" class="bglink-TR" />
+    <use href="#link-244610-233000" class="link link-TR" />
+    <use href="#link-244610-234000" class="bglink-TR" />
+    <use href="#link-244610-234000" class="link link-TR" />
+    <use href="#link-244620-236000" class="bglink-TR" />
+    <use href="#link-244620-236000" class="link link-TR" />
+    <use href="#link-244620-248000" class="bglink-TR" />
+    <use href="#link-244620-248000" class="link link-TR" />
+    <use href="#link-400133-260010" class="bglink-TR" />
+    <use href="#link-400133-260010" class="link link-TR" />
+    <use href="#link-400134-239000" class="bglink-TR" />
+    <use href="#link-400134-239000" class="link link-TR" />
+    <use href="#link-400135-244610" class="bglink-TR" />
+    <use href="#link-400135-244610" class="link link-TR" />
+    <use href="#link-400135-246000" class="bglink-TR" />
+    <use href="#link-400135-246000" class="link link-TR" />
+    <use href="#link-400314-239000" class="bglink-TR" />
+    <use href="#link-400314-239000" class="link link-TR" />
+    <use href="#link-400314-244300" class="bglink-TR" />
+    <use href="#link-400314-244300" class="link link-TR" />
+    <use href="#link-400314-249000" class="bglink-TR" />
+    <use href="#link-400314-249000" class="link link-TR" />
+    <use href="#link-400315-236000" class="bglink-TR" />
+    <use href="#link-400315-236000" class="link link-TR" />
+    <use href="#link-400327-243000" class="bglink-TR" />
+    <use href="#link-400327-243000" class="link link-TR" />
+    <use href="#link-400327-257000" class="bglink-TR" />
+    <use href="#link-400327-257000" class="link link-TR" />
+    <use href="#link-400327-260010" class="bglink-TR" />
+    <use href="#link-400327-260010" class="link link-TR" />
+    <use href="#link-400317-244100" class="bglink-TR" />
+    <use href="#link-400317-244100" class="link link-TR" />
+    <use href="#link-400317-400133" class="bglink-TR" />
+    <use href="#link-400317-400133" class="link link-TR" />
+  </g>
+  <g id="badge-layer">
+    <use href="#facility-bg" id="badge-230000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(201.55 335.19)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(201.55 335.19)" />
+    <use href="#facility-bg" id="badge-231000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(298.75 317.48)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(298.75 317.48)" />
+    <use href="#facility-bg" id="badge-232000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(420.43 223.23)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(420.43 223.23)" />
+    <use href="#facility-bg" id="badge-233000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(443.71 327.45)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(443.71 327.45)" />
+    <use href="#facility-bg" id="badge-234000" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(555.23 366.59)" />
+    <use href="#containment-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(555.23 366.59)" />
+    <use href="#facility-bg" id="badge-235000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(653.21 272.45)" />
+    <use href="#const-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(653.21 272.45)" />
+    <use href="#facility-bg" id="badge-236000" class="badge-TR" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(740.65 390.77)" />
+    <use href="#lg-outpost-fg" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(740.65 390.77)" />
+    <use href="#facility-bg" id="badge-237000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(337.67 467.48)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(337.67 467.48)" />
+    <use href="#facility-bg" id="badge-239000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(372.41 566.12)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(372.41 566.12)" />
+    <use href="#facility-bg" id="badge-240000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(460.13 720.39)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(460.13 720.39)" />
+    <use href="#facility-bg" id="badge-242000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(861.22 600.26)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(861.22 600.26)" />
+    <use href="#facility-bg" id="badge-243000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(587.52 744.44)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(587.52 744.44)" />
+    <use href="#facility-bg" id="badge-244000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(828.52 658.43)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(828.52 658.43)" />
+    <use href="#facility-bg" id="badge-245000" class="badge-TR" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(253.71 379.73)" />
+    <use href="#lg-outpost-fg" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(253.71 379.73)" />
+    <use href="#facility-bg" id="badge-246000" class="badge-TR" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(407.05 485.02)" />
+    <use href="#lg-outpost-fg" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(407.05 485.02)" />
+    <use href="#facility-bg" id="badge-247000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(646.64 179.86)" />
+    <use href="#const-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(646.64 179.86)" />
+    <use href="#facility-bg" id="badge-248000" class="badge-TR" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(579.04 477.66)" />
+    <use href="#lg-outpost-fg" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(579.04 477.66)" />
+    <use href="#facility-bg" id="badge-249000" class="badge-TR" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(520.74 591.22)" />
+    <use href="#lg-outpost-fg" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(520.74 591.22)" />
+    <use href="#facility-bg" id="badge-400326" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(192.75 493.75)" />
+    <use href="#containment-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(192.75 493.75)" />
+    <use href="#facility-bg" id="badge-253000" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(376.38 363.54)" />
+    <use href="#amp-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(376.38 363.54)" />
+    <use href="#facility-bg" id="badge-254000" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(493.88 495.16)" />
+    <use href="#tech-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(493.88 495.16)" />
+    <use href="#facility-bg" id="badge-256000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(751.94 511.42)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(751.94 511.42)" />
+    <use href="#facility-bg" id="badge-257000" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(773.32 750.65)" />
+    <use href="#const-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(773.32 750.65)" />
+    <use href="#facility-bg" id="badge-258000" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(205.34 222.67)" />
+    <use href="#warpgate-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(205.34 222.67)" />
+    <use href="#facility-bg" id="badge-259000" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(254.10 802.40)" />
+    <use href="#warpgate-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(254.10 802.40)" />
+    <use href="#facility-bg" id="badge-244100" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(571.94 549.27)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(571.94 549.27)" />
+    <use href="#facility-bg" id="badge-244200" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(507.64 647.65)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(507.64 647.65)" />
+    <use href="#facility-bg" id="badge-244300" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(388.96 690.27)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(388.96 690.27)" />
+    <use href="#facility-bg" id="badge-244500" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(234.48 611.35)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(234.48 611.35)" />
+    <use href="#facility-bg" id="badge-244600" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(233.69 706.96)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(233.69 706.96)" />
+    <use href="#facility-bg" id="badge-260010" class="badge-TR" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(742.44 652.87)" />
+    <use href="#lg-outpost-fg" x="0px" y="0px" width="13.6px" height="13.6px" transform="translate(742.44 652.87)" />
+    <use href="#facility-bg" id="badge-251010" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(208.85 449.09)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(208.85 449.09)" />
+    <use href="#facility-bg" id="badge-251030" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(211.87 550.05)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(211.87 550.05)" />
+    <use href="#facility-bg" id="badge-252010" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(536.77 722.77)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(536.77 722.77)" />
+    <use href="#facility-bg" id="badge-255010" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(479.92 204.37)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(479.92 204.37)" />
+    <use href="#facility-bg" id="badge-255020" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(544.47 184.12)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(544.47 184.12)" />
+    <use href="#facility-bg" id="badge-255030" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(501.03 273.80)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(501.03 273.80)" />
+    <use href="#facility-bg" id="badge-260000" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(836.26 474.76)" />
+    <use href="#warpgate-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(836.26 474.76)" />
+    <use href="#facility-bg" id="badge-256030" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(674.90 467.56)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(674.90 467.56)" />
+    <use href="#facility-bg" id="badge-244610" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(513.91 416.01)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(513.91 416.01)" />
+    <use href="#facility-bg" id="badge-244620" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(629.67 416.89)" />
+    <use href="#sm-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(629.67 416.89)" />
+    <use href="#facility-bg" id="badge-400133" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(715.27 593.19)" />
+    <use href="#const-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(715.27 593.19)" />
+    <use href="#facility-bg" id="badge-400134" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(287.41 549.22)" />
+    <use href="#const-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(287.41 549.22)" />
+    <use href="#facility-bg" id="badge-400135" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(455.41 411.76)" />
+    <use href="#const-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(455.41 411.76)" />
+    <use href="#facility-bg" id="badge-400314" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(434.04 609.42)" />
+    <use href="#amp-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(434.04 609.42)" />
+    <use href="#facility-bg" id="badge-400315" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(778.40 338.64)" />
+    <use href="#const-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(778.40 338.64)" />
+    <use href="#facility-bg" id="badge-400327" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(698.54 759.88)" />
+    <use href="#containment-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(698.54 759.88)" />
+    <use href="#facility-bg" id="badge-400317" class="badge-TR" x="0px" y="0px" width="16px" height="16px" transform="translate(647.79 559.03)" />
+    <use href="#amp-fg" x="0px" y="0px" width="16px" height="16px" transform="translate(647.79 559.03)" />
+    <use href="#facility-bg" id="badge-400328" class="badge-TR" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(643.68 688.23)" />
+    <use href="#const-outpost-fg" x="0px" y="0px" width="11.2px" height="11.2px" transform="translate(643.68 688.23)" />
+  </g>
+  <g id="name-layer">
+    <use href="#name-230000" class="bgtext bgtext-TR" />
+    <use href="#name-230000" class="fgtext" />
+    <use href="#name-231000" class="bgtext bgtext-TR" />
+    <use href="#name-231000" class="fgtext" />
+    <use href="#name-232000" class="bgtext bgtext-TR" />
+    <use href="#name-232000" class="fgtext" />
+    <use href="#name-233000" class="bgtext bgtext-TR" />
+    <use href="#name-233000" class="fgtext" />
+    <use href="#name-234000" class="bgtext bgtext-TR" />
+    <use href="#name-234000" class="fgtext" />
+    <use href="#name-235000" class="bgtext bgtext-TR" />
+    <use href="#name-235000" class="fgtext" />
+    <use href="#name-236000" class="bgtext bgtext-TR" />
+    <use href="#name-236000" class="fgtext" />
+    <use href="#name-237000" class="bgtext bgtext-TR" />
+    <use href="#name-237000" class="fgtext" />
+    <use href="#name-239000" class="bgtext bgtext-TR" />
+    <use href="#name-239000" class="fgtext" />
+    <use href="#name-240000" class="bgtext bgtext-TR" />
+    <use href="#name-240000" class="fgtext" />
+    <use href="#name-242000" class="bgtext bgtext-TR" />
+    <use href="#name-242000" class="fgtext" />
+    <use href="#name-243000" class="bgtext bgtext-TR" />
+    <use href="#name-243000" class="fgtext" />
+    <use href="#name-244000" class="bgtext bgtext-TR" />
+    <use href="#name-244000" class="fgtext" />
+    <use href="#name-245000" class="bgtext bgtext-TR" />
+    <use href="#name-245000" class="fgtext" />
+    <use href="#name-246000" class="bgtext bgtext-TR" />
+    <use href="#name-246000" class="fgtext" />
+    <use href="#name-247000" class="bgtext bgtext-TR" />
+    <use href="#name-247000" class="fgtext" />
+    <use href="#name-248000" class="bgtext bgtext-TR" />
+    <use href="#name-248000" class="fgtext" />
+    <use href="#name-249000" class="bgtext bgtext-TR" />
+    <use href="#name-249000" class="fgtext" />
+    <use href="#name-400326" class="bgtext bgtext-TR" />
+    <use href="#name-400326" class="fgtext" />
+    <use href="#name-253000" class="bgtext bgtext-TR" />
+    <use href="#name-253000" class="fgtext" />
+    <use href="#name-254000" class="bgtext bgtext-TR" />
+    <use href="#name-254000" class="fgtext" />
+    <use href="#name-256000" class="bgtext bgtext-TR" />
+    <use href="#name-256000" class="fgtext" />
+    <use href="#name-257000" class="bgtext bgtext-TR" />
+    <use href="#name-257000" class="fgtext" />
+    <use href="#name-258000" class="bgtext bgtext-TR" />
+    <use href="#name-258000" class="fgtext" />
+    <use href="#name-259000" class="bgtext bgtext-TR" />
+    <use href="#name-259000" class="fgtext" />
+    <use href="#name-244100" class="bgtext bgtext-TR" />
+    <use href="#name-244100" class="fgtext" />
+    <use href="#name-244200" class="bgtext bgtext-TR" />
+    <use href="#name-244200" class="fgtext" />
+    <use href="#name-244300" class="bgtext bgtext-TR" />
+    <use href="#name-244300" class="fgtext" />
+    <use href="#name-244500" class="bgtext bgtext-TR" />
+    <use href="#name-244500" class="fgtext" />
+    <use href="#name-244600" class="bgtext bgtext-TR" />
+    <use href="#name-244600" class="fgtext" />
+    <use href="#name-260010" class="bgtext bgtext-TR" />
+    <use href="#name-260010" class="fgtext" />
+    <use href="#name-251010" class="bgtext bgtext-TR" />
+    <use href="#name-251010" class="fgtext" />
+    <use href="#name-251030" class="bgtext bgtext-TR" />
+    <use href="#name-251030" class="fgtext" />
+    <use href="#name-252010" class="bgtext bgtext-TR" />
+    <use href="#name-252010" class="fgtext" />
+    <use href="#name-255010" class="bgtext bgtext-TR" />
+    <use href="#name-255010" class="fgtext" />
+    <use href="#name-255020" class="bgtext bgtext-TR" />
+    <use href="#name-255020" class="fgtext" />
+    <use href="#name-255030" class="bgtext bgtext-TR" />
+    <use href="#name-255030" class="fgtext" />
+    <use href="#name-260000" class="bgtext bgtext-TR" />
+    <use href="#name-260000" class="fgtext" />
+    <use href="#name-256030" class="bgtext bgtext-TR" />
+    <use href="#name-256030" class="fgtext" />
+    <use href="#name-244610" class="bgtext bgtext-TR" />
+    <use href="#name-244610" class="fgtext" />
+    <use href="#name-244620" class="bgtext bgtext-TR" />
+    <use href="#name-244620" class="fgtext" />
+    <use href="#name-400133" class="bgtext bgtext-TR" />
+    <use href="#name-400133" class="fgtext" />
+    <use href="#name-400134" class="bgtext bgtext-TR" />
+    <use href="#name-400134" class="fgtext" />
+    <use href="#name-400135" class="bgtext bgtext-TR" />
+    <use href="#name-400135" class="fgtext" />
+    <use href="#name-18249" class="bgtext bgtext-TR" />
+    <use href="#name-18249" class="fgtext" />
+    <use href="#name-400314" class="bgtext bgtext-TR" />
+    <use href="#name-400314" class="fgtext" />
+    <use href="#name-400315" class="bgtext bgtext-TR" />
+    <use href="#name-400315" class="fgtext" />
+    <use href="#name-400327" class="bgtext bgtext-TR" />
+    <use href="#name-400327" class="fgtext" />
+    <use href="#name-400317" class="bgtext bgtext-TR" />
+    <use href="#name-400317" class="fgtext" />
+    <use href="#name-400328" class="bgtext bgtext-TR" />
+    <use href="#name-400328" class="fgtext" />
+    <use href="#name-18262" class="bgtext bgtext-TR" />
+    <use href="#name-18262" class="fgtext" />
+  </g>
 </svg>
