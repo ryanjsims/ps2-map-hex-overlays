@@ -316,7 +316,7 @@ class pathContext:
                 self.__elem.attrib["id"] = self.__id
             if self.__class is not None:
                 self.__elem.attrib["class"] = self.__class
-        if self.__class is None:
+        if self.__class is None and self.__color is not None:
             self.__elem.attrib["fill"] = f"rgb({self.__color[0] * 100:.2f}%,{self.__color[1] * 100:.2f}%,{self.__color[2] * 100:.2f}%)"
             self.__elem.attrib["fill-opacity"] = f"{self.__color[3]}"
         self.__elem.attrib["fill-rule"] = "nonzero"

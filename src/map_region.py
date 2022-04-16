@@ -117,12 +117,13 @@ class Region:
         self.__dirty = False
         return self.__shape
     
-    def draw_outline(self, context: cairo.Context, offset_x = 0, offset_y = 0, transform_fn = Map.world_to_map):
+    def draw_outline(self, context: Union[cairo.Context, pathContext], offset_x = 0, offset_y = 0, transform_fn = Map.world_to_map):
         context.save()
         context.set_line_width(1.2)
         context.set_line_cap(cairo.LINE_CAP_BUTT)
         context.set_line_join(cairo.LINE_JOIN_MITER)
-        context.set_source_rgba(*self._color.as_percents(), 0.4)
+        if type(context) == cairo.Context:
+            context.set_source_rgba(*self._color.as_percents(), 0.4)
         outline = self.get_outline()
         if len(outline) == 0:
             return
@@ -133,7 +134,8 @@ class Region:
             context.line_to(point[0], point[1])
         context.close_path()
         context.fill_preserve()
-        context.set_source_rgba(0, 0, 0, 0.8)
+        if type(context) == cairo.Context:
+            context.set_source_rgba(0, 0, 0, 0.8)
         context.stroke()
         context.restore()
     
