@@ -1,6 +1,6 @@
 import math
 
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Union
 from queue import SimpleQueue
 
 import cairo
@@ -44,7 +44,7 @@ class Region:
         self._location = location
         self._connections = connections
     
-    def as_embeddable_json(self, regions: Dict[int, 'Region'], offsets, transform_fn=Map.world_to_map) -> Dict[str, int | Tuple[float, float] | List[int] | Dict[str, float]]:
+    def as_embeddable_json(self, regions: Dict[int, 'Region'], offsets, transform_fn=Map.world_to_map) -> Dict[str, Union[int, Tuple[float, float], List[int], Dict[str, float]]]:
         location = transform_fn(self._location, offsets)
         rounded = map(round, location, [2, 2])
         return {
@@ -55,7 +55,8 @@ class Region:
             },
             'facility_id': self._facility_id,
             'facility_type': self._facility_type,
-            'linked_facilities': [regions[region_id]._facility_id for region_id in self._connections]
+            'linked_facilities': [regions[region_id]._facility_id for region_id in self._connections],
+            'orig_linked_facilities': [regions[region_id]._facility_id for region_id in self._connections],
         }
     
     def add_hexes(self, hexes: List[CubeHex]) -> None:
@@ -136,7 +137,7 @@ class Region:
         context.stroke()
         context.restore()
     
-    def draw_lattice_defs(self, context: cairo.Context | pathContext, offset_x, offset_y, connections: List['Region'], transform_fn=Map.world_to_map):
+    def draw_lattice_defs(self, context: Union[cairo.Context, pathContext], offset_x, offset_y, connections: List['Region'], transform_fn=Map.world_to_map):
         x, y = transform_fn(self.get_location(), (-offset_x, offset_y))
         if len(self.get_location()) != 2:
             return
@@ -153,7 +154,7 @@ class Region:
         context.restore()
 
     
-    def draw_lattice(self, context: cairo.Context | pathContext, offset_x, offset_y, connections: List['Region'], transform_fn=Map.world_to_map, _class: str=None, _id: bool=False):
+    def draw_lattice(self, context: Union[cairo.Context, pathContext], offset_x, offset_y, connections: List['Region'], transform_fn=Map.world_to_map, _class: str=None, _id: bool=False):
         x, y = transform_fn(self.get_location(), (-offset_x, offset_y))
         if len(self.get_location()) != 2:
             return
@@ -184,7 +185,7 @@ class Region:
             context.restore()
         context.restore()
     
-    def draw_name(self, context: cairo.Context | pathContext, offset_x: int, offset_y: int, is_background: bool = False):
+    def draw_name(self, context: Union[cairo.Context, pathContext], offset_x: int, offset_y: int, is_background: bool = False):
         if len(self.get_location()) != 2:
             return
         if None in self.get_location():
