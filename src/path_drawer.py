@@ -3,7 +3,7 @@ from io import FileIO
 import sys
 import cairo
 import math
-from typing import Tuple, List
+from typing import Optional, Tuple, List
 
 import xml.etree.ElementTree as ET
 
@@ -390,14 +390,15 @@ class pathContext:
                 self.__elem.attrib["class"] = self.__class
             else:
                 self.__elem.attrib["fill"] = "none"
-        if self.__class is None:
+        if self.__class is None and self.__color is not None:
             self.__elem.attrib["stroke"] = f"rgb({self.__color[0] * 100:.2f}%,{self.__color[1] * 100:.2f}%,{self.__color[2] * 100:.2f}%)"
             self.__elem.attrib["stroke-opacity"] = f"{self.__color[3]}"
         linecaps = ["butt", "round", "square"]
         linejoins = ["miter", "round", "bevel"]
         self.__elem.attrib["stroke-linejoin"] = linejoins[self.__line_join]
         self.__elem.attrib["stroke-linecap"] = linecaps[self.__line_cap]
-        self.__elem.attrib["stroke-width"] = f"{self.__line_width:.2f}"
+        if self.__line_width is not None:
+            self.__elem.attrib["stroke-width"] = f"{self.__line_width:.2f}"
         self.__elem.attrib["stroke-miterlimit"] = f"{self.__miter_limit:.2f}"
 
     def rectangle(self, x, y, w, h):
@@ -422,26 +423,26 @@ class pathContext:
             self.__elem.attrib["stroke-width"] = f"{font_size / 6:.1f}"
             self.__elem.attrib["filter"] = f"blur({font_size / 10:.1f}px)"
         for i, line in enumerate(text.split("\n")):
-            attribs = {"text-anchor": "middle"}
+            attribs = {"text-anchor": "middle", "stroke-miterlimit": f"{self.__miter_limit}"}
             if i != 0:
                 attribs["dy"] = "110%"
             tspan = ET.SubElement(self.__elem, "tspan", attribs)
             tspan.text = line
 
-    def use(self, href: str, x: float, y: float, width: float = 0, height: float = 0):
+    def use(self, href: str, x: Optional[float] = None, y: Optional[float] = None, width: float = 0, height: float = 0):
         self.__elem = ET.SubElement(self.__root, "use", {
             "href": href,
-            "x": f"0px",
-            "y": f"0px",
-            "width": f"{width}px",
-            "height": f"{height}px",
-            "transform": f"translate({x - width / 2} {y - height / 2})",
-            #"transform-origin": f"{x:.2f} {y:.2f}",
         })
         if self.__id is not None:
             self.__elem.attrib["id"] = self.__id
         if self.__class is not None:
             self.__elem.attrib["class"] = self.__class
+        if x is not None and y is not None:
+            self.__elem.attrib["x"] = "0px"
+            self.__elem.attrib["y"] = "0px"
+            self.__elem.attrib["width"] = f"{width}px"
+            self.__elem.attrib["height"] = f"{height}px"
+            self.__elem.attrib["transform"] = f"translate({x - width / 2:.2f} {y - height / 2:.2f})"
 
     def write(self):
         ET.indent(self.__tree)

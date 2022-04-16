@@ -51,6 +51,7 @@ def build_zone_request(service_id: str, zone_id: int) -> auraxium.census.Query:
 async def main():
     parser = ArgumentParser(description="Planetside 2 Map Drawing Utility")
     parser.add_argument("service-id", help="PS2 census service ID: https://census.daybreakgames.com/#devSignup")
+    parser.add_argument("--defs", help="Only output definitions block, no graphics", action="store_true")
     args = parser.parse_args()
     
     service_id = ""
@@ -155,55 +156,68 @@ async def main():
                     region.draw_name(context, *offsets)
 
         facility_icons = ET.ElementTree(file=f"..{os.path.sep}svg{os.path.sep}facility-icon.svg").getroot()[0]
-        embedded_css = open("../css/map_embedded.css")
+        embedded_css = open("../css/map_embedded.min.css")
         style = ET.Element("style")
         style.text = embedded_css.read()
         embedded_css.close()
+        offsets = (4096, 4096)
 
         for zone in zones:
+            regions = ET.Element("regionJson")
+            regions.text = json.dumps({region._facility_id: region.as_embeddable_json(zones[zone], offsets) for region in zones[zone].values() if region.get_facility_type() != FacilityTypes.UNKNOWN}, separators=(',', ':'))
             with open(f"..{os.path.sep}svg{os.path.sep}{zone}_base.svg", "wb") as surface:
                 print("Drawing " + f"..{os.path.sep}svg{os.path.sep}{zone}_base.svg")
                 context = pathContext(surface, 2048, 2048)
+                context.embed(regions)
                 context.embed(style)
+
                 context.enter_defs()
                 for icon in facility_icons:
                     context.embed(icon)
-                context.exit_defs()
-
-                offsets = (4096, 4096)
-                context.enter_group("hex-layer")
+                
                 for region_id, region in zones[zone].items():
-                    if region_id != region._id:
+                    if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
                         continue
                     context.id(f"hex-{region._facility_id}")
-                    context._class(f"region-NS")
-                    region.draw_outline(context, *offsets, transform_fn=Map.world_to_map)
-                context.exit_group()
+                    region.draw_outline(context, *offsets)
+                    region.draw_lattice_defs(context, *offsets, [zones[zone][link_id] for link_id in region.get_connections()])
+                    context.id(f"name-{region._facility_id}")
+                    region.draw_name(context, *offsets)
 
-                context.enter_group("lattice-layer")
-                context.set_source_rgba(1, 1, 1, 0.5)
-                for region_id, region in zones[zone].items():
-                    if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
-                        continue
-                    try:
-                        region.draw_lattice(context, *offsets, [zones[zone][link_id] for link_id in region.get_connections()], Map.world_to_map, "link-NS", True)
-                    except IndexError as e:
-                        print(region.get_name())
-                        print(region.get_facility_type())
-                        raise e
+                context.exit_defs()
 
-                context.exit_group()
-                context.enter_group("badge-layer")
-                for region_id, region in zones[zone].items():
-                    if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
-                        continue
-                    try:
+                if not args.defs:
+                    context.enter_group("hex-layer")
+                    for region_id, region in zones[zone].items():
+                        if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
+                            continue
+                        context._class("region-TR")
+                        context.use(f"#hex-{region._facility_id}")
+                        context._finalize()
+                    context.exit_group()
+
+                    context.enter_group("lattice-layer")
+                    context.set_source_rgba(1, 1, 1, 0.5)
+                    for region_id, region in zones[zone].items():
+                        if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
+                            continue
+                        for link_id in region.get_connections():
+                            connection = zones[zone][link_id]
+                            context._class("bglink-TR")
+                            context.use(f"#link-{region._facility_id}-{connection._facility_id}")
+                            context._finalize()
+                            context._class("link link-TR")
+                            context.use(f"#link-{region._facility_id}-{connection._facility_id}")
+                            context._finalize()
+                    context.exit_group()
+
+                    context.enter_group("badge-layer")
+                    for region_id, region in zones[zone].items():
+                        if region_id != region._id or region.get_facility_type() == FacilityTypes.UNKNOWN:
+                            continue
                         location = Map.world_to_map(region.get_location(), (-offsets[0], offsets[1]))
-                        context.enter_group(f"badge-{region._facility_id}")
-                        context.id(f"bgbadge-{region._facility_id}")
-                        context._class(f"badge-NS")
-                        context.save()
-                        context.set_source_rgb(*region._color.as_percents())
+                        context.id(f"badge-{region._facility_id}")
+                        context._class(f"badge-TR")
                         context.use(
                             "#facility-bg",
                             location[0],
@@ -211,7 +225,7 @@ async def main():
                             BADGE_SIZES[region.get_facility_type()] * 2,
                             BADGE_SIZES[region.get_facility_type()] * 2
                         )
-                        context.fill()
+                        context._finalize()
                         context.use(
                             f"{BADGE_HREFS[region.get_facility_type()]}", 
                             location[0],
@@ -220,26 +234,17 @@ async def main():
                             BADGE_SIZES[region.get_facility_type()] * 2
                         )
                         context._finalize()
-                        context.exit_group()
-                        context.restore()
+                    context.exit_group()
 
-                    except IndexError as e:
-                        print(region.get_name())
-                        print(region.get_facility_type())
-                        raise e
-                context.exit_group()
-
-                context.enter_group("name-layer")
-                for region_id, region in zones[zone].items():
-                    if region_id != region._id:
-                        continue
-                    context.id(f"bgname-{region._facility_id}")
-                    context._class(f"bgtext-NS")
-                    region.draw_name(context, *offsets, True)
-                    context.id(f"name-{region._facility_id}")
-                    context._class(f"fgtext")
-                    region.draw_name(context, *offsets)
-                context.exit_group()
+                    context.enter_group("name-layer")
+                    for region_id, region in zones[zone].items():
+                        if region_id != region._id:
+                            continue
+                        context._class(f"bgtext bgtext-TR")
+                        context.use(f"#name-{region._facility_id}")
+                        context._class(f"fgtext")
+                        context.use(f"#name-{region._facility_id}")
+                    context.exit_group()
 
                 context.write()
 

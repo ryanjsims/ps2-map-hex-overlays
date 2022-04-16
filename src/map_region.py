@@ -1,6 +1,6 @@
 import math
 
-from typing import List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 from queue import SimpleQueue
 
 import cairo
@@ -43,6 +43,20 @@ class Region:
         self.__dirty = True
         self._location = location
         self._connections = connections
+    
+    def as_embeddable_json(self, regions: Dict[int, 'Region'], offsets, transform_fn=Map.world_to_map) -> Dict[str, int | Tuple[float, float] | List[int] | Dict[str, float]]:
+        location = transform_fn(self._location, offsets)
+        rounded = map(round, location, [2, 2])
+        return {
+            'name': self._name,
+            'location': tuple(rounded),
+            'badge': {
+                'size': BADGE_SIZES[self._facility_type] * 2
+            },
+            'facility_id': self._facility_id,
+            'facility_type': self._facility_type,
+            'linked_facilities': [regions[region_id]._facility_id for region_id in self._connections]
+        }
     
     def add_hexes(self, hexes: List[CubeHex]) -> None:
         self._hexes = self._hexes.union(set(hexes))
@@ -122,6 +136,23 @@ class Region:
         context.stroke()
         context.restore()
     
+    def draw_lattice_defs(self, context: cairo.Context | pathContext, offset_x, offset_y, connections: List['Region'], transform_fn=Map.world_to_map):
+        x, y = transform_fn(self.get_location(), (-offset_x, offset_y))
+        if len(self.get_location()) != 2:
+            return
+        if None in self.get_location():
+            return
+        context.save()
+        context.set_line_width(None)
+        for connection in connections:
+            conn_x, conn_y = transform_fn(connection.get_location(), (-offset_x, offset_y))
+            context.id(f"link-{self._facility_id}-{connection._facility_id}")
+            context.move_to(x, y)
+            context.line_to(conn_x, conn_y)
+            context.stroke()
+        context.restore()
+
+    
     def draw_lattice(self, context: cairo.Context | pathContext, offset_x, offset_y, connections: List['Region'], transform_fn=Map.world_to_map, _class: str=None, _id: bool=False):
         x, y = transform_fn(self.get_location(), (-offset_x, offset_y))
         if len(self.get_location()) != 2:
@@ -176,6 +207,7 @@ class Region:
             context.move_to(x - extents.logical_rect.width / (2 * pango.SCALE), y + BADGE_SIZES[self._facility_type])
             pangocairo.show_layout(context, layout)
         else:
+            context.set_miter_limit(1.56)
             context.text(x, y + BADGE_SIZES[self._facility_type] * 1.2, font_size, self._name, is_background)
             context._finalize()
         context.restore()

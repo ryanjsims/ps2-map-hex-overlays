@@ -47,6 +47,10 @@
         fill-opacity: 0.8;
     }
 
+    .link {
+        stroke-width: 0.66;
+    }
+
     .link-NS {
         stroke: #928e99;
         opacity: 0.6;
@@ -80,19 +84,19 @@
     }
 
     .badge-TR {
-        fill: #bc1212;
+        fill: #cd4d4d;
     }
 
     .badge-NC {
-        fill: #0064aa;
+        fill: #408bbf;
     }
 
     .badge-VS {
-        fill: #6e18a3;
+        fill: #9252ba;
     }
 
     .badge-NS {
-        fill: #718096;
+        fill: #94a0b0;
     }
 
     .bglink-NS,
@@ -123,6 +127,10 @@
 
     .fgtext {
         fill: #FFF;
+    }
+
+    .bgtext {
+        filter: blur(1px);
     }
 
     .bgtext-TR {
