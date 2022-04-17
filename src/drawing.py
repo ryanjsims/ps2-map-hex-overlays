@@ -132,12 +132,15 @@ async def main():
 
         for zone in zones:
             regions = ET.Element("regionJson")
-            regionData = {region._facility_id: region.as_embeddable_json(zones[zone], (-offsets[0], offsets[1])) for region in zones[zone].values() if region.get_facility_type() != FacilityTypes.UNKNOWN}
-            for regionJson in regionData.values():
+            regionData = {
+                "byFacilityIds": {region._facility_id: region.as_embeddable_json(zones[zone], (-offsets[0], offsets[1])) for region in zones[zone].values() if region.get_facility_type() != FacilityTypes.UNKNOWN},
+                "regionIdsToFacilityIds": {reg_id: region._facility_id for reg_id, region in zones[zone].items() if region.get_facility_type() != FacilityTypes.UNKNOWN}
+            }
+            for regionJson in regionData["byFacilityIds"].values():
                 for connection_id in regionJson["linked_facilities"]:
-                    if regionJson["facility_id"] in regionData[connection_id]["linked_facilities"]:
+                    if regionJson["facility_id"] in regionData["byFacilityIds"][connection_id]["linked_facilities"]:
                         continue
-                    regionData[connection_id]["linked_facilities"].append(regionJson["facility_id"])
+                    regionData["byFacilityIds"][connection_id]["linked_facilities"].append(regionJson["facility_id"])
             regions.text = json.dumps(regionData, separators=(',', ':'))
             with open(f"..{os.path.sep}svg{os.path.sep}{zone}_base.svg", "wb") as surface:
                 print("Drawing " + f"..{os.path.sep}svg{os.path.sep}{zone}_base.svg")
