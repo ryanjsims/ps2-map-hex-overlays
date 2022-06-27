@@ -1,4 +1,5 @@
 import math
+from typing import Callable, Optional, Tuple
 
 class CubeHex:
     DIRECTION_VECTORS: tuple = tuple()
@@ -51,8 +52,11 @@ class CubeHex:
                    (3, 4), (4, 5), (5, 0),]
         return (self.corner(indices[(i) % len(indices)][0], hex_size), self.corner(indices[(i) % len(indices)][1], hex_size))
 
-    def vertices(self, hex_size: float):
-        return [self.corner(i, hex_size) for i in range(6)]
+    def vertices(self, hex_size: float, transform: Optional[Callable] = None, offset: Tuple[float, float] = (0, 0)):
+        to_return = [self.corner(i, hex_size) for i in range(6)]
+        if transform is not None:
+            to_return = [transform(point, offset) for point in to_return]
+        return to_return
     
     @classmethod
     def from_axial_rs(cls, r: int, s: int):

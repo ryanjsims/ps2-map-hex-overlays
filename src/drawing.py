@@ -18,7 +18,7 @@ import auraxium
 from auraxium import ps2
 
 from cube_hex import CubeHex
-from map_region import Region
+from cairo_region import CairoRegion as Region
 from map import Map
 from path_drawer import pathContext
 

@@ -5,6 +5,6 @@ cache/amerish_cache.json
 cache/esamir_cache.json
 cache/hossin_cache.json
 cache/indar_cache.json
-tiles
+tiles*
 node_modules
 *.png
