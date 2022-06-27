@@ -191,7 +191,7 @@ def next_region(sender, app_data):
 
 def save(sender, app_data):
     global regions
-    with open("new_oshur.json") as f:
+    with open("new_oshur.json", "w") as f:
         json.dump(regions, f)
     
 def main():
