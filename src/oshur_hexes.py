@@ -154,6 +154,16 @@ def clear(sender=None, app_data=None, user_data=None, keep_fill=False):
 
 facility_index = 0
 
+def load_region(map_region_id: str):
+    global facilities, facility_index, regions, hexes
+    if map_region_id in regions:
+        region = regions[map_region_id]
+        for _, r, s in region["hexes"]:
+            hex = hexes[r + len(hexes) // 2][s + len(hexes[0]) // 2]
+            hex._selected = True
+            dpg.configure_item(str(hex), color=hex.color(), fill=hex.fill())
+    dpg.set_value("region name", facilities[facility_index]["facility_name"])
+
 def prev_region(sender, app_data):
     global facilities, regions, hexes, facility_index
     region = {"name": facilities[facility_index]["facility_name"], "hexes": []}
@@ -164,12 +174,7 @@ def prev_region(sender, app_data):
     regions[facilities[facility_index]["map_region_id"]] = region
     clear()
     facility_index -= 1
-    region = regions[facilities[facility_index]["map_region_id"]]
-    for _, r, s in region["hexes"]:
-        hex = hexes[r + len(hexes) // 2][s + len(hexes[0]) // 2]
-        hex._selected = True
-        dpg.configure_item(str(hex), color=hex.color(), fill=hex.fill())
-    dpg.set_value("region name", facilities[facility_index]["facility_name"])
+    load_region(facilities[facility_index]["map_region_id"])
 
 def next_region(sender, app_data):
     global facilities, regions, hexes, facility_index
@@ -180,19 +185,20 @@ def next_region(sender, app_data):
                 region["hexes"].append([hex._q, hex._r, hex._s])
     regions[facilities[facility_index]["map_region_id"]] = region
     facility_index += 1
-    dpg.set_value("region name", facilities[facility_index]["facility_name"])
     clear(keep_fill=True)
-    if facilities[facility_index]["map_region_id"] in regions:
-        region = regions[facilities[facility_index]["map_region_id"]]
-        for _, r, s in region["hexes"]:
-            hex = hexes[r + len(hexes) // 2][s + len(hexes[0]) // 2]
-            hex._selected = True
-            dpg.configure_item(str(hex), color=hex.color(), fill=hex.fill())
+    load_region(facilities[facility_index]["map_region_id"])
 
 def save(sender, app_data):
     global regions
-    with open("new_oshur.json", "w") as f:
+    with open(app_data["file_path_name"], "w") as f:
         json.dump(regions, f)
+
+def load(sender, app_data):
+    global regions
+    with open(app_data["file_path_name"]) as f:
+        regions = json.load(f)
+    load_region(facilities[facility_index]["map_region_id"])
+    
     
 def main():
     dpg.create_context()
@@ -201,6 +207,12 @@ def main():
     global hexes, facilities, facility_index
     hexes = [[DrawingHex.from_axial_rs(r, s) for s in range(-50, 51)] for r in range(-50, 51)]
     hexes[len(hexes) // 2][len(hexes[0]) // 2].fill((255, 0, 0, 255))
+
+    with dpg.file_dialog(directory_selector=False, show=False, callback=load, tag="load file picker", height=512):
+        dpg.add_file_extension(".json")
+    
+    with dpg.file_dialog(directory_selector=False, show=False, callback=save, tag="save file picker", height=512):
+        dpg.add_file_extension(".json")
 
     with dpg.texture_registry():
         dpg.add_static_texture(width, height, data, tag="image_id")
@@ -238,15 +250,17 @@ def main():
                 draw_hexgrid((-4096, 4096), hexes)
         dpg.add_text(label="Current Region Name", source="region name", show_label=True)
         with dpg.group(horizontal=True):
-            dpg.add_button(label="Next Region", width=256, height=64, tag="next")
             dpg.add_button(label="Previous Region", width=256, height=64, tag="prev")
+            dpg.add_button(label="Next Region", width=256, height=64, tag="next")
             dpg.add_button(label="Clear Selection", width=256, height=64, tag="clear")
-            dpg.add_button(label="Save", width=256, height=64, tag="save")
+        
+        with dpg.group(horizontal=True):
+            dpg.add_button(label="Save...", width=256, height=64, tag="save", callback=lambda: dpg.show_item("save file picker"))
+            dpg.add_button(label="Load...", width=256, height=64, tag="load", callback=lambda: dpg.show_item("load file picker"))
     
     dpg.bind_item_handler_registry("next", "next handler")
     dpg.bind_item_handler_registry("prev", "prev handler")
     dpg.bind_item_handler_registry("clear", "clear handler")
-    dpg.bind_item_handler_registry("save", "save handler")
     dpg.bind_item_handler_registry("hex grid", "hex grid handler")
 
     dpg.set_value("region name", facilities[facility_index]["facility_name"])
