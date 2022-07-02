@@ -4,76 +4,37 @@ from typing import List, Tuple
 import dearpygui.dearpygui as dpg
 import json
 
-from cube_hex import CubeHex
+from drawing_hex import DrawingHex
+from map_region import Region
 from map import Map
 from constants.zone_ids import ZoneHexSize
+from constants.facility_types import FacilityTypes
+
+facilities: List[dict] = []
+
+def load_regions(sender, app_data):
+    global facilities
+    with open(app_data["file_path_name"]) as f:
+        facilities = json.load(f)
+
+def save_regions(sender, app_data):
+    with open(app_data["file_path_name"], "w") as f:
+        json.dump(facilities, f)
 
 
-def get_numeric(prompt):
-    sign = 1
-    val = input(prompt)
-    if val.lower().startswith("d"):
-        return None
-    if val.startswith("-"):
-        sign = -1
-        val = val[1:]
-    while not val.isnumeric():
-        sign = 1
-        val = input(prompt)
-        if val.lower().startswith("d"):
-            return None
-        if val.startswith("-"):
-            sign = -1
-            val = val[1:]
-    return sign * int(val)
-        
-
-def get_hexes():
-    r = get_numeric("R? (Blue) ")
-    if r is None:
-        return []
-    s_range = input("S range? (Red)")
-    if(s_range.lower().startswith("d")):
-        return []
-    s_strvals = s_range.split(",")
-    s_vals = []
-    for val in s_strvals:
-        if ":" in val:
-            val_range = val.split(":")
-            s_vals.extend(range(int(val_range[0]), int(val_range[1]) + 1))
-        else:
-            s_vals.append(int(val))
-    return [(-r-s, r, s) for s in s_vals]
-    
-
-with open(Path("data") / "oshur.json") as f:
-    facilities: List[dict] = json.load(f)
+load_regions(None, {"file_path_name": str(Path("data") / "oshur.json")})
 
 regions = {}
-
-class DrawingHex(CubeHex):
-    def __init__(self, q:int, r:int, s:int):
-        super().__init__(q, r, s)
-        self._color = (128, 128, 128, 128)
-        self._selected_color = (0, 255, 0, 128)
-        self._fill = (0, 0, 0, 0)
-        self._selected_fill = (0, 255, 0, 64)
-        self._selected = False
-    
-    def color(self, new_color: Tuple[int, int, int, int]=None):
-        if new_color is not None:
-            self._color = new_color
-        return self._color if not self._selected else self._selected_color
-
-    def fill(self, new_fill: Tuple[int, int, int, int]=None):
-        if new_fill is not None:
-            self._fill = new_fill
-        return self._fill if not self._selected else self._selected_fill
-    
-    def toggle_select(self):
-        self._selected = not self._selected
-
+regions_by_hex = {}
+selecting = False
+offset = [0, 0]
+drag_start = [0, 0]
+scale = 1
+last_hover_time = 0
 hexes: List[List[DrawingHex]] = None
+facility_index = 0
+facility_to_link = None
+
 
 def draw_hexgrid(origin: Tuple[float, float], hexes: List[List[DrawingHex]]):
     for row in hexes:
@@ -82,20 +43,35 @@ def draw_hexgrid(origin: Tuple[float, float], hexes: List[List[DrawingHex]]):
             if hex._r == 0 and hex._s == 0:
                 dpg.draw_polygon(hex.vertices(ZoneHexSize.OSHUR, transform=Map.world_to_map, offset=origin), color=hex.color(), fill=(255, 0, 0, 64))
 
-def hex_grid_click(sender, app_data):
-    hex = CubeHex.from_pixel(
+
+def link_regions(sender, app_data):
+    global regions_by_hex, facility_to_link
+    hex = DrawingHex.from_pixel(
         Map.map_to_world(dpg.get_drawing_mouse_pos(), offsets=(-512, -512)),
         ZoneHexSize.OSHUR
     )
-    drawhex = hexes[hex._r + len(hexes) // 2][hex._s + len(hexes[0]) // 2]
-    drawhex.toggle_select()
-    dpg.configure_item(str(drawhex), color=drawhex.color())
+    if app_data[0] == 1 and str(hex) in regions_by_hex:
+        if facility_to_link is None:
+            facility_to_link = regions_by_hex[str(hex)]
+            dpg.set_value("linking name", facility_to_link["name"])
+            map_location = Map.world_to_map((float(facility_to_link["location_x"]), float(facility_to_link["location_z"])), (-4096, 4096))
+            map_location = [(1 / scale) * (val - offset[i]) for i, val in enumerate(map_location)]
+            dpg.configure_item("new link", p1=map_location, p2=map_location, show=True)
+        else:
+            regions_by_hex[str(hex)]["facility_links"].append(facility_to_link["facility_id"])
+            facility_to_link["facility_links"].append(regions_by_hex[str(hex)]["facility_id"])
+            dpg.configure_item("new link", p1=(0, 0), p2=(0, 0), show=False)
+            dpg.set_value("linking name", f"{regions_by_hex[str(hex)]['name']} linked to {facility_to_link['name']}")
+            facility_to_link = None
 
-selecting = False
-offset = [0, 0]
-drag_start = [0, 0]
-scale = 1
-last_hover_time = 0
+def move_link(sender, app_data):
+    global facility_to_link
+    map_location = [(1 / scale) * (val - offset[i]) for i, val in enumerate(dpg.get_drawing_mouse_pos())]
+    world_location = Map.map_to_world(map_location, offsets=(-512, -512))
+    dpg.set_value("mouse coords", f"x: {world_location[0]:5.2f} z: {world_location[1]:5.2f}")
+    if facility_to_link is None:
+        return
+    dpg.configure_item("new link", p2=map_location)
 
 def hex_grid_drag(sender, app_data):
     global last_hover_time
@@ -105,7 +81,7 @@ def hex_grid_drag(sender, app_data):
         global selecting, offset, scale
         raw_pos = dpg.get_drawing_mouse_pos()
         transformed_pos = [(1 / scale) * (val - offset[i]) for i, val in enumerate(raw_pos)]
-        hex = CubeHex.from_pixel(
+        hex = DrawingHex.from_pixel(
             Map.map_to_world(transformed_pos, offsets=(-512, -512)),
             ZoneHexSize.OSHUR
         )
@@ -152,7 +128,33 @@ def clear(sender=None, app_data=None, user_data=None, keep_fill=False):
                 if not keep_fill:
                     dpg.configure_item(str(hex), fill=hex.fill())
 
-facility_index = 0
+def create_region(index):
+    global facilities
+    return {
+        "name": facilities[index]["facility_name"], 
+        "hexes": [], 
+        "facility_id": facilities[index]["facility_id"], 
+        "facility_links": facilities[index]["facility_links"], 
+        "location_x": facilities[index]["location_x"],
+        "location_z": facilities[index]["location_z"]
+    }
+
+def update_region_with_current_selection(index: int):
+    global regions, regions_by_hex, facilities
+    region_name = facilities[index]["facility_name"]
+    map_region_id = facilities[index]["map_region_id"]
+    if map_region_id not in regions:
+        region = create_region(index)
+    else:
+        region = regions[map_region_id]
+        region["hexes"] = []
+    for row in hexes:
+        for hex in row:
+            if hex._selected:
+                region["hexes"].append([hex._q, hex._r, hex._s])
+                regions_by_hex[str(hex)] = region
+    regions[map_region_id] = region
+
 
 def load_region(map_region_id: str):
     global facilities, facility_index, regions, hexes
@@ -166,52 +168,93 @@ def load_region(map_region_id: str):
 
 def prev_region(sender, app_data):
     global facilities, regions, hexes, facility_index
-    region = {"name": facilities[facility_index]["facility_name"], "hexes": []}
-    for row in hexes:
-        for hex in row:
-            if hex._selected:
-                region["hexes"].append([hex._q, hex._r, hex._s])
-    regions[facilities[facility_index]["map_region_id"]] = region
+    update_region_with_current_selection(facility_index)
     clear()
-    facility_index -= 1
+    facility_index = max(0, facility_index - 1)
     load_region(facilities[facility_index]["map_region_id"])
 
 def next_region(sender, app_data):
     global facilities, regions, hexes, facility_index
-    region = {"name": facilities[facility_index]["facility_name"], "hexes": []}
-    for row in hexes:
-        for hex in row:
-            if hex._selected:
-                region["hexes"].append([hex._q, hex._r, hex._s])
-    regions[facilities[facility_index]["map_region_id"]] = region
-    facility_index += 1
+    update_region_with_current_selection(facility_index)
     clear(keep_fill=True)
+    facility_index = min(len(facilities) - 1, facility_index + 1)
     load_region(facilities[facility_index]["map_region_id"])
 
-def save(sender, app_data):
+def save_hexes(sender, app_data):
     global regions
     with open(app_data["file_path_name"], "w") as f:
         json.dump(regions, f)
 
-def load(sender, app_data):
-    global regions
+def load_hexes(sender, app_data):
+    global regions, facility_index
     with open(app_data["file_path_name"]) as f:
-        regions = json.load(f)
+        new_regions = json.load(f)
+        for map_region_id in new_regions:
+            if map_region_id not in regions:
+                for i, facility in enumerate(facilities):
+                    if facility["map_region_id"] == map_region_id:
+                        regions[map_region_id] = create_region(i)
+                        break
+            regions[map_region_id]["hexes"] = new_regions[map_region_id]["hexes"]
     load_region(facilities[facility_index]["map_region_id"])
+    while facility_index < len(facilities) - 1:
+        next_region(None, None)
+
+def add_or_edit_region(sender, app_data):
+    global facilities
+    name = dpg.get_value("facility name input")
+    ftype = dpg.get_value("facility type input")
+    to_edit = {}
+    edit_index = None
+    max_facility_id = 0
+    max_map_region_id = 0
+    #{
+    #    "zone_id": "334", 
+    #    "facility_type_id": str(FacilityTypes[ftype].value),
+    #    "facility_name": name,
+    #}
+    for i, facility in enumerate(facilities):
+        if name == facility["facility_name"]:
+            to_edit = facility
+            edit_index = i
+        max_facility_id = max(max_facility_id, int(facility["facility_id"]))
+        max_map_region_id = max(max_map_region_id, int(facility["map_region_id"]))
     
+    if edit_index is None:
+        to_edit["map_region_id"] = str(max_map_region_id + 1)
+        to_edit["zone_id"] = "334"
+        to_edit["facility_id"] = str(max_facility_id + 1)
+        to_edit["facility_name"] = name
+        to_edit["facility_links"] = []
     
+    to_edit["facility_type_id"] = str(FacilityTypes[ftype].value)
+    to_edit["location_x"] = str(dpg.get_value("facility x input"))
+    to_edit["location_z"] = str(dpg.get_value("facility z input"))
+
+    if edit_index is None:
+        facilities.append(to_edit)
+    dpg.set_value("facility name input", "")
+    dpg.hide_item("region editor")
+
+
 def main():
     dpg.create_context()
-    dpg.create_viewport(title="Oshur Hex Editor", width=1280, height=1280)
+    dpg.create_viewport(title="Oshur Hex Editor", width=1280, height=1408)
     width, height, channels, data = dpg.load_image('new_oshur.png')
     global hexes, facilities, facility_index
     hexes = [[DrawingHex.from_axial_rs(r, s) for s in range(-50, 51)] for r in range(-50, 51)]
     hexes[len(hexes) // 2][len(hexes[0]) // 2].fill((255, 0, 0, 255))
 
-    with dpg.file_dialog(directory_selector=False, show=False, callback=load, tag="load file picker", height=512):
+    with dpg.file_dialog(directory_selector=False, show=False, callback=load_hexes, tag="load hexes file picker", height=512):
         dpg.add_file_extension(".json")
     
-    with dpg.file_dialog(directory_selector=False, show=False, callback=save, tag="save file picker", height=512):
+    with dpg.file_dialog(directory_selector=False, show=False, callback=save_hexes, tag="save hexes file picker", height=512):
+        dpg.add_file_extension(".json")
+    
+    with dpg.file_dialog(directory_selector=False, show=False, callback=load_regions, tag="load regions file picker", height=512):
+        dpg.add_file_extension(".json")
+    
+    with dpg.file_dialog(directory_selector=False, show=False, callback=save_regions, tag="save regions file picker", height=512):
         dpg.add_file_extension(".json")
 
     with dpg.texture_registry():
@@ -226,18 +269,19 @@ def main():
     with dpg.item_handler_registry(tag="prev handler"):
         dpg.add_item_clicked_handler(callback=prev_region)
     
-    with dpg.item_handler_registry(tag="save handler"):
-        dpg.add_item_clicked_handler(callback=save)
+    with dpg.item_handler_registry(tag="hex grid handler"):
+        dpg.add_item_hover_handler(callback=hex_grid_hovered)
+        dpg.add_item_clicked_handler(callback=link_regions)
+        
+    with dpg.value_registry():
+        dpg.add_string_value(default_value="", tag="region name")
+        dpg.add_string_value(default_value="", tag="linking name")
+        dpg.add_string_value(default_value="", tag="mouse coords")
 
     with dpg.handler_registry():
         dpg.add_mouse_down_handler(callback=hex_grid_drag)
         dpg.add_mouse_wheel_handler(callback=zoom)
-
-    with dpg.item_handler_registry(tag="hex grid handler"):
-        dpg.add_item_hover_handler(callback=hex_grid_hovered)
-        
-    with dpg.value_registry():
-        dpg.add_string_value(default_value="", tag="region name")
+        dpg.add_mouse_move_handler(callback=move_link)
 
     with dpg.window(label="Oshur Hex Editor", tag="Primary Window"):
         with dpg.drawlist(width=1024, height=1024, tag="hex grid"):
@@ -248,15 +292,47 @@ def main():
                 dpg.draw_line((1023, 1023), (1023, 0))
                 dpg.draw_line((1023, 0), (0, 0))
                 draw_hexgrid((-4096, 4096), hexes)
+                dpg.draw_line((0, 0), (0, 0), show=False, color=(0, 0, 255, 255), tag="new link")
+        
         dpg.add_text(label="Current Region Name", source="region name", show_label=True)
+        dpg.add_text(label="Linking Region Name", source="linking name", show_label=True)
+        dpg.add_text(label="Mouse World Coordinates", source="mouse coords", show_label=True)
         with dpg.group(horizontal=True):
             dpg.add_button(label="Previous Region", width=256, height=64, tag="prev")
             dpg.add_button(label="Next Region", width=256, height=64, tag="next")
             dpg.add_button(label="Clear Selection", width=256, height=64, tag="clear")
         
         with dpg.group(horizontal=True):
-            dpg.add_button(label="Save...", width=256, height=64, tag="save", callback=lambda: dpg.show_item("save file picker"))
-            dpg.add_button(label="Load...", width=256, height=64, tag="load", callback=lambda: dpg.show_item("load file picker"))
+            dpg.add_button(label="Save Hexes...", width=256, height=64, callback=lambda: dpg.show_item("save hexes file picker"))
+            dpg.add_button(label="Load Hexes...", width=256, height=64, callback=lambda: dpg.show_item("load hexes file picker"))
+        
+        with dpg.group(horizontal=True):
+            dpg.add_button(label="Save Regions...", width=256, height=64, callback=lambda: dpg.show_item("save regions file picker"))
+            dpg.add_button(label="Load Regions...", width=256, height=64, callback=lambda: dpg.show_item("load regions file picker"))
+            dpg.add_button(label="Add/Edit Region...", width=256, height=64, callback=lambda: dpg.show_item("region editor"))
+    
+    with dpg.window(label="Add/Edit Region", show=False, tag="region editor"):
+        with dpg.group(horizontal=True):
+            dpg.add_text("facility_name")
+            dpg.add_input_text(tag="facility name input")
+        
+        with dpg.group(horizontal=True):
+            dpg.add_text("location_x (vertical location)")
+            dpg.add_input_float(tag="facility x input")
+        
+        with dpg.group(horizontal=True):
+            dpg.add_text("location_z (horizontal location)")
+            dpg.add_input_float(tag="facility z input")
+        
+        with dpg.group(horizontal=True):
+            dpg.add_text("facility type")
+            dpg.add_listbox(list((ftype.name for ftype in FacilityTypes)), tag="facility type input")
+        
+        with dpg.group(horizontal=True):
+            dpg.add_button(label="Done", width=256, height=64, callback=add_or_edit_region)
+            dpg.add_button(label="Cancel", width=256, height=64, callback=lambda: dpg.hide_item("region editor"))
+        
+        
     
     dpg.bind_item_handler_registry("next", "next handler")
     dpg.bind_item_handler_registry("prev", "prev handler")
@@ -270,19 +346,6 @@ def main():
     dpg.set_primary_window("Primary Window", True)
     dpg.start_dearpygui()
     dpg.destroy_context()
-    
-    return
-    for i, facility in enumerate(facilities.values()):
-        if len(facility["hexes"]) != 0:
-            continue
-        print(facility["name"], len(facilities) - i)
-        hexes = get_hexes()
-        while len(hexes) != 0:
-            facility["hexes"].extend(hexes)
-            hexes = get_hexes()
-
-    with open("oshur_hexes.json", "w") as f:
-        json.dump(facilities, f, indent=4)
 
 
 if __name__ == "__main__":

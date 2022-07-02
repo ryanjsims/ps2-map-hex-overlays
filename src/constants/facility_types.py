@@ -13,6 +13,7 @@ class FacilityTypes(IntEnum):
     RELIC = 10
     CONTAINMENT_SITE = 11
     TRIDENT = 12
+    UNDERWATER = 13
 
 MAJOR_FACILITY_TYPES = [
     FacilityTypes.AMP_STATION, 
