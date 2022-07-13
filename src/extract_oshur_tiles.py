@@ -1,3 +1,5 @@
+from io import BytesIO
+import math
 import sys
 sys.path.insert(0, "/home/ryan/repos/ps2alerts/map_drawing/lib/")
 from DbgPack import AssetManager
@@ -5,8 +7,9 @@ from DbgPack import AssetManager
 from glob import glob
 from pathlib import Path, PosixPath
 import progressbar
+from PIL import Image
 
-test_server = r"/mnt/c/Users/Public/Daybreak Game Company/Installed Games/PlanetSide 2/Resources/Assets"
+test_server = r"/mnt/e/Users/Public/Daybreak Game Company/Installed Games/PlanetSide 2 Test/Resources/Assets"
 packs = [Path(p) for p in (glob(test_server + "/Oshur*.pack2"))]
 
 class LoadingBar:
@@ -31,7 +34,7 @@ def main():
     manager = AssetManager(packs, callback=bar.callback)
     bar.finish()
     format = "Oshur_Tile_{:03d}_{:03d}_LOD{:d}.dds"
-    saveformat = "tile_{:03d}_{:03d}.dds"
+    saveformat = "tile_{:d}_{:d}.png"
     savepath = Path("/home/ryan/repos/ps2alerts/map_drawing/tiles/oshur/")
     savepath.mkdir(parents=True, exist_ok=True)
     print("Saving tiles...")
@@ -45,14 +48,21 @@ def main():
                     bar.callback(index, total, Path())
                     continue
                 
+                image = Image.open(BytesIO(asset.get_data()))
                 path = savepath / "{}".format(5 - lod)
                 path.mkdir(parents=True, exist_ok=True)
-                with open(path / saveformat.format(x, z), "wb") as tile:
-                    tile.write(asset.get_data())
-                    bar.callback(index, total, path)
+                image = image.transpose(Image.FLIP_TOP_BOTTOM)
+                image.save(path / saveformat.format(int((x + 64) / math.pow(2, 2 + lod)), int((-z + (64 - math.pow(2, 2 + lod))) / math.pow(2, 2 + lod))))
+                bar.callback(index, total, path)
+
     bar.finish()
     print("Finished")
-                
+
+#
+# 2 32   2^5
+# 3 16   2^4
+# 4 8    2^3
+# 5 4    2^2            
 
 if __name__ == "__main__":
     main()
