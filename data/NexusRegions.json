@@ -1,0 +1,144 @@
+[
+    {
+        "map_region_id": "11500",
+        "zone_id": "10",
+        "facility_id": "310500",
+        "facility_name": "Arazek SATCOM Hub",
+        "facility_type_id": "5",
+        "location_x": "-475.0",
+        "location_y": "0.0",
+        "location_z": "465.0",
+        "facility_links": [
+            "310510",
+            "310520"
+        ]
+    },
+    {
+        "map_region_id": "11510",
+        "zone_id": "10",
+        "facility_id": "310510",
+        "facility_name": "Nexus Secure Substation",
+        "facility_type_id": "6",
+        "location_x": "-585.0",
+        "location_y": "0.0",
+        "location_z": "-30.0",
+        "facility_links": [
+            "310530",
+            "310600"
+        ]
+    },
+    {
+        "map_region_id": "11520",
+        "zone_id": "10",
+        "facility_id": "310520",
+        "facility_name": "Hydroponics Compound",
+        "facility_type_id": "6",
+        "location_x": "20.0",
+        "location_y": "0.0",
+        "location_z": "605.0",
+        "facility_links": [
+            "310530",
+            "310610"
+        ]
+    },
+    {
+        "map_region_id": "11530",
+        "zone_id": "10",
+        "facility_id": "310530",
+        "facility_name": "The Granitehead Reactor",
+        "facility_type_id": "5",
+        "location_x": "145.0",
+        "location_y": "0.0",
+        "location_z": "-90.0",
+        "facility_links": []
+    },
+    {
+        "map_region_id": "11540",
+        "zone_id": "10",
+        "facility_id": "310540",
+        "facility_name": "Argent Pass",
+        "facility_type_id": "6",
+        "location_x": "180.0",
+        "location_y": "0.0",
+        "location_z": "-820.0",
+        "facility_links": [
+            "310590",
+            "310600"
+        ]
+    },
+    {
+        "map_region_id": "11550",
+        "zone_id": "10",
+        "facility_id": "310550",
+        "facility_name": "Slate Canyon Hold",
+        "facility_type_id": "6",
+        "location_x": "795.0",
+        "location_y": "0.0",
+        "location_z": "-190.0",
+        "facility_links": [
+            "310590",
+            "310610"
+        ]
+    },
+    {
+        "map_region_id": "11560",
+        "zone_id": "10",
+        "facility_id": "310560",
+        "facility_name": "Nexus Northeast Warpgate",
+        "facility_type_id": "7",
+        "location_x": "785.0",
+        "location_y": "0.0",
+        "location_z": "835.0",
+        "facility_links": [
+            "310610"
+        ]
+    },
+    {
+        "map_region_id": "11570",
+        "zone_id": "10",
+        "facility_id": "310570",
+        "facility_name": "Nexus Southwest Warpgate",
+        "facility_type_id": "7",
+        "location_x": "-800.0",
+        "location_y": "0.0",
+        "location_z": "-825.0",
+        "facility_links": [
+            "310600"
+        ]
+    },
+    {
+        "map_region_id": "11590",
+        "zone_id": "10",
+        "facility_id": "310590",
+        "facility_name": "Bitter Gorge Garrison",
+        "facility_type_id": "5",
+        "location_x": "425.0",
+        "location_y": "0.0",
+        "location_z": "-420.0",
+        "facility_links": [
+            "310530"
+        ]
+    },
+    {
+        "map_region_id": "11600",
+        "zone_id": "10",
+        "facility_id": "310600",
+        "facility_name": "Nexus Alpha",
+        "facility_type_id": "5",
+        "location_x": "-360.0",
+        "location_y": "0.0",
+        "location_z": "-400.0",
+        "facility_links": []
+    },
+    {
+        "map_region_id": "11610",
+        "zone_id": "10",
+        "facility_id": "310610",
+        "facility_name": "Nexus Omega",
+        "facility_type_id": "5",
+        "location_x": "370.0",
+        "location_y": "0.0",
+        "location_z": "315.0",
+        "facility_links": []
+    }
+]

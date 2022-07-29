@@ -1,18 +1,18 @@
 import json
 import math
 
-with open("../data/oshur.json") as f:
-    oshur_data = json.load(f)
+with open("../data/NexusRegions_locs.json") as f:
+    zone_data = json.load(f)
 
-with open("../data/oshur_hexes.json") as f:
-    oshur_hexes = json.load(f)
+with open("../data/NexusHexes.json") as f:
+    zone_hexes = json.load(f)
 
 facility_id_map = {
     region["facility_id"]: region["map_region_id"] 
-    for region in oshur_data
+    for region in zone_data
 }
 
-for region in oshur_data:
+for region in zone_data:
     if "zone_id" in region:
         del region["zone_id"]
     if "location_y" in region:
@@ -33,16 +33,13 @@ for region in oshur_data:
         {
             "x": str(-cubehex[2]), 
             "y": str(-cubehex[1] - 1)
-        } for cubehex in oshur_hexes[region["map_region_id"]]["hexes"]
+        } for cubehex in zone_hexes[region["map_region_id"]]["hexes"]
     ]
 
 
-oshur_cache = {}
-oshur_cache["map_region_list"] = oshur_data
-oshur_cache["returned"] = len(oshur_data)
+zone_cache = {}
+zone_cache["map_region_list"] = zone_data
+zone_cache["returned"] = len(zone_data)
 
-with open("../cache/oshur_cache.json", "w") as f:
-    json.dump(oshur_cache, f, separators=(',', ':'))
-
-
-math.ce
+with open("../cache/nexus_cache.json", "w") as f:
+    json.dump(zone_cache, f, separators=(',', ':'))
